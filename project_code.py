@@ -82,7 +82,7 @@ class MongoToGCSExporter:
         except Exception as e:
             logging.error(f"Error uploading to GCS: {str(e)}")
             raise
-        
+
     
 
     def export_to_gcs(self):
@@ -96,8 +96,8 @@ class MongoToGCSExporter:
             total_docs = collection.estimated_document_count()
             logging.info(f"Total documents to process: {total_docs}")
 
-            # Limit to 10,000 documents for testing
-            max_docs = 10000
+            # Limit to 100,000 documents for testing
+            max_docs = 100000
             if total_docs > max_docs:
                 logging.info(f"Limiting processing to the first {max_docs} documents for testing.")
                 total_docs = max_docs

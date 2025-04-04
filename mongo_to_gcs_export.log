@@ -119,3 +119,208 @@
 2025-04-04 03:49:07,532 - INFO - Successfully uploaded export_batch_9_20250404_034907.jsonl to GCS
 2025-04-04 03:49:07,532 - INFO - Processed batch 10 - 10000/10000 documents
 2025-04-04 03:49:07,532 - INFO - Export completed successfully
+2025-04-04 11:49:49,352 - INFO - Successfully connected to MongoDB
+2025-04-04 11:49:52,282 - INFO - Successfully connected to GCS
+2025-04-04 11:49:52,288 - INFO - Total documents to process: 41432473
+2025-04-04 11:49:52,288 - INFO - Limiting processing to the first 100000 documents for testing.
+2025-04-04 11:49:52,748 - INFO - Successfully uploaded export_batch_0_20250404_114952.jsonl to GCS
+2025-04-04 11:49:52,749 - INFO - Processed batch 1 - 1000/100000 documents
+2025-04-04 11:49:53,168 - INFO - Successfully uploaded export_batch_1_20250404_114952.jsonl to GCS
+2025-04-04 11:49:53,168 - INFO - Processed batch 2 - 2000/100000 documents
+2025-04-04 11:49:53,566 - INFO - Successfully uploaded export_batch_2_20250404_114953.jsonl to GCS
+2025-04-04 11:49:53,566 - INFO - Processed batch 3 - 3000/100000 documents
+2025-04-04 11:49:54,038 - INFO - Successfully uploaded export_batch_3_20250404_114953.jsonl to GCS
+2025-04-04 11:49:54,039 - INFO - Processed batch 4 - 4000/100000 documents
+2025-04-04 11:49:54,409 - INFO - Successfully uploaded export_batch_4_20250404_114954.jsonl to GCS
+2025-04-04 11:49:54,409 - INFO - Processed batch 5 - 5000/100000 documents
+2025-04-04 11:49:54,795 - INFO - Successfully uploaded export_batch_5_20250404_114954.jsonl to GCS
+2025-04-04 11:49:54,795 - INFO - Processed batch 6 - 6000/100000 documents
+2025-04-04 11:49:55,171 - INFO - Successfully uploaded export_batch_6_20250404_114954.jsonl to GCS
+2025-04-04 11:49:55,172 - INFO - Processed batch 7 - 7000/100000 documents
+2025-04-04 11:49:55,587 - INFO - Successfully uploaded export_batch_7_20250404_114955.jsonl to GCS
+2025-04-04 11:49:55,587 - INFO - Processed batch 8 - 8000/100000 documents
+2025-04-04 11:49:55,964 - INFO - Successfully uploaded export_batch_8_20250404_114955.jsonl to GCS
+2025-04-04 11:49:55,964 - INFO - Processed batch 9 - 9000/100000 documents
+2025-04-04 11:49:56,388 - INFO - Successfully uploaded export_batch_9_20250404_114955.jsonl to GCS
+2025-04-04 11:49:56,389 - INFO - Processed batch 10 - 10000/100000 documents
+2025-04-04 11:49:56,753 - INFO - Successfully uploaded export_batch_10_20250404_114956.jsonl to GCS
+2025-04-04 11:49:56,753 - INFO - Processed batch 11 - 11000/100000 documents
+2025-04-04 11:49:57,160 - INFO - Successfully uploaded export_batch_11_20250404_114956.jsonl to GCS
+2025-04-04 11:49:57,161 - INFO - Processed batch 12 - 12000/100000 documents
+2025-04-04 11:49:57,555 - INFO - Successfully uploaded export_batch_12_20250404_114957.jsonl to GCS
+2025-04-04 11:49:57,556 - INFO - Processed batch 13 - 13000/100000 documents
+2025-04-04 11:49:57,964 - INFO - Successfully uploaded export_batch_13_20250404_114957.jsonl to GCS
+2025-04-04 11:49:57,964 - INFO - Processed batch 14 - 14000/100000 documents
+2025-04-04 11:49:58,344 - INFO - Successfully uploaded export_batch_14_20250404_114957.jsonl to GCS
+2025-04-04 11:49:58,344 - INFO - Processed batch 15 - 15000/100000 documents
+2025-04-04 11:49:58,774 - INFO - Successfully uploaded export_batch_15_20250404_114958.jsonl to GCS
+2025-04-04 11:49:58,775 - INFO - Processed batch 16 - 16000/100000 documents
+2025-04-04 11:49:59,157 - INFO - Successfully uploaded export_batch_16_20250404_114958.jsonl to GCS
+2025-04-04 11:49:59,157 - INFO - Processed batch 17 - 17000/100000 documents
+2025-04-04 11:49:59,547 - INFO - Successfully uploaded export_batch_17_20250404_114959.jsonl to GCS
+2025-04-04 11:49:59,547 - INFO - Processed batch 18 - 18000/100000 documents
+2025-04-04 11:49:59,911 - INFO - Successfully uploaded export_batch_18_20250404_114959.jsonl to GCS
+2025-04-04 11:49:59,911 - INFO - Processed batch 19 - 19000/100000 documents
+2025-04-04 11:50:00,319 - INFO - Successfully uploaded export_batch_19_20250404_114959.jsonl to GCS
+2025-04-04 11:50:00,320 - INFO - Processed batch 20 - 20000/100000 documents
+2025-04-04 11:50:00,723 - INFO - Successfully uploaded export_batch_20_20250404_115000.jsonl to GCS
+2025-04-04 11:50:00,724 - INFO - Processed batch 21 - 21000/100000 documents
+2025-04-04 11:50:01,113 - INFO - Successfully uploaded export_batch_21_20250404_115000.jsonl to GCS
+2025-04-04 11:50:01,113 - INFO - Processed batch 22 - 22000/100000 documents
+2025-04-04 11:50:01,478 - INFO - Successfully uploaded export_batch_22_20250404_115001.jsonl to GCS
+2025-04-04 11:50:01,479 - INFO - Processed batch 23 - 23000/100000 documents
+2025-04-04 11:50:01,838 - INFO - Successfully uploaded export_batch_23_20250404_115001.jsonl to GCS
+2025-04-04 11:50:01,838 - INFO - Processed batch 24 - 24000/100000 documents
+2025-04-04 11:50:02,231 - INFO - Successfully uploaded export_batch_24_20250404_115001.jsonl to GCS
+2025-04-04 11:50:02,231 - INFO - Processed batch 25 - 25000/100000 documents
+2025-04-04 11:50:02,637 - INFO - Successfully uploaded export_batch_25_20250404_115002.jsonl to GCS
+2025-04-04 11:50:02,637 - INFO - Processed batch 26 - 26000/100000 documents
+2025-04-04 11:50:03,021 - INFO - Successfully uploaded export_batch_26_20250404_115002.jsonl to GCS
+2025-04-04 11:50:03,021 - INFO - Processed batch 27 - 27000/100000 documents
+2025-04-04 11:50:03,428 - INFO - Successfully uploaded export_batch_27_20250404_115003.jsonl to GCS
+2025-04-04 11:50:03,428 - INFO - Processed batch 28 - 28000/100000 documents
+2025-04-04 11:50:03,787 - INFO - Successfully uploaded export_batch_28_20250404_115003.jsonl to GCS
+2025-04-04 11:50:03,788 - INFO - Processed batch 29 - 29000/100000 documents
+2025-04-04 11:50:04,147 - INFO - Successfully uploaded export_batch_29_20250404_115003.jsonl to GCS
+2025-04-04 11:50:04,148 - INFO - Processed batch 30 - 30000/100000 documents
+2025-04-04 11:50:04,541 - INFO - Successfully uploaded export_batch_30_20250404_115004.jsonl to GCS
+2025-04-04 11:50:04,542 - INFO - Processed batch 31 - 31000/100000 documents
+2025-04-04 11:50:04,894 - INFO - Successfully uploaded export_batch_31_20250404_115004.jsonl to GCS
+2025-04-04 11:50:04,895 - INFO - Processed batch 32 - 32000/100000 documents
+2025-04-04 11:50:05,246 - INFO - Successfully uploaded export_batch_32_20250404_115004.jsonl to GCS
+2025-04-04 11:50:05,247 - INFO - Processed batch 33 - 33000/100000 documents
+2025-04-04 11:50:05,644 - INFO - Successfully uploaded export_batch_33_20250404_115005.jsonl to GCS
+2025-04-04 11:50:05,644 - INFO - Processed batch 34 - 34000/100000 documents
+2025-04-04 11:50:06,057 - INFO - Successfully uploaded export_batch_34_20250404_115005.jsonl to GCS
+2025-04-04 11:50:06,058 - INFO - Processed batch 35 - 35000/100000 documents
+2025-04-04 11:50:06,462 - INFO - Successfully uploaded export_batch_35_20250404_115006.jsonl to GCS
+2025-04-04 11:50:06,463 - INFO - Processed batch 36 - 36000/100000 documents
+2025-04-04 11:50:06,867 - INFO - Successfully uploaded export_batch_36_20250404_115006.jsonl to GCS
+2025-04-04 11:50:06,868 - INFO - Processed batch 37 - 37000/100000 documents
+2025-04-04 11:50:07,266 - INFO - Successfully uploaded export_batch_37_20250404_115006.jsonl to GCS
+2025-04-04 11:50:07,266 - INFO - Processed batch 38 - 38000/100000 documents
+2025-04-04 11:50:07,682 - INFO - Successfully uploaded export_batch_38_20250404_115007.jsonl to GCS
+2025-04-04 11:50:07,682 - INFO - Processed batch 39 - 39000/100000 documents
+2025-04-04 11:50:08,058 - INFO - Successfully uploaded export_batch_39_20250404_115007.jsonl to GCS
+2025-04-04 11:50:08,058 - INFO - Processed batch 40 - 40000/100000 documents
+2025-04-04 11:50:08,484 - INFO - Successfully uploaded export_batch_40_20250404_115008.jsonl to GCS
+2025-04-04 11:50:08,484 - INFO - Processed batch 41 - 41000/100000 documents
+2025-04-04 11:50:08,870 - INFO - Successfully uploaded export_batch_41_20250404_115008.jsonl to GCS
+2025-04-04 11:50:08,871 - INFO - Processed batch 42 - 42000/100000 documents
+2025-04-04 11:50:09,258 - INFO - Successfully uploaded export_batch_42_20250404_115008.jsonl to GCS
+2025-04-04 11:50:09,259 - INFO - Processed batch 43 - 43000/100000 documents
+2025-04-04 11:50:09,649 - INFO - Successfully uploaded export_batch_43_20250404_115009.jsonl to GCS
+2025-04-04 11:50:09,650 - INFO - Processed batch 44 - 44000/100000 documents
+2025-04-04 11:50:10,034 - INFO - Successfully uploaded export_batch_44_20250404_115009.jsonl to GCS
+2025-04-04 11:50:10,034 - INFO - Processed batch 45 - 45000/100000 documents
+2025-04-04 11:50:10,432 - INFO - Successfully uploaded export_batch_45_20250404_115010.jsonl to GCS
+2025-04-04 11:50:10,432 - INFO - Processed batch 46 - 46000/100000 documents
+2025-04-04 11:50:10,811 - INFO - Successfully uploaded export_batch_46_20250404_115010.jsonl to GCS
+2025-04-04 11:50:10,811 - INFO - Processed batch 47 - 47000/100000 documents
+2025-04-04 11:50:11,181 - INFO - Successfully uploaded export_batch_47_20250404_115010.jsonl to GCS
+2025-04-04 11:50:11,182 - INFO - Processed batch 48 - 48000/100000 documents
+2025-04-04 11:50:11,595 - INFO - Successfully uploaded export_batch_48_20250404_115011.jsonl to GCS
+2025-04-04 11:50:11,596 - INFO - Processed batch 49 - 49000/100000 documents
+2025-04-04 11:50:11,962 - INFO - Successfully uploaded export_batch_49_20250404_115011.jsonl to GCS
+2025-04-04 11:50:11,962 - INFO - Processed batch 50 - 50000/100000 documents
+2025-04-04 11:50:12,358 - INFO - Successfully uploaded export_batch_50_20250404_115012.jsonl to GCS
+2025-04-04 11:50:12,358 - INFO - Processed batch 51 - 51000/100000 documents
+2025-04-04 11:50:12,916 - INFO - Successfully uploaded export_batch_51_20250404_115012.jsonl to GCS
+2025-04-04 11:50:12,917 - INFO - Processed batch 52 - 52000/100000 documents
+2025-04-04 11:50:13,304 - INFO - Successfully uploaded export_batch_52_20250404_115012.jsonl to GCS
+2025-04-04 11:50:13,304 - INFO - Processed batch 53 - 53000/100000 documents
+2025-04-04 11:50:13,697 - INFO - Successfully uploaded export_batch_53_20250404_115013.jsonl to GCS
+2025-04-04 11:50:13,697 - INFO - Processed batch 54 - 54000/100000 documents
+2025-04-04 11:50:14,097 - INFO - Successfully uploaded export_batch_54_20250404_115013.jsonl to GCS
+2025-04-04 11:50:14,098 - INFO - Processed batch 55 - 55000/100000 documents
+2025-04-04 11:50:14,470 - INFO - Successfully uploaded export_batch_55_20250404_115014.jsonl to GCS
+2025-04-04 11:50:14,470 - INFO - Processed batch 56 - 56000/100000 documents
+2025-04-04 11:50:14,888 - INFO - Successfully uploaded export_batch_56_20250404_115014.jsonl to GCS
+2025-04-04 11:50:14,888 - INFO - Processed batch 57 - 57000/100000 documents
+2025-04-04 11:50:15,258 - INFO - Successfully uploaded export_batch_57_20250404_115014.jsonl to GCS
+2025-04-04 11:50:15,259 - INFO - Processed batch 58 - 58000/100000 documents
+2025-04-04 11:50:15,681 - INFO - Successfully uploaded export_batch_58_20250404_115015.jsonl to GCS
+2025-04-04 11:50:15,682 - INFO - Processed batch 59 - 59000/100000 documents
+2025-04-04 11:50:16,094 - INFO - Successfully uploaded export_batch_59_20250404_115015.jsonl to GCS
+2025-04-04 11:50:16,095 - INFO - Processed batch 60 - 60000/100000 documents
+2025-04-04 11:50:16,483 - INFO - Successfully uploaded export_batch_60_20250404_115016.jsonl to GCS
+2025-04-04 11:50:16,483 - INFO - Processed batch 61 - 61000/100000 documents
+2025-04-04 11:50:16,895 - INFO - Successfully uploaded export_batch_61_20250404_115016.jsonl to GCS
+2025-04-04 11:50:16,895 - INFO - Processed batch 62 - 62000/100000 documents
+2025-04-04 11:50:17,292 - INFO - Successfully uploaded export_batch_62_20250404_115016.jsonl to GCS
+2025-04-04 11:50:17,293 - INFO - Processed batch 63 - 63000/100000 documents
+2025-04-04 11:50:17,713 - INFO - Successfully uploaded export_batch_63_20250404_115017.jsonl to GCS
+2025-04-04 11:50:17,713 - INFO - Processed batch 64 - 64000/100000 documents
+2025-04-04 11:50:18,090 - INFO - Successfully uploaded export_batch_64_20250404_115017.jsonl to GCS
+2025-04-04 11:50:18,091 - INFO - Processed batch 65 - 65000/100000 documents
+2025-04-04 11:50:18,500 - INFO - Successfully uploaded export_batch_65_20250404_115018.jsonl to GCS
+2025-04-04 11:50:18,501 - INFO - Processed batch 66 - 66000/100000 documents
+2025-04-04 11:50:18,908 - INFO - Successfully uploaded export_batch_66_20250404_115018.jsonl to GCS
+2025-04-04 11:50:18,909 - INFO - Processed batch 67 - 67000/100000 documents
+2025-04-04 11:50:19,290 - INFO - Successfully uploaded export_batch_67_20250404_115018.jsonl to GCS
+2025-04-04 11:50:19,290 - INFO - Processed batch 68 - 68000/100000 documents
+2025-04-04 11:50:19,713 - INFO - Successfully uploaded export_batch_68_20250404_115019.jsonl to GCS
+2025-04-04 11:50:19,714 - INFO - Processed batch 69 - 69000/100000 documents
+2025-04-04 11:50:20,148 - INFO - Successfully uploaded export_batch_69_20250404_115019.jsonl to GCS
+2025-04-04 11:50:20,148 - INFO - Processed batch 70 - 70000/100000 documents
+2025-04-04 11:50:20,550 - INFO - Successfully uploaded export_batch_70_20250404_115020.jsonl to GCS
+2025-04-04 11:50:20,550 - INFO - Processed batch 71 - 71000/100000 documents
+2025-04-04 11:50:20,946 - INFO - Successfully uploaded export_batch_71_20250404_115020.jsonl to GCS
+2025-04-04 11:50:20,947 - INFO - Processed batch 72 - 72000/100000 documents
+2025-04-04 11:50:21,338 - INFO - Successfully uploaded export_batch_72_20250404_115020.jsonl to GCS
+2025-04-04 11:50:21,339 - INFO - Processed batch 73 - 73000/100000 documents
+2025-04-04 11:50:21,714 - INFO - Successfully uploaded export_batch_73_20250404_115021.jsonl to GCS
+2025-04-04 11:50:21,715 - INFO - Processed batch 74 - 74000/100000 documents
+2025-04-04 11:50:22,118 - INFO - Successfully uploaded export_batch_74_20250404_115021.jsonl to GCS
+2025-04-04 11:50:22,118 - INFO - Processed batch 75 - 75000/100000 documents
+2025-04-04 11:50:22,558 - INFO - Successfully uploaded export_batch_75_20250404_115022.jsonl to GCS
+2025-04-04 11:50:22,559 - INFO - Processed batch 76 - 76000/100000 documents
+2025-04-04 11:50:22,965 - INFO - Successfully uploaded export_batch_76_20250404_115022.jsonl to GCS
+2025-04-04 11:50:22,966 - INFO - Processed batch 77 - 77000/100000 documents
+2025-04-04 11:50:23,360 - INFO - Successfully uploaded export_batch_77_20250404_115023.jsonl to GCS
+2025-04-04 11:50:23,361 - INFO - Processed batch 78 - 78000/100000 documents
+2025-04-04 11:50:23,799 - INFO - Successfully uploaded export_batch_78_20250404_115023.jsonl to GCS
+2025-04-04 11:50:23,799 - INFO - Processed batch 79 - 79000/100000 documents
+2025-04-04 11:50:24,192 - INFO - Successfully uploaded export_batch_79_20250404_115023.jsonl to GCS
+2025-04-04 11:50:24,192 - INFO - Processed batch 80 - 80000/100000 documents
+2025-04-04 11:50:24,628 - INFO - Successfully uploaded export_batch_80_20250404_115024.jsonl to GCS
+2025-04-04 11:50:24,629 - INFO - Processed batch 81 - 81000/100000 documents
+2025-04-04 11:50:25,021 - INFO - Successfully uploaded export_batch_81_20250404_115024.jsonl to GCS
+2025-04-04 11:50:25,022 - INFO - Processed batch 82 - 82000/100000 documents
+2025-04-04 11:50:25,427 - INFO - Successfully uploaded export_batch_82_20250404_115025.jsonl to GCS
+2025-04-04 11:50:25,427 - INFO - Processed batch 83 - 83000/100000 documents
+2025-04-04 11:50:25,891 - INFO - Successfully uploaded export_batch_83_20250404_115025.jsonl to GCS
+2025-04-04 11:50:25,891 - INFO - Processed batch 84 - 84000/100000 documents
+2025-04-04 11:50:26,286 - INFO - Successfully uploaded export_batch_84_20250404_115025.jsonl to GCS
+2025-04-04 11:50:26,287 - INFO - Processed batch 85 - 85000/100000 documents
+2025-04-04 11:50:26,716 - INFO - Successfully uploaded export_batch_85_20250404_115026.jsonl to GCS
+2025-04-04 11:50:26,716 - INFO - Processed batch 86 - 86000/100000 documents
+2025-04-04 11:50:27,127 - INFO - Successfully uploaded export_batch_86_20250404_115026.jsonl to GCS
+2025-04-04 11:50:27,128 - INFO - Processed batch 87 - 87000/100000 documents
+2025-04-04 11:50:27,567 - INFO - Successfully uploaded export_batch_87_20250404_115027.jsonl to GCS
+2025-04-04 11:50:27,567 - INFO - Processed batch 88 - 88000/100000 documents
+2025-04-04 11:50:27,974 - INFO - Successfully uploaded export_batch_88_20250404_115027.jsonl to GCS
+2025-04-04 11:50:27,974 - INFO - Processed batch 89 - 89000/100000 documents
+2025-04-04 11:50:28,401 - INFO - Successfully uploaded export_batch_89_20250404_115028.jsonl to GCS
+2025-04-04 11:50:28,401 - INFO - Processed batch 90 - 90000/100000 documents
+2025-04-04 11:50:28,790 - INFO - Successfully uploaded export_batch_90_20250404_115028.jsonl to GCS
+2025-04-04 11:50:28,791 - INFO - Processed batch 91 - 91000/100000 documents
+2025-04-04 11:50:29,204 - INFO - Successfully uploaded export_batch_91_20250404_115028.jsonl to GCS
+2025-04-04 11:50:29,205 - INFO - Processed batch 92 - 92000/100000 documents
+2025-04-04 11:50:29,620 - INFO - Successfully uploaded export_batch_92_20250404_115029.jsonl to GCS
+2025-04-04 11:50:29,621 - INFO - Processed batch 93 - 93000/100000 documents
+2025-04-04 11:50:30,004 - INFO - Successfully uploaded export_batch_93_20250404_115029.jsonl to GCS
+2025-04-04 11:50:30,004 - INFO - Processed batch 94 - 94000/100000 documents
+2025-04-04 11:50:30,360 - INFO - Successfully uploaded export_batch_94_20250404_115030.jsonl to GCS
+2025-04-04 11:50:30,360 - INFO - Processed batch 95 - 95000/100000 documents
+2025-04-04 11:50:30,782 - INFO - Successfully uploaded export_batch_95_20250404_115030.jsonl to GCS
+2025-04-04 11:50:30,783 - INFO - Processed batch 96 - 96000/100000 documents
+2025-04-04 11:50:31,153 - INFO - Successfully uploaded export_batch_96_20250404_115030.jsonl to GCS
+2025-04-04 11:50:31,153 - INFO - Processed batch 97 - 97000/100000 documents
+2025-04-04 11:50:31,549 - INFO - Successfully uploaded export_batch_97_20250404_115031.jsonl to GCS
+2025-04-04 11:50:31,549 - INFO - Processed batch 98 - 98000/100000 documents
+2025-04-04 11:50:31,936 - INFO - Successfully uploaded export_batch_98_20250404_115031.jsonl to GCS
+2025-04-04 11:50:31,936 - INFO - Processed batch 99 - 99000/100000 documents
+2025-04-04 11:50:32,354 - INFO - Successfully uploaded export_batch_99_20250404_115031.jsonl to GCS
+2025-04-04 11:50:32,354 - INFO - Processed batch 100 - 100000/100000 documents
+2025-04-04 11:50:32,354 - INFO - Export completed successfully
