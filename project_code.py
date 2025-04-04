@@ -5,6 +5,10 @@ import logging
 import json
 from datetime import datetime
 import os
+from google.cloud.exceptions import GoogleCloudError
+
+
+from config import mongo_uri, database, collection, bucket_name, batch_size
 
 # Configure logging
 logging.basicConfig(
@@ -14,16 +18,17 @@ logging.basicConfig(
 )
 
 class MongoToGCSExporter:
-    def __init__(self, mongo_uri="mongodb://localhost:27017/", 
-                 database="countly", 
-                 collection="summary",
-                 bucket_name="project-06-bucket"):
+    def __init__(self, mongo_uri, 
+                 database, 
+                 collection,
+                 bucket_name,
+                 batch_size):
         self.mongo_uri = mongo_uri
         self.database = database
         self.collection = collection
         self.bucket_name = bucket_name
-        self.batch_size = 1000  # Adjust based on your needs
-        
+        self.batch_size = batch_size  
+
     def connect_to_mongo(self):
         """Establish MongoDB connection"""
         try:
@@ -32,7 +37,7 @@ class MongoToGCSExporter:
             collection = db[self.collection]
             logging.info("Successfully connected to MongoDB")
             return collection
-        except errors.ConnectionError as e:
+        except errors.ServerSelectionTimeoutError as e:  
             logging.error(f"Failed to connect to MongoDB: {str(e)}")
             raise
 
@@ -65,6 +70,17 @@ class MongoToGCSExporter:
             logging.error(f"Error processing batch to JSONL: {str(e)}")
             raise
 
+    def connect_to_gcs(self):
+        """Initialize GCS client"""
+        try:
+            storage_client = storage.Client()
+            bucket = storage_client.get_bucket(self.bucket_name)
+            logging.info("Successfully connected to GCS")
+            return bucket
+        except GoogleCloudError as e:
+            logging.error(f"Failed to connect to GCS: {str(e)}")
+            raise
+    
     def upload_to_gcs(self, bucket, filename):
         """Upload file to GCS"""
         try:
@@ -75,6 +91,7 @@ class MongoToGCSExporter:
         except Exception as e:
             logging.error(f"Error uploading to GCS: {str(e)}")
             raise
+    
 
     def export_to_gcs(self):
         """Main export function"""
@@ -84,8 +101,12 @@ class MongoToGCSExporter:
             bucket = self.connect_to_gcs()
 
             # Get total document count for progress tracking
-            total_docs = collection.count_documents({})
-            logging.info(f"Total documents to process: {total_docs}")
+            total_docs = collection.estimated_document_count()
+            if total_docs == 0:
+                logging.info("No documents found in the collection. Exiting.")
+                return True
+            else:
+                logging.info(f"Total documents to process: {total_docs}")
 
             # Process in batches
             batch_number = 0
@@ -118,10 +139,11 @@ class MongoToGCSExporter:
 
 def main():
     exporter = MongoToGCSExporter(
-        mongo_uri="mongodb://localhost:27017/",
-        database="countly",
-        collection="summary",
-        bucket_name="project-06-bucket"
+        mongo_uri = mongo_uri,
+        database = database,
+        collection = collection,
+        bucket_name = bucket_name,
+        batch_size = batch_size
     )
     exporter.export_to_gcs()
 

@@ -1,7 +1,37 @@
-2025-04-03 21:53:52,754 - INFO - Successfully connected to MongoDB
-2025-04-03 21:53:55,759 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
-2025-04-03 21:53:59,688 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
-2025-04-03 21:54:04,775 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
-2025-04-03 21:54:04,775 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
-2025-04-03 21:54:04,775 - ERROR - Failed to connect to GCS: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
-2025-04-03 21:54:04,775 - ERROR - Export failed: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-04 02:09:19,792 - INFO - Successfully connected to MongoDB
+2025-04-04 02:10:08,807 - INFO - Successfully connected to GCS
+2025-04-04 02:13:35,417 - INFO - Successfully connected to MongoDB
+2025-04-04 02:13:35,517 - INFO - Successfully connected to GCS
+2025-04-04 02:13:35,522 - INFO - Total documents to process: 41432473
+2025-04-04 02:13:35,561 - ERROR - Export failed: 'MongoToGCSExporter' object has no attribute 'upload_to_gcs'
+2025-04-04 02:19:34,112 - INFO - Successfully connected to MongoDB
+2025-04-04 02:19:34,207 - INFO - Successfully connected to GCS
+2025-04-04 02:19:34,210 - INFO - Total documents to process: 41432473
+2025-04-04 02:19:34,626 - ERROR - Error uploading to GCS: 403 POST https://storage.googleapis.com/upload/storage/v1/b/project-06-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "Access denied.",
+    "errors": [
+      {
+        "message": "Access denied.",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+2025-04-04 02:19:34,627 - ERROR - Export failed: 403 POST https://storage.googleapis.com/upload/storage/v1/b/project-06-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "Access denied.",
+    "errors": [
+      {
+        "message": "Access denied.",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
