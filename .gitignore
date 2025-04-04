@@ -1,4 +1,5 @@
 data/
 venv/
 .qodo
-config.py
+/home/hofonam/Project06/config.py
+/home/hofonam/Project06/__pycache__
