@@ -102,11 +102,13 @@ class MongoToGCSExporter:
 
             # Get total document count for progress tracking
             total_docs = collection.estimated_document_count()
-            if total_docs == 0:
-                logging.info("No documents found in the collection. Exiting.")
-                return True
-            else:
-                logging.info(f"Total documents to process: {total_docs}")
+            logging.info(f"Total documents to process: {total_docs}")
+
+            # Limit to 10,000 documents for testing
+            max_docs = 10000
+            if total_docs > max_docs:
+                logging.info(f"Limiting processing to the first {max_docs} documents for testing.")
+                total_docs = max_docs
 
             # Process in batches
             batch_number = 0
@@ -115,8 +117,8 @@ class MongoToGCSExporter:
             while skip < total_docs:
                 # Fetch batch
                 batch_data = list(collection.find()
-                                .skip(skip)
-                                .limit(self.batch_size))
+                                    .skip(skip)
+                                    .limit(self.batch_size))
                 
                 if not batch_data:
                     break

@@ -1,13 +1,8 @@
-2025-04-04 02:09:19,792 - INFO - Successfully connected to MongoDB
-2025-04-04 02:10:08,807 - INFO - Successfully connected to GCS
-2025-04-04 02:13:35,417 - INFO - Successfully connected to MongoDB
-2025-04-04 02:13:35,517 - INFO - Successfully connected to GCS
-2025-04-04 02:13:35,522 - INFO - Total documents to process: 41432473
-2025-04-04 02:13:35,561 - ERROR - Export failed: 'MongoToGCSExporter' object has no attribute 'upload_to_gcs'
-2025-04-04 02:19:34,112 - INFO - Successfully connected to MongoDB
-2025-04-04 02:19:34,207 - INFO - Successfully connected to GCS
-2025-04-04 02:19:34,210 - INFO - Total documents to process: 41432473
-2025-04-04 02:19:34,626 - ERROR - Error uploading to GCS: 403 POST https://storage.googleapis.com/upload/storage/v1/b/project-06-bucket/o?uploadType=multipart: {
+2025-04-04 03:43:40,795 - INFO - Successfully connected to MongoDB
+2025-04-04 03:43:41,124 - INFO - Successfully connected to GCS
+2025-04-04 03:43:41,126 - INFO - Total documents to process: 41432473
+2025-04-04 03:43:41,127 - INFO - Limiting processing to the first 10000 documents for testing.
+2025-04-04 03:43:41,459 - ERROR - Error uploading to GCS: 403 POST https://storage.googleapis.com/upload/storage/v1/b/project-06-bucket/o?uploadType=multipart: {
   "error": {
     "code": 403,
     "message": "Access denied.",
@@ -21,7 +16,7 @@
   }
 }
 : ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
-2025-04-04 02:19:34,627 - ERROR - Export failed: 403 POST https://storage.googleapis.com/upload/storage/v1/b/project-06-bucket/o?uploadType=multipart: {
+2025-04-04 03:43:41,459 - ERROR - Export failed: 403 POST https://storage.googleapis.com/upload/storage/v1/b/project-06-bucket/o?uploadType=multipart: {
   "error": {
     "code": 403,
     "message": "Access denied.",
@@ -35,3 +30,92 @@
   }
 }
 : ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+2025-04-04 03:45:09,535 - INFO - Successfully connected to MongoDB
+2025-04-04 03:45:09,817 - INFO - Successfully connected to GCS
+2025-04-04 03:45:09,819 - INFO - Total documents to process: 41432473
+2025-04-04 03:45:09,819 - INFO - Limiting processing to the first 10000 documents for testing.
+2025-04-04 03:45:10,159 - ERROR - Error uploading to GCS: 403 POST https://storage.googleapis.com/upload/storage/v1/b/project-06-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "Access denied.",
+    "errors": [
+      {
+        "message": "Access denied.",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+2025-04-04 03:45:10,160 - ERROR - Export failed: 403 POST https://storage.googleapis.com/upload/storage/v1/b/project-06-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "Access denied.",
+    "errors": [
+      {
+        "message": "Access denied.",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+2025-04-04 03:45:29,557 - INFO - Successfully connected to MongoDB
+2025-04-04 03:45:29,649 - INFO - Successfully connected to GCS
+2025-04-04 03:45:29,652 - INFO - Total documents to process: 41432473
+2025-04-04 03:45:29,652 - INFO - Limiting processing to the first 10000 documents for testing.
+2025-04-04 03:45:30,026 - ERROR - Error uploading to GCS: 403 POST https://storage.googleapis.com/upload/storage/v1/b/project-06-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "Access denied.",
+    "errors": [
+      {
+        "message": "Access denied.",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+2025-04-04 03:45:30,026 - ERROR - Export failed: 403 POST https://storage.googleapis.com/upload/storage/v1/b/project-06-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "Access denied.",
+    "errors": [
+      {
+        "message": "Access denied.",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+2025-04-04 03:49:01,231 - INFO - Successfully connected to MongoDB
+2025-04-04 03:49:03,204 - INFO - Successfully connected to GCS
+2025-04-04 03:49:03,207 - INFO - Total documents to process: 41432473
+2025-04-04 03:49:03,208 - INFO - Limiting processing to the first 10000 documents for testing.
+2025-04-04 03:49:03,788 - INFO - Successfully uploaded export_batch_0_20250404_034903.jsonl to GCS
+2025-04-04 03:49:03,789 - INFO - Processed batch 1 - 1000/10000 documents
+2025-04-04 03:49:04,228 - INFO - Successfully uploaded export_batch_1_20250404_034903.jsonl to GCS
+2025-04-04 03:49:04,228 - INFO - Processed batch 2 - 2000/10000 documents
+2025-04-04 03:49:04,580 - INFO - Successfully uploaded export_batch_2_20250404_034904.jsonl to GCS
+2025-04-04 03:49:04,580 - INFO - Processed batch 3 - 3000/10000 documents
+2025-04-04 03:49:05,043 - INFO - Successfully uploaded export_batch_3_20250404_034904.jsonl to GCS
+2025-04-04 03:49:05,044 - INFO - Processed batch 4 - 4000/10000 documents
+2025-04-04 03:49:05,442 - INFO - Successfully uploaded export_batch_4_20250404_034905.jsonl to GCS
+2025-04-04 03:49:05,443 - INFO - Processed batch 5 - 5000/10000 documents
+2025-04-04 03:49:06,025 - INFO - Successfully uploaded export_batch_5_20250404_034905.jsonl to GCS
+2025-04-04 03:49:06,025 - INFO - Processed batch 6 - 6000/10000 documents
+2025-04-04 03:49:06,403 - INFO - Successfully uploaded export_batch_6_20250404_034906.jsonl to GCS
+2025-04-04 03:49:06,403 - INFO - Processed batch 7 - 7000/10000 documents
+2025-04-04 03:49:06,799 - INFO - Successfully uploaded export_batch_7_20250404_034906.jsonl to GCS
+2025-04-04 03:49:06,799 - INFO - Processed batch 8 - 8000/10000 documents
+2025-04-04 03:49:07,137 - INFO - Successfully uploaded export_batch_8_20250404_034906.jsonl to GCS
+2025-04-04 03:49:07,137 - INFO - Processed batch 9 - 9000/10000 documents
+2025-04-04 03:49:07,532 - INFO - Successfully uploaded export_batch_9_20250404_034907.jsonl to GCS
+2025-04-04 03:49:07,532 - INFO - Processed batch 10 - 10000/10000 documents
+2025-04-04 03:49:07,532 - INFO - Export completed successfully
