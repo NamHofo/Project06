@@ -70,16 +70,7 @@ class MongoToGCSExporter:
             logging.error(f"Error processing batch to JSONL: {str(e)}")
             raise
 
-    def connect_to_gcs(self):
-        """Initialize GCS client"""
-        try:
-            storage_client = storage.Client()
-            bucket = storage_client.get_bucket(self.bucket_name)
-            logging.info("Successfully connected to GCS")
-            return bucket
-        except GoogleCloudError as e:
-            logging.error(f"Failed to connect to GCS: {str(e)}")
-            raise
+
     
     def upload_to_gcs(self, bucket, filename):
         """Upload file to GCS"""
@@ -91,6 +82,7 @@ class MongoToGCSExporter:
         except Exception as e:
             logging.error(f"Error uploading to GCS: {str(e)}")
             raise
+        
     
 
     def export_to_gcs(self):
