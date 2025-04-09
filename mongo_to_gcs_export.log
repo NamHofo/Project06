@@ -1,699 +1,305 @@
-2025-04-07 14:45:42,439 - INFO - Successfully connected to MongoDB
-2025-04-07 14:45:44,621 - INFO - Successfully connected to GCS
-2025-04-07 14:45:44,624 - INFO - Total documents to process: 41432473
-2025-04-07 14:45:44,625 - INFO - Limiting processing to the first 1000 documents for testing.
-2025-04-07 14:45:44,682 - ERROR - Error processing batch to Parquet: ("Could not convert 'criteo' with type str: tried to convert to boolean", 'Conversion failed for column utm_source with type object')
-2025-04-07 14:45:44,682 - ERROR - Export failed: ("Could not convert 'criteo' with type str: tried to convert to boolean", 'Conversion failed for column utm_source with type object')
-2025-04-07 14:54:30,804 - INFO - Successfully connected to MongoDB
-2025-04-07 14:54:32,977 - INFO - Successfully connected to GCS
-2025-04-07 14:54:32,981 - INFO - Total documents to process: 41432473
-2025-04-07 14:54:32,981 - INFO - Limiting processing to the first 1000 documents for testing.
-2025-04-07 14:54:33,045 - ERROR - Error processing batch to Parquet: ("Could not convert 'criteo' with type str: tried to convert to boolean", 'Conversion failed for column utm_source with type object')
-2025-04-07 14:54:33,045 - ERROR - Export failed: ("Could not convert 'criteo' with type str: tried to convert to boolean", 'Conversion failed for column utm_source with type object')
-2025-04-07 14:55:32,742 - INFO - Successfully connected to MongoDB
-2025-04-07 14:55:34,841 - INFO - Successfully connected to GCS
-2025-04-07 14:55:34,845 - INFO - Total documents to process: 41432473
-2025-04-07 14:55:34,845 - INFO - Limiting processing to the first 1000 documents for testing.
-2025-04-07 14:55:34,894 - ERROR - Error processing batch to Parquet: ("Could not convert 'criteo' with type str: tried to convert to boolean", 'Conversion failed for column utm_source with type object')
-2025-04-07 14:55:34,894 - ERROR - Export failed: ("Could not convert 'criteo' with type str: tried to convert to boolean", 'Conversion failed for column utm_source with type object')
-2025-04-07 14:57:17,163 - INFO - Successfully connected to MongoDB
-2025-04-07 14:57:19,421 - INFO - Successfully connected to GCS
-2025-04-07 14:57:19,425 - INFO - Total documents to process: 41432473
-2025-04-07 14:57:19,425 - INFO - Limiting processing to the first 1000 documents for testing.
-2025-04-07 14:57:19,800 - INFO - Successfully uploaded export_batch_0_20250407_145719.parquet to GCS
-2025-04-07 14:57:19,800 - INFO - Processed batch 1 - 1000/1000 documents
-2025-04-07 14:57:19,800 - INFO - Export completed successfully
-2025-04-07 15:01:47,012 - INFO - Successfully connected to MongoDB
-2025-04-07 15:01:49,003 - INFO - Successfully connected to GCS
-2025-04-07 15:01:49,006 - INFO - Total documents to process: 41432473
-2025-04-07 15:01:49,006 - INFO - Limiting processing to the first 1000 documents for testing.
-2025-04-07 15:01:49,383 - INFO - Successfully uploaded export_batch_0_20250407_150149.parquet to GCS
-2025-04-07 15:01:49,383 - INFO - Processed batch 1 - 1000/1000 documents
-2025-04-07 15:01:49,384 - INFO - Export completed successfully
-2025-04-07 15:05:07,494 - INFO - Successfully connected to MongoDB
-2025-04-07 15:05:10,275 - INFO - Successfully connected to GCS
-2025-04-07 15:05:10,279 - INFO - Total documents to process: 41432473
-2025-04-07 15:05:10,279 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:05:10,720 - INFO - Successfully uploaded export_batch_0_20250407_150510.parquet to GCS
-2025-04-07 15:05:10,721 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:05:10,984 - INFO - Successfully uploaded export_batch_1_20250407_150510.parquet to GCS
-2025-04-07 15:05:10,986 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:05:11,216 - INFO - Successfully uploaded export_batch_2_20250407_150511.parquet to GCS
-2025-04-07 15:05:11,217 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:05:11,470 - INFO - Successfully uploaded export_batch_3_20250407_150511.parquet to GCS
-2025-04-07 15:05:11,470 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:05:11,510 - ERROR - Error processing batch to Parquet: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:05:11,511 - ERROR - Export failed: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:07:11,432 - INFO - Successfully connected to MongoDB
-2025-04-07 15:07:14,006 - INFO - Successfully connected to GCS
-2025-04-07 15:07:14,009 - INFO - Total documents to process: 41432473
-2025-04-07 15:07:14,009 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:07:14,316 - INFO - Successfully uploaded export_batch_0_20250407_150714.parquet to GCS
-2025-04-07 15:07:14,317 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:07:14,614 - INFO - Successfully uploaded export_batch_1_20250407_150714.parquet to GCS
-2025-04-07 15:07:14,615 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:07:14,872 - INFO - Successfully uploaded export_batch_2_20250407_150714.parquet to GCS
-2025-04-07 15:07:14,872 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:07:15,105 - INFO - Successfully uploaded export_batch_3_20250407_150714.parquet to GCS
-2025-04-07 15:07:15,105 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:07:15,145 - ERROR - Error processing batch to Parquet: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:07:15,145 - ERROR - Export failed: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:08:58,749 - INFO - Successfully connected to MongoDB
-2025-04-07 15:09:00,766 - INFO - Successfully connected to GCS
-2025-04-07 15:09:00,769 - INFO - Total documents to process: 41432473
-2025-04-07 15:09:00,769 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:09:01,073 - INFO - Successfully uploaded export_batch_0_20250407_150900.parquet to GCS
-2025-04-07 15:09:01,073 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:09:01,400 - INFO - Successfully uploaded export_batch_1_20250407_150901.parquet to GCS
-2025-04-07 15:09:01,401 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:09:01,685 - INFO - Successfully uploaded export_batch_2_20250407_150901.parquet to GCS
-2025-04-07 15:09:01,685 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:09:01,949 - INFO - Successfully uploaded export_batch_3_20250407_150901.parquet to GCS
-2025-04-07 15:09:01,949 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:09:01,992 - ERROR - Error processing batch to Parquet: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:09:01,992 - ERROR - Export failed: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:09:45,398 - INFO - Successfully connected to MongoDB
-2025-04-07 15:09:47,435 - INFO - Successfully connected to GCS
-2025-04-07 15:09:47,438 - INFO - Total documents to process: 41432473
-2025-04-07 15:09:47,438 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:09:47,794 - INFO - Successfully uploaded export_batch_0_20250407_150947.parquet to GCS
-2025-04-07 15:09:47,794 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:09:48,011 - INFO - Successfully uploaded export_batch_1_20250407_150947.parquet to GCS
-2025-04-07 15:09:48,011 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:09:48,279 - INFO - Successfully uploaded export_batch_2_20250407_150948.parquet to GCS
-2025-04-07 15:09:48,279 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:09:48,544 - INFO - Successfully uploaded export_batch_3_20250407_150948.parquet to GCS
-2025-04-07 15:09:48,545 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:09:48,581 - ERROR - Error processing batch to Parquet: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:09:48,581 - ERROR - Export failed: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:11:53,939 - INFO - Successfully connected to MongoDB
-2025-04-07 15:11:55,886 - INFO - Successfully connected to GCS
-2025-04-07 15:11:55,890 - INFO - Total documents to process: 41432473
-2025-04-07 15:11:55,890 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:11:56,203 - INFO - Successfully uploaded export_batch_0_20250407_151155.parquet to GCS
-2025-04-07 15:11:56,204 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:11:56,463 - INFO - Successfully uploaded export_batch_1_20250407_151156.parquet to GCS
-2025-04-07 15:11:56,463 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:11:56,701 - INFO - Successfully uploaded export_batch_2_20250407_151156.parquet to GCS
-2025-04-07 15:11:56,701 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:11:56,949 - INFO - Successfully uploaded export_batch_3_20250407_151156.parquet to GCS
-2025-04-07 15:11:56,950 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:11:56,985 - ERROR - Error processing batch to Parquet: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:11:56,985 - ERROR - Export failed: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:12:06,241 - INFO - Successfully connected to MongoDB
-2025-04-07 15:12:08,318 - INFO - Successfully connected to GCS
-2025-04-07 15:12:08,321 - INFO - Total documents to process: 41432473
-2025-04-07 15:12:08,321 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:12:08,628 - INFO - Successfully uploaded export_batch_0_20250407_151208.parquet to GCS
-2025-04-07 15:12:08,628 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:12:08,855 - INFO - Successfully uploaded export_batch_1_20250407_151208.parquet to GCS
-2025-04-07 15:12:08,856 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:12:09,100 - INFO - Successfully uploaded export_batch_2_20250407_151208.parquet to GCS
-2025-04-07 15:12:09,100 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:12:09,344 - INFO - Successfully uploaded export_batch_3_20250407_151209.parquet to GCS
-2025-04-07 15:12:09,345 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:12:09,389 - ERROR - Error processing batch to Parquet: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:12:09,389 - ERROR - Export failed: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:20:11,201 - INFO - Successfully connected to MongoDB
-2025-04-07 15:20:13,376 - INFO - Successfully connected to GCS
-2025-04-07 15:20:13,379 - INFO - Total documents to process: 41432473
-2025-04-07 15:20:13,380 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:20:13,722 - INFO - Successfully uploaded export_batch_0_20250407_152013.parquet to GCS
-2025-04-07 15:20:13,722 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:20:13,972 - INFO - Successfully uploaded export_batch_1_20250407_152013.parquet to GCS
-2025-04-07 15:20:13,973 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:20:14,242 - INFO - Successfully uploaded export_batch_2_20250407_152013.parquet to GCS
-2025-04-07 15:20:14,242 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:20:14,477 - INFO - Successfully uploaded export_batch_3_20250407_152014.parquet to GCS
-2025-04-07 15:20:14,477 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:20:14,520 - ERROR - Error processing batch to Parquet: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:20:14,520 - ERROR - Export failed: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:26:40,035 - INFO - Successfully connected to MongoDB
-2025-04-07 15:26:41,950 - INFO - Successfully connected to GCS
-2025-04-07 15:26:41,954 - INFO - Total documents to process: 41432473
-2025-04-07 15:26:41,954 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:26:42,302 - INFO - Successfully uploaded export_batch_0_20250407_152641.parquet to GCS
-2025-04-07 15:26:42,302 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:26:42,555 - INFO - Successfully uploaded export_batch_1_20250407_152642.parquet to GCS
-2025-04-07 15:26:42,555 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:26:42,825 - INFO - Successfully uploaded export_batch_2_20250407_152642.parquet to GCS
-2025-04-07 15:26:42,825 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:26:43,084 - INFO - Successfully uploaded export_batch_3_20250407_152642.parquet to GCS
-2025-04-07 15:26:43,084 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:26:43,143 - ERROR - Export failed: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:29:01,360 - INFO - Successfully connected to MongoDB
-2025-04-07 15:29:03,417 - INFO - Successfully connected to GCS
-2025-04-07 15:29:03,421 - INFO - Total documents to process: 41432473
-2025-04-07 15:29:03,421 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:29:03,780 - INFO - Successfully uploaded export_batch_0_20250407_152903.parquet to GCS
-2025-04-07 15:29:03,780 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:29:04,059 - INFO - Successfully uploaded export_batch_1_20250407_152903.parquet to GCS
-2025-04-07 15:29:04,059 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:29:04,325 - INFO - Successfully uploaded export_batch_2_20250407_152904.parquet to GCS
-2025-04-07 15:29:04,326 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:29:04,711 - INFO - Successfully uploaded export_batch_3_20250407_152904.parquet to GCS
-2025-04-07 15:29:04,711 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:29:04,761 - ERROR - Export failed: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:31:37,552 - INFO - Successfully connected to MongoDB
-2025-04-07 15:31:39,769 - INFO - Successfully connected to GCS
-2025-04-07 15:31:39,772 - INFO - Total documents to process: 41432473
-2025-04-07 15:31:39,773 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:31:40,095 - INFO - Successfully uploaded export_batch_0_20250407_153139.parquet to GCS
-2025-04-07 15:31:40,096 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:31:40,338 - INFO - Successfully uploaded export_batch_1_20250407_153140.parquet to GCS
-2025-04-07 15:31:40,338 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:31:40,595 - INFO - Successfully uploaded export_batch_2_20250407_153140.parquet to GCS
-2025-04-07 15:31:40,596 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:31:40,873 - INFO - Successfully uploaded export_batch_3_20250407_153140.parquet to GCS
-2025-04-07 15:31:40,873 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:31:40,919 - ERROR - Export failed: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:33:07,780 - INFO - Successfully connected to MongoDB
-2025-04-07 15:33:09,703 - INFO - Successfully connected to GCS
-2025-04-07 15:33:09,706 - INFO - Total documents to process: 41432473
-2025-04-07 15:33:09,707 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:33:10,869 - INFO - Successfully uploaded export_batch_0_20250407_153309.parquet to GCS
-2025-04-07 15:33:10,869 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:33:11,952 - INFO - Successfully uploaded export_batch_1_20250407_153310.parquet to GCS
-2025-04-07 15:33:11,952 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:33:13,106 - INFO - Successfully uploaded export_batch_2_20250407_153311.parquet to GCS
-2025-04-07 15:33:13,106 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:33:14,199 - INFO - Successfully uploaded export_batch_3_20250407_153313.parquet to GCS
-2025-04-07 15:33:14,199 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:33:15,086 - ERROR - Export failed: ('cannot mix list and non-list, non-null values', 'Conversion failed for column cart_products with type object')
-2025-04-07 15:35:42,689 - INFO - Successfully connected to MongoDB
-2025-04-07 15:35:44,805 - INFO - Successfully connected to GCS
-2025-04-07 15:35:44,809 - INFO - Total documents to process: 41432473
-2025-04-07 15:35:44,809 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:35:45,157 - INFO - Successfully uploaded export_batch_0_20250407_153544.parquet to GCS
-2025-04-07 15:35:45,157 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:35:45,440 - INFO - Successfully uploaded export_batch_1_20250407_153545.parquet to GCS
-2025-04-07 15:35:45,441 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:35:45,724 - INFO - Successfully uploaded export_batch_2_20250407_153545.parquet to GCS
-2025-04-07 15:35:45,724 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:35:46,051 - INFO - Successfully uploaded export_batch_3_20250407_153545.parquet to GCS
-2025-04-07 15:35:46,051 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:35:46,103 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:35:46,103 - ERROR - Export failed: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:38:21,022 - INFO - Successfully connected to MongoDB
-2025-04-07 15:38:23,135 - INFO - Successfully connected to GCS
-2025-04-07 15:38:23,138 - INFO - Total documents to process: 41432473
-2025-04-07 15:38:23,138 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:38:23,477 - INFO - Successfully uploaded export_batch_0_20250407_153823.parquet to GCS
-2025-04-07 15:38:23,477 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:38:23,726 - INFO - Successfully uploaded export_batch_1_20250407_153823.parquet to GCS
-2025-04-07 15:38:23,726 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:38:23,975 - INFO - Successfully uploaded export_batch_2_20250407_153823.parquet to GCS
-2025-04-07 15:38:23,976 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:38:24,195 - INFO - Successfully uploaded export_batch_3_20250407_153823.parquet to GCS
-2025-04-07 15:38:24,196 - INFO - Processed batch 4 - 4000/100000 documents
-2025-04-07 15:38:24,253 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:38:24,253 - ERROR - Export failed: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:33,357 - INFO - Successfully connected to MongoDB
-2025-04-07 15:40:35,508 - INFO - Successfully connected to GCS
-2025-04-07 15:40:35,511 - INFO - Total documents to process: 41432473
-2025-04-07 15:40:35,511 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:40:35,973 - INFO - Successfully uploaded export_batch_0_20250407_154035.parquet to GCS
-2025-04-07 15:40:35,973 - INFO - Processed batch 0 - 0/100000 documents
-2025-04-07 15:40:36,206 - INFO - Successfully uploaded export_batch_1_20250407_154035.parquet to GCS
-2025-04-07 15:40:36,206 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:40:36,517 - INFO - Successfully uploaded export_batch_2_20250407_154036.parquet to GCS
-2025-04-07 15:40:36,518 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:40:36,759 - INFO - Successfully uploaded export_batch_3_20250407_154036.parquet to GCS
-2025-04-07 15:40:36,760 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:40:36,807 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:36,807 - ERROR - Error processing batch 4: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:36,807 - INFO - Skipping batch 4 and continuing with the next batch.
-2025-04-07 15:40:37,031 - INFO - Successfully uploaded export_batch_5_20250407_154036.parquet to GCS
-2025-04-07 15:40:37,032 - INFO - Processed batch 5 - 5000/100000 documents
-2025-04-07 15:40:37,079 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:37,079 - ERROR - Error processing batch 6: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:37,080 - INFO - Skipping batch 6 and continuing with the next batch.
-2025-04-07 15:40:37,335 - INFO - Successfully uploaded export_batch_7_20250407_154037.parquet to GCS
-2025-04-07 15:40:37,336 - INFO - Processed batch 7 - 7000/100000 documents
-2025-04-07 15:40:37,603 - INFO - Successfully uploaded export_batch_8_20250407_154037.parquet to GCS
-2025-04-07 15:40:37,603 - INFO - Processed batch 8 - 8000/100000 documents
-2025-04-07 15:40:37,850 - INFO - Successfully uploaded export_batch_9_20250407_154037.parquet to GCS
-2025-04-07 15:40:37,850 - INFO - Processed batch 9 - 9000/100000 documents
-2025-04-07 15:40:38,103 - INFO - Successfully uploaded export_batch_10_20250407_154037.parquet to GCS
-2025-04-07 15:40:38,104 - INFO - Processed batch 10 - 10000/100000 documents
-2025-04-07 15:40:38,327 - INFO - Successfully uploaded export_batch_11_20250407_154038.parquet to GCS
-2025-04-07 15:40:38,328 - INFO - Processed batch 11 - 11000/100000 documents
-2025-04-07 15:40:38,580 - INFO - Successfully uploaded export_batch_12_20250407_154038.parquet to GCS
-2025-04-07 15:40:38,580 - INFO - Processed batch 12 - 12000/100000 documents
-2025-04-07 15:40:38,879 - INFO - Successfully uploaded export_batch_13_20250407_154038.parquet to GCS
-2025-04-07 15:40:38,879 - INFO - Processed batch 13 - 13000/100000 documents
-2025-04-07 15:40:39,175 - INFO - Successfully uploaded export_batch_14_20250407_154038.parquet to GCS
-2025-04-07 15:40:39,175 - INFO - Processed batch 14 - 14000/100000 documents
-2025-04-07 15:40:39,422 - INFO - Successfully uploaded export_batch_15_20250407_154039.parquet to GCS
-2025-04-07 15:40:39,422 - INFO - Processed batch 15 - 15000/100000 documents
-2025-04-07 15:40:39,664 - INFO - Successfully uploaded export_batch_16_20250407_154039.parquet to GCS
-2025-04-07 15:40:39,665 - INFO - Processed batch 16 - 16000/100000 documents
-2025-04-07 15:40:39,906 - INFO - Successfully uploaded export_batch_17_20250407_154039.parquet to GCS
-2025-04-07 15:40:39,906 - INFO - Processed batch 17 - 17000/100000 documents
-2025-04-07 15:40:39,968 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:39,968 - ERROR - Error processing batch 18: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:39,968 - INFO - Skipping batch 18 and continuing with the next batch.
-2025-04-07 15:40:40,223 - INFO - Successfully uploaded export_batch_19_20250407_154039.parquet to GCS
-2025-04-07 15:40:40,224 - INFO - Processed batch 19 - 19000/100000 documents
-2025-04-07 15:40:40,283 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:40,283 - ERROR - Error processing batch 20: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:40,283 - INFO - Skipping batch 20 and continuing with the next batch.
-2025-04-07 15:40:40,355 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:40,355 - ERROR - Error processing batch 21: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:40,355 - INFO - Skipping batch 21 and continuing with the next batch.
-2025-04-07 15:40:40,434 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:40,434 - ERROR - Error processing batch 22: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:40,434 - INFO - Skipping batch 22 and continuing with the next batch.
-2025-04-07 15:40:40,688 - INFO - Successfully uploaded export_batch_23_20250407_154040.parquet to GCS
-2025-04-07 15:40:40,688 - INFO - Processed batch 23 - 23000/100000 documents
-2025-04-07 15:40:40,950 - INFO - Successfully uploaded export_batch_24_20250407_154040.parquet to GCS
-2025-04-07 15:40:40,950 - INFO - Processed batch 24 - 24000/100000 documents
-2025-04-07 15:40:41,013 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:41,013 - ERROR - Error processing batch 25: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:41,013 - INFO - Skipping batch 25 and continuing with the next batch.
-2025-04-07 15:40:41,287 - INFO - Successfully uploaded export_batch_26_20250407_154041.parquet to GCS
-2025-04-07 15:40:41,287 - INFO - Processed batch 26 - 26000/100000 documents
-2025-04-07 15:40:41,543 - INFO - Successfully uploaded export_batch_27_20250407_154041.parquet to GCS
-2025-04-07 15:40:41,543 - INFO - Processed batch 27 - 27000/100000 documents
-2025-04-07 15:40:41,851 - INFO - Successfully uploaded export_batch_28_20250407_154041.parquet to GCS
-2025-04-07 15:40:41,851 - INFO - Processed batch 28 - 28000/100000 documents
-2025-04-07 15:40:42,142 - INFO - Successfully uploaded export_batch_29_20250407_154041.parquet to GCS
-2025-04-07 15:40:42,142 - INFO - Processed batch 29 - 29000/100000 documents
-2025-04-07 15:40:42,426 - INFO - Successfully uploaded export_batch_30_20250407_154042.parquet to GCS
-2025-04-07 15:40:42,426 - INFO - Processed batch 30 - 30000/100000 documents
-2025-04-07 15:40:42,716 - INFO - Successfully uploaded export_batch_31_20250407_154042.parquet to GCS
-2025-04-07 15:40:42,716 - INFO - Processed batch 31 - 31000/100000 documents
-2025-04-07 15:40:42,807 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:42,807 - ERROR - Error processing batch 32: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:42,807 - INFO - Skipping batch 32 and continuing with the next batch.
-2025-04-07 15:40:42,880 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:42,880 - ERROR - Error processing batch 33: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:42,880 - INFO - Skipping batch 33 and continuing with the next batch.
-2025-04-07 15:40:43,159 - INFO - Successfully uploaded export_batch_34_20250407_154042.parquet to GCS
-2025-04-07 15:40:43,159 - INFO - Processed batch 34 - 34000/100000 documents
-2025-04-07 15:40:43,473 - INFO - Successfully uploaded export_batch_35_20250407_154043.parquet to GCS
-2025-04-07 15:40:43,473 - INFO - Processed batch 35 - 35000/100000 documents
-2025-04-07 15:40:43,874 - INFO - Successfully uploaded export_batch_36_20250407_154043.parquet to GCS
-2025-04-07 15:40:43,875 - INFO - Processed batch 36 - 36000/100000 documents
-2025-04-07 15:40:44,140 - INFO - Successfully uploaded export_batch_37_20250407_154043.parquet to GCS
-2025-04-07 15:40:44,141 - INFO - Processed batch 37 - 37000/100000 documents
-2025-04-07 15:40:44,411 - INFO - Successfully uploaded export_batch_38_20250407_154044.parquet to GCS
-2025-04-07 15:40:44,412 - INFO - Processed batch 38 - 38000/100000 documents
-2025-04-07 15:40:44,656 - INFO - Successfully uploaded export_batch_39_20250407_154044.parquet to GCS
-2025-04-07 15:40:44,656 - INFO - Processed batch 39 - 39000/100000 documents
-2025-04-07 15:40:44,951 - INFO - Successfully uploaded export_batch_40_20250407_154044.parquet to GCS
-2025-04-07 15:40:44,951 - INFO - Processed batch 40 - 40000/100000 documents
-2025-04-07 15:40:45,207 - INFO - Successfully uploaded export_batch_41_20250407_154044.parquet to GCS
-2025-04-07 15:40:45,208 - INFO - Processed batch 41 - 41000/100000 documents
-2025-04-07 15:40:45,328 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:45,328 - ERROR - Error processing batch 42: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:45,328 - INFO - Skipping batch 42 and continuing with the next batch.
-2025-04-07 15:40:45,599 - INFO - Successfully uploaded export_batch_43_20250407_154045.parquet to GCS
-2025-04-07 15:40:45,599 - INFO - Processed batch 43 - 43000/100000 documents
-2025-04-07 15:40:45,681 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:45,682 - ERROR - Error processing batch 44: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:45,682 - INFO - Skipping batch 44 and continuing with the next batch.
-2025-04-07 15:40:45,991 - INFO - Successfully uploaded export_batch_45_20250407_154045.parquet to GCS
-2025-04-07 15:40:45,991 - INFO - Processed batch 45 - 45000/100000 documents
-2025-04-07 15:40:46,251 - INFO - Successfully uploaded export_batch_46_20250407_154046.parquet to GCS
-2025-04-07 15:40:46,251 - INFO - Processed batch 46 - 46000/100000 documents
-2025-04-07 15:40:46,502 - INFO - Successfully uploaded export_batch_47_20250407_154046.parquet to GCS
-2025-04-07 15:40:46,502 - INFO - Processed batch 47 - 47000/100000 documents
-2025-04-07 15:40:46,764 - INFO - Successfully uploaded export_batch_48_20250407_154046.parquet to GCS
-2025-04-07 15:40:46,764 - INFO - Processed batch 48 - 48000/100000 documents
-2025-04-07 15:40:46,844 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:46,844 - ERROR - Error processing batch 49: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:46,844 - INFO - Skipping batch 49 and continuing with the next batch.
-2025-04-07 15:40:46,924 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:46,924 - ERROR - Error processing batch 50: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:46,924 - INFO - Skipping batch 50 and continuing with the next batch.
-2025-04-07 15:40:47,194 - INFO - Successfully uploaded export_batch_51_20250407_154046.parquet to GCS
-2025-04-07 15:40:47,195 - INFO - Processed batch 51 - 51000/100000 documents
-2025-04-07 15:40:47,451 - INFO - Successfully uploaded export_batch_52_20250407_154047.parquet to GCS
-2025-04-07 15:40:47,451 - INFO - Processed batch 52 - 52000/100000 documents
-2025-04-07 15:40:47,687 - INFO - Successfully uploaded export_batch_53_20250407_154047.parquet to GCS
-2025-04-07 15:40:47,688 - INFO - Processed batch 53 - 53000/100000 documents
-2025-04-07 15:40:47,959 - INFO - Successfully uploaded export_batch_54_20250407_154047.parquet to GCS
-2025-04-07 15:40:47,959 - INFO - Processed batch 54 - 54000/100000 documents
-2025-04-07 15:40:48,258 - INFO - Successfully uploaded export_batch_55_20250407_154048.parquet to GCS
-2025-04-07 15:40:48,259 - INFO - Processed batch 55 - 55000/100000 documents
-2025-04-07 15:40:48,577 - INFO - Successfully uploaded export_batch_56_20250407_154048.parquet to GCS
-2025-04-07 15:40:48,578 - INFO - Processed batch 56 - 56000/100000 documents
-2025-04-07 15:40:48,658 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:48,658 - ERROR - Error processing batch 57: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:48,658 - INFO - Skipping batch 57 and continuing with the next batch.
-2025-04-07 15:40:48,929 - INFO - Successfully uploaded export_batch_58_20250407_154048.parquet to GCS
-2025-04-07 15:40:48,929 - INFO - Processed batch 58 - 58000/100000 documents
-2025-04-07 15:40:49,018 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:49,018 - ERROR - Error processing batch 59: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:49,018 - INFO - Skipping batch 59 and continuing with the next batch.
-2025-04-07 15:40:49,288 - INFO - Successfully uploaded export_batch_60_20250407_154049.parquet to GCS
-2025-04-07 15:40:49,288 - INFO - Processed batch 60 - 60000/100000 documents
-2025-04-07 15:40:49,369 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:49,369 - ERROR - Error processing batch 61: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:49,369 - INFO - Skipping batch 61 and continuing with the next batch.
-2025-04-07 15:40:49,635 - INFO - Successfully uploaded export_batch_62_20250407_154049.parquet to GCS
-2025-04-07 15:40:49,635 - INFO - Processed batch 62 - 62000/100000 documents
-2025-04-07 15:40:49,716 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:49,717 - ERROR - Error processing batch 63: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:49,717 - INFO - Skipping batch 63 and continuing with the next batch.
-2025-04-07 15:40:49,996 - INFO - Successfully uploaded export_batch_64_20250407_154049.parquet to GCS
-2025-04-07 15:40:49,997 - INFO - Processed batch 64 - 64000/100000 documents
-2025-04-07 15:40:50,292 - INFO - Successfully uploaded export_batch_65_20250407_154050.parquet to GCS
-2025-04-07 15:40:50,293 - INFO - Processed batch 65 - 65000/100000 documents
-2025-04-07 15:40:50,585 - INFO - Successfully uploaded export_batch_66_20250407_154050.parquet to GCS
-2025-04-07 15:40:50,586 - INFO - Processed batch 66 - 66000/100000 documents
-2025-04-07 15:40:50,874 - INFO - Successfully uploaded export_batch_67_20250407_154050.parquet to GCS
-2025-04-07 15:40:50,875 - INFO - Processed batch 67 - 67000/100000 documents
-2025-04-07 15:40:51,141 - INFO - Successfully uploaded export_batch_68_20250407_154050.parquet to GCS
-2025-04-07 15:40:51,141 - INFO - Processed batch 68 - 68000/100000 documents
-2025-04-07 15:40:51,416 - INFO - Successfully uploaded export_batch_69_20250407_154051.parquet to GCS
-2025-04-07 15:40:51,417 - INFO - Processed batch 69 - 69000/100000 documents
-2025-04-07 15:40:51,714 - INFO - Successfully uploaded export_batch_70_20250407_154051.parquet to GCS
-2025-04-07 15:40:51,714 - INFO - Processed batch 70 - 70000/100000 documents
-2025-04-07 15:40:51,995 - INFO - Successfully uploaded export_batch_71_20250407_154051.parquet to GCS
-2025-04-07 15:40:51,995 - INFO - Processed batch 71 - 71000/100000 documents
-2025-04-07 15:40:52,295 - INFO - Successfully uploaded export_batch_72_20250407_154052.parquet to GCS
-2025-04-07 15:40:52,295 - INFO - Processed batch 72 - 72000/100000 documents
-2025-04-07 15:40:52,384 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:52,384 - ERROR - Error processing batch 73: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:52,385 - INFO - Skipping batch 73 and continuing with the next batch.
-2025-04-07 15:40:52,495 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:52,495 - ERROR - Error processing batch 74: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:52,495 - INFO - Skipping batch 74 and continuing with the next batch.
-2025-04-07 15:40:52,591 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:52,591 - ERROR - Error processing batch 75: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:52,591 - INFO - Skipping batch 75 and continuing with the next batch.
-2025-04-07 15:40:52,683 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:52,684 - ERROR - Error processing batch 76: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:52,684 - INFO - Skipping batch 76 and continuing with the next batch.
-2025-04-07 15:40:52,968 - INFO - Successfully uploaded export_batch_77_20250407_154052.parquet to GCS
-2025-04-07 15:40:52,968 - INFO - Processed batch 77 - 77000/100000 documents
-2025-04-07 15:40:53,252 - INFO - Successfully uploaded export_batch_78_20250407_154053.parquet to GCS
-2025-04-07 15:40:53,252 - INFO - Processed batch 78 - 78000/100000 documents
-2025-04-07 15:40:53,341 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:53,342 - ERROR - Error processing batch 79: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:53,342 - INFO - Skipping batch 79 and continuing with the next batch.
-2025-04-07 15:40:53,436 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:53,436 - ERROR - Error processing batch 80: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:53,436 - INFO - Skipping batch 80 and continuing with the next batch.
-2025-04-07 15:40:53,717 - INFO - Successfully uploaded export_batch_81_20250407_154053.parquet to GCS
-2025-04-07 15:40:53,718 - INFO - Processed batch 81 - 81000/100000 documents
-2025-04-07 15:40:53,815 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:53,816 - ERROR - Error processing batch 82: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:53,816 - INFO - Skipping batch 82 and continuing with the next batch.
-2025-04-07 15:40:54,149 - INFO - Successfully uploaded export_batch_83_20250407_154053.parquet to GCS
-2025-04-07 15:40:54,149 - INFO - Processed batch 83 - 83000/100000 documents
-2025-04-07 15:40:54,410 - INFO - Successfully uploaded export_batch_84_20250407_154054.parquet to GCS
-2025-04-07 15:40:54,411 - INFO - Processed batch 84 - 84000/100000 documents
-2025-04-07 15:40:54,694 - INFO - Successfully uploaded export_batch_85_20250407_154054.parquet to GCS
-2025-04-07 15:40:54,694 - INFO - Processed batch 85 - 85000/100000 documents
-2025-04-07 15:40:54,987 - INFO - Successfully uploaded export_batch_86_20250407_154054.parquet to GCS
-2025-04-07 15:40:54,988 - INFO - Processed batch 86 - 86000/100000 documents
-2025-04-07 15:40:55,251 - INFO - Successfully uploaded export_batch_87_20250407_154055.parquet to GCS
-2025-04-07 15:40:55,251 - INFO - Processed batch 87 - 87000/100000 documents
-2025-04-07 15:40:55,539 - INFO - Successfully uploaded export_batch_88_20250407_154055.parquet to GCS
-2025-04-07 15:40:55,540 - INFO - Processed batch 88 - 88000/100000 documents
-2025-04-07 15:40:55,833 - INFO - Successfully uploaded export_batch_89_20250407_154055.parquet to GCS
-2025-04-07 15:40:55,833 - INFO - Processed batch 89 - 89000/100000 documents
-2025-04-07 15:40:56,089 - INFO - Successfully uploaded export_batch_90_20250407_154055.parquet to GCS
-2025-04-07 15:40:56,089 - INFO - Processed batch 90 - 90000/100000 documents
-2025-04-07 15:40:56,407 - INFO - Successfully uploaded export_batch_91_20250407_154056.parquet to GCS
-2025-04-07 15:40:56,407 - INFO - Processed batch 91 - 91000/100000 documents
-2025-04-07 15:40:56,717 - INFO - Successfully uploaded export_batch_92_20250407_154056.parquet to GCS
-2025-04-07 15:40:56,718 - INFO - Processed batch 92 - 92000/100000 documents
-2025-04-07 15:40:57,068 - INFO - Successfully uploaded export_batch_93_20250407_154056.parquet to GCS
-2025-04-07 15:40:57,069 - INFO - Processed batch 93 - 93000/100000 documents
-2025-04-07 15:40:57,387 - INFO - Successfully uploaded export_batch_94_20250407_154057.parquet to GCS
-2025-04-07 15:40:57,387 - INFO - Processed batch 94 - 94000/100000 documents
-2025-04-07 15:40:57,486 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:57,486 - ERROR - Error processing batch 95: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:57,486 - INFO - Skipping batch 95 and continuing with the next batch.
-2025-04-07 15:40:57,745 - INFO - Successfully uploaded export_batch_96_20250407_154057.parquet to GCS
-2025-04-07 15:40:57,745 - INFO - Processed batch 96 - 96000/100000 documents
-2025-04-07 15:40:57,877 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:57,877 - ERROR - Error processing batch 97: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:40:57,877 - INFO - Skipping batch 97 and continuing with the next batch.
-2025-04-07 15:40:58,212 - INFO - Successfully uploaded export_batch_98_20250407_154057.parquet to GCS
-2025-04-07 15:40:58,212 - INFO - Processed batch 98 - 98000/100000 documents
-2025-04-07 15:40:58,497 - INFO - Successfully uploaded export_batch_99_20250407_154058.parquet to GCS
-2025-04-07 15:40:58,497 - INFO - Processed batch 99 - 99000/100000 documents
-2025-04-07 15:40:58,497 - INFO - Export completed successfully
-2025-04-07 15:45:39,184 - INFO - Successfully connected to MongoDB
-2025-04-07 15:45:41,340 - INFO - Successfully connected to GCS
-2025-04-07 15:45:41,344 - INFO - Total documents to process: 41432473
-2025-04-07 15:45:41,344 - INFO - Limiting processing to the first 100000 documents for testing.
-2025-04-07 15:45:41,668 - INFO - Successfully uploaded export_batch_0_20250407_154541.parquet to GCS
-2025-04-07 15:45:41,668 - INFO - Processed batch 0 - 0/100000 documents
-2025-04-07 15:45:42,076 - INFO - Successfully uploaded export_batch_1_20250407_154541.parquet to GCS
-2025-04-07 15:45:42,076 - INFO - Processed batch 1 - 1000/100000 documents
-2025-04-07 15:45:42,323 - INFO - Successfully uploaded export_batch_2_20250407_154542.parquet to GCS
-2025-04-07 15:45:42,323 - INFO - Processed batch 2 - 2000/100000 documents
-2025-04-07 15:45:42,575 - INFO - Successfully uploaded export_batch_3_20250407_154542.parquet to GCS
-2025-04-07 15:45:42,575 - INFO - Processed batch 3 - 3000/100000 documents
-2025-04-07 15:45:42,622 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:42,622 - ERROR - Error processing batch 4: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:42,622 - INFO - Skipping batch 4 and continuing with the next batch.
-2025-04-07 15:45:42,867 - INFO - Successfully uploaded export_batch_5_20250407_154542.parquet to GCS
-2025-04-07 15:45:42,868 - INFO - Processed batch 5 - 5000/100000 documents
-2025-04-07 15:45:42,929 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:42,929 - ERROR - Error processing batch 6: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:42,930 - INFO - Skipping batch 6 and continuing with the next batch.
-2025-04-07 15:45:43,181 - INFO - Successfully uploaded export_batch_7_20250407_154542.parquet to GCS
-2025-04-07 15:45:43,181 - INFO - Processed batch 7 - 7000/100000 documents
-2025-04-07 15:45:43,418 - INFO - Successfully uploaded export_batch_8_20250407_154543.parquet to GCS
-2025-04-07 15:45:43,419 - INFO - Processed batch 8 - 8000/100000 documents
-2025-04-07 15:45:43,660 - INFO - Successfully uploaded export_batch_9_20250407_154543.parquet to GCS
-2025-04-07 15:45:43,661 - INFO - Processed batch 9 - 9000/100000 documents
-2025-04-07 15:45:43,901 - INFO - Successfully uploaded export_batch_10_20250407_154543.parquet to GCS
-2025-04-07 15:45:43,901 - INFO - Processed batch 10 - 10000/100000 documents
-2025-04-07 15:45:44,130 - INFO - Successfully uploaded export_batch_11_20250407_154543.parquet to GCS
-2025-04-07 15:45:44,131 - INFO - Processed batch 11 - 11000/100000 documents
-2025-04-07 15:45:44,397 - INFO - Successfully uploaded export_batch_12_20250407_154544.parquet to GCS
-2025-04-07 15:45:44,397 - INFO - Processed batch 12 - 12000/100000 documents
-2025-04-07 15:45:44,633 - INFO - Successfully uploaded export_batch_13_20250407_154544.parquet to GCS
-2025-04-07 15:45:44,634 - INFO - Processed batch 13 - 13000/100000 documents
-2025-04-07 15:45:44,935 - INFO - Successfully uploaded export_batch_14_20250407_154544.parquet to GCS
-2025-04-07 15:45:44,936 - INFO - Processed batch 14 - 14000/100000 documents
-2025-04-07 15:45:45,186 - INFO - Successfully uploaded export_batch_15_20250407_154544.parquet to GCS
-2025-04-07 15:45:45,186 - INFO - Processed batch 15 - 15000/100000 documents
-2025-04-07 15:45:45,415 - INFO - Successfully uploaded export_batch_16_20250407_154545.parquet to GCS
-2025-04-07 15:45:45,416 - INFO - Processed batch 16 - 16000/100000 documents
-2025-04-07 15:45:45,665 - INFO - Successfully uploaded export_batch_17_20250407_154545.parquet to GCS
-2025-04-07 15:45:45,665 - INFO - Processed batch 17 - 17000/100000 documents
-2025-04-07 15:45:45,721 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:45,721 - ERROR - Error processing batch 18: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:45,721 - INFO - Skipping batch 18 and continuing with the next batch.
-2025-04-07 15:45:45,960 - INFO - Successfully uploaded export_batch_19_20250407_154545.parquet to GCS
-2025-04-07 15:45:45,960 - INFO - Processed batch 19 - 19000/100000 documents
-2025-04-07 15:45:46,017 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:46,017 - ERROR - Error processing batch 20: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:46,017 - INFO - Skipping batch 20 and continuing with the next batch.
-2025-04-07 15:45:46,073 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:46,073 - ERROR - Error processing batch 21: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:46,073 - INFO - Skipping batch 21 and continuing with the next batch.
-2025-04-07 15:45:46,135 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:46,135 - ERROR - Error processing batch 22: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:46,135 - INFO - Skipping batch 22 and continuing with the next batch.
-2025-04-07 15:45:46,386 - INFO - Successfully uploaded export_batch_23_20250407_154546.parquet to GCS
-2025-04-07 15:45:46,389 - INFO - Processed batch 23 - 23000/100000 documents
-2025-04-07 15:45:46,635 - INFO - Successfully uploaded export_batch_24_20250407_154546.parquet to GCS
-2025-04-07 15:45:46,635 - INFO - Processed batch 24 - 24000/100000 documents
-2025-04-07 15:45:46,694 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:46,695 - ERROR - Error processing batch 25: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:46,695 - INFO - Skipping batch 25 and continuing with the next batch.
-2025-04-07 15:45:46,923 - INFO - Successfully uploaded export_batch_26_20250407_154546.parquet to GCS
-2025-04-07 15:45:46,923 - INFO - Processed batch 26 - 26000/100000 documents
-2025-04-07 15:45:47,168 - INFO - Successfully uploaded export_batch_27_20250407_154546.parquet to GCS
-2025-04-07 15:45:47,168 - INFO - Processed batch 27 - 27000/100000 documents
-2025-04-07 15:45:47,462 - INFO - Successfully uploaded export_batch_28_20250407_154547.parquet to GCS
-2025-04-07 15:45:47,463 - INFO - Processed batch 28 - 28000/100000 documents
-2025-04-07 15:45:47,720 - INFO - Successfully uploaded export_batch_29_20250407_154547.parquet to GCS
-2025-04-07 15:45:47,720 - INFO - Processed batch 29 - 29000/100000 documents
-2025-04-07 15:45:47,985 - INFO - Successfully uploaded export_batch_30_20250407_154547.parquet to GCS
-2025-04-07 15:45:47,985 - INFO - Processed batch 30 - 30000/100000 documents
-2025-04-07 15:45:48,261 - INFO - Successfully uploaded export_batch_31_20250407_154548.parquet to GCS
-2025-04-07 15:45:48,261 - INFO - Processed batch 31 - 31000/100000 documents
-2025-04-07 15:45:48,323 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:48,323 - ERROR - Error processing batch 32: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:48,323 - INFO - Skipping batch 32 and continuing with the next batch.
-2025-04-07 15:45:48,390 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:48,390 - ERROR - Error processing batch 33: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:48,390 - INFO - Skipping batch 33 and continuing with the next batch.
-2025-04-07 15:45:48,613 - INFO - Successfully uploaded export_batch_34_20250407_154548.parquet to GCS
-2025-04-07 15:45:48,614 - INFO - Processed batch 34 - 34000/100000 documents
-2025-04-07 15:45:48,876 - INFO - Successfully uploaded export_batch_35_20250407_154548.parquet to GCS
-2025-04-07 15:45:48,876 - INFO - Processed batch 35 - 35000/100000 documents
-2025-04-07 15:45:49,142 - INFO - Successfully uploaded export_batch_36_20250407_154548.parquet to GCS
-2025-04-07 15:45:49,142 - INFO - Processed batch 36 - 36000/100000 documents
-2025-04-07 15:45:49,452 - INFO - Successfully uploaded export_batch_37_20250407_154549.parquet to GCS
-2025-04-07 15:45:49,452 - INFO - Processed batch 37 - 37000/100000 documents
-2025-04-07 15:45:49,711 - INFO - Successfully uploaded export_batch_38_20250407_154549.parquet to GCS
-2025-04-07 15:45:49,711 - INFO - Processed batch 38 - 38000/100000 documents
-2025-04-07 15:45:49,971 - INFO - Successfully uploaded export_batch_39_20250407_154549.parquet to GCS
-2025-04-07 15:45:49,971 - INFO - Processed batch 39 - 39000/100000 documents
-2025-04-07 15:45:50,481 - INFO - Successfully uploaded export_batch_40_20250407_154550.parquet to GCS
-2025-04-07 15:45:50,481 - INFO - Processed batch 40 - 40000/100000 documents
-2025-04-07 15:45:50,810 - INFO - Successfully uploaded export_batch_41_20250407_154550.parquet to GCS
-2025-04-07 15:45:50,811 - INFO - Processed batch 41 - 41000/100000 documents
-2025-04-07 15:45:50,920 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:50,920 - ERROR - Error processing batch 42: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:50,920 - INFO - Skipping batch 42 and continuing with the next batch.
-2025-04-07 15:45:51,162 - INFO - Successfully uploaded export_batch_43_20250407_154550.parquet to GCS
-2025-04-07 15:45:51,163 - INFO - Processed batch 43 - 43000/100000 documents
-2025-04-07 15:45:51,236 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:51,236 - ERROR - Error processing batch 44: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:51,236 - INFO - Skipping batch 44 and continuing with the next batch.
-2025-04-07 15:45:51,530 - INFO - Successfully uploaded export_batch_45_20250407_154551.parquet to GCS
-2025-04-07 15:45:51,531 - INFO - Processed batch 45 - 45000/100000 documents
-2025-04-07 15:45:51,796 - INFO - Successfully uploaded export_batch_46_20250407_154551.parquet to GCS
-2025-04-07 15:45:51,796 - INFO - Processed batch 46 - 46000/100000 documents
-2025-04-07 15:45:52,048 - INFO - Successfully uploaded export_batch_47_20250407_154551.parquet to GCS
-2025-04-07 15:45:52,049 - INFO - Processed batch 47 - 47000/100000 documents
-2025-04-07 15:45:52,292 - INFO - Successfully uploaded export_batch_48_20250407_154552.parquet to GCS
-2025-04-07 15:45:52,293 - INFO - Processed batch 48 - 48000/100000 documents
-2025-04-07 15:45:52,362 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:52,362 - ERROR - Error processing batch 49: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:52,362 - INFO - Skipping batch 49 and continuing with the next batch.
-2025-04-07 15:45:52,447 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:52,447 - ERROR - Error processing batch 50: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:52,447 - INFO - Skipping batch 50 and continuing with the next batch.
-2025-04-07 15:45:52,699 - INFO - Successfully uploaded export_batch_51_20250407_154552.parquet to GCS
-2025-04-07 15:45:52,699 - INFO - Processed batch 51 - 51000/100000 documents
-2025-04-07 15:45:52,948 - INFO - Successfully uploaded export_batch_52_20250407_154552.parquet to GCS
-2025-04-07 15:45:52,948 - INFO - Processed batch 52 - 52000/100000 documents
-2025-04-07 15:45:53,227 - INFO - Successfully uploaded export_batch_53_20250407_154552.parquet to GCS
-2025-04-07 15:45:53,227 - INFO - Processed batch 53 - 53000/100000 documents
-2025-04-07 15:45:53,484 - INFO - Successfully uploaded export_batch_54_20250407_154553.parquet to GCS
-2025-04-07 15:45:53,484 - INFO - Processed batch 54 - 54000/100000 documents
-2025-04-07 15:45:53,739 - INFO - Successfully uploaded export_batch_55_20250407_154553.parquet to GCS
-2025-04-07 15:45:53,739 - INFO - Processed batch 55 - 55000/100000 documents
-2025-04-07 15:45:54,036 - INFO - Successfully uploaded export_batch_56_20250407_154553.parquet to GCS
-2025-04-07 15:45:54,036 - INFO - Processed batch 56 - 56000/100000 documents
-2025-04-07 15:45:54,113 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:54,113 - ERROR - Error processing batch 57: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:54,113 - INFO - Skipping batch 57 and continuing with the next batch.
-2025-04-07 15:45:54,370 - INFO - Successfully uploaded export_batch_58_20250407_154554.parquet to GCS
-2025-04-07 15:45:54,370 - INFO - Processed batch 58 - 58000/100000 documents
-2025-04-07 15:45:54,447 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:54,447 - ERROR - Error processing batch 59: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:54,448 - INFO - Skipping batch 59 and continuing with the next batch.
-2025-04-07 15:45:54,724 - INFO - Successfully uploaded export_batch_60_20250407_154554.parquet to GCS
-2025-04-07 15:45:54,724 - INFO - Processed batch 60 - 60000/100000 documents
-2025-04-07 15:45:54,801 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:54,802 - ERROR - Error processing batch 61: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:54,802 - INFO - Skipping batch 61 and continuing with the next batch.
-2025-04-07 15:45:55,077 - INFO - Successfully uploaded export_batch_62_20250407_154554.parquet to GCS
-2025-04-07 15:45:55,077 - INFO - Processed batch 62 - 62000/100000 documents
-2025-04-07 15:45:55,170 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:55,170 - ERROR - Error processing batch 63: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:55,170 - INFO - Skipping batch 63 and continuing with the next batch.
-2025-04-07 15:45:55,454 - INFO - Successfully uploaded export_batch_64_20250407_154555.parquet to GCS
-2025-04-07 15:45:55,454 - INFO - Processed batch 64 - 64000/100000 documents
-2025-04-07 15:45:55,749 - INFO - Successfully uploaded export_batch_65_20250407_154555.parquet to GCS
-2025-04-07 15:45:55,749 - INFO - Processed batch 65 - 65000/100000 documents
-2025-04-07 15:45:56,074 - INFO - Successfully uploaded export_batch_66_20250407_154555.parquet to GCS
-2025-04-07 15:45:56,074 - INFO - Processed batch 66 - 66000/100000 documents
-2025-04-07 15:45:56,361 - INFO - Successfully uploaded export_batch_67_20250407_154556.parquet to GCS
-2025-04-07 15:45:56,362 - INFO - Processed batch 67 - 67000/100000 documents
-2025-04-07 15:45:56,630 - INFO - Successfully uploaded export_batch_68_20250407_154556.parquet to GCS
-2025-04-07 15:45:56,630 - INFO - Processed batch 68 - 68000/100000 documents
-2025-04-07 15:45:57,082 - INFO - Successfully uploaded export_batch_69_20250407_154556.parquet to GCS
-2025-04-07 15:45:57,083 - INFO - Processed batch 69 - 69000/100000 documents
-2025-04-07 15:45:57,402 - INFO - Successfully uploaded export_batch_70_20250407_154557.parquet to GCS
-2025-04-07 15:45:57,403 - INFO - Processed batch 70 - 70000/100000 documents
-2025-04-07 15:45:57,674 - INFO - Successfully uploaded export_batch_71_20250407_154557.parquet to GCS
-2025-04-07 15:45:57,674 - INFO - Processed batch 71 - 71000/100000 documents
-2025-04-07 15:45:57,944 - INFO - Successfully uploaded export_batch_72_20250407_154557.parquet to GCS
-2025-04-07 15:45:57,944 - INFO - Processed batch 72 - 72000/100000 documents
-2025-04-07 15:45:58,036 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:58,036 - ERROR - Error processing batch 73: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:58,036 - INFO - Skipping batch 73 and continuing with the next batch.
-2025-04-07 15:45:58,125 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:58,125 - ERROR - Error processing batch 74: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:58,125 - INFO - Skipping batch 74 and continuing with the next batch.
-2025-04-07 15:45:58,211 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:58,211 - ERROR - Error processing batch 75: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:58,211 - INFO - Skipping batch 75 and continuing with the next batch.
-2025-04-07 15:45:58,297 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:58,297 - ERROR - Error processing batch 76: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:58,297 - INFO - Skipping batch 76 and continuing with the next batch.
-2025-04-07 15:45:58,574 - INFO - Successfully uploaded export_batch_77_20250407_154558.parquet to GCS
-2025-04-07 15:45:58,574 - INFO - Processed batch 77 - 77000/100000 documents
-2025-04-07 15:45:58,866 - INFO - Successfully uploaded export_batch_78_20250407_154558.parquet to GCS
-2025-04-07 15:45:58,867 - INFO - Processed batch 78 - 78000/100000 documents
-2025-04-07 15:45:58,958 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:58,958 - ERROR - Error processing batch 79: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:58,958 - INFO - Skipping batch 79 and continuing with the next batch.
-2025-04-07 15:45:59,051 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:59,051 - ERROR - Error processing batch 80: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:59,051 - INFO - Skipping batch 80 and continuing with the next batch.
-2025-04-07 15:45:59,323 - INFO - Successfully uploaded export_batch_81_20250407_154559.parquet to GCS
-2025-04-07 15:45:59,324 - INFO - Processed batch 81 - 81000/100000 documents
-2025-04-07 15:45:59,415 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:59,415 - ERROR - Error processing batch 82: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:45:59,416 - INFO - Skipping batch 82 and continuing with the next batch.
-2025-04-07 15:45:59,744 - INFO - Successfully uploaded export_batch_83_20250407_154559.parquet to GCS
-2025-04-07 15:45:59,744 - INFO - Processed batch 83 - 83000/100000 documents
-2025-04-07 15:46:00,003 - INFO - Successfully uploaded export_batch_84_20250407_154559.parquet to GCS
-2025-04-07 15:46:00,003 - INFO - Processed batch 84 - 84000/100000 documents
-2025-04-07 15:46:00,278 - INFO - Successfully uploaded export_batch_85_20250407_154600.parquet to GCS
-2025-04-07 15:46:00,279 - INFO - Processed batch 85 - 85000/100000 documents
-2025-04-07 15:46:00,529 - INFO - Successfully uploaded export_batch_86_20250407_154600.parquet to GCS
-2025-04-07 15:46:00,529 - INFO - Processed batch 86 - 86000/100000 documents
-2025-04-07 15:46:00,773 - INFO - Successfully uploaded export_batch_87_20250407_154600.parquet to GCS
-2025-04-07 15:46:00,774 - INFO - Processed batch 87 - 87000/100000 documents
-2025-04-07 15:46:01,042 - INFO - Successfully uploaded export_batch_88_20250407_154600.parquet to GCS
-2025-04-07 15:46:01,042 - INFO - Processed batch 88 - 88000/100000 documents
-2025-04-07 15:46:01,315 - INFO - Successfully uploaded export_batch_89_20250407_154601.parquet to GCS
-2025-04-07 15:46:01,316 - INFO - Processed batch 89 - 89000/100000 documents
-2025-04-07 15:46:01,623 - INFO - Successfully uploaded export_batch_90_20250407_154601.parquet to GCS
-2025-04-07 15:46:01,624 - INFO - Processed batch 90 - 90000/100000 documents
-2025-04-07 15:46:01,938 - INFO - Successfully uploaded export_batch_91_20250407_154601.parquet to GCS
-2025-04-07 15:46:01,938 - INFO - Processed batch 91 - 91000/100000 documents
-2025-04-07 15:46:02,322 - INFO - Successfully uploaded export_batch_92_20250407_154602.parquet to GCS
-2025-04-07 15:46:02,322 - INFO - Processed batch 92 - 92000/100000 documents
-2025-04-07 15:46:02,628 - INFO - Successfully uploaded export_batch_93_20250407_154602.parquet to GCS
-2025-04-07 15:46:02,628 - INFO - Processed batch 93 - 93000/100000 documents
-2025-04-07 15:46:02,945 - INFO - Successfully uploaded export_batch_94_20250407_154602.parquet to GCS
-2025-04-07 15:46:02,946 - INFO - Processed batch 94 - 94000/100000 documents
-2025-04-07 15:46:03,063 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:46:03,063 - ERROR - Error processing batch 95: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:46:03,063 - INFO - Skipping batch 95 and continuing with the next batch.
-2025-04-07 15:46:03,368 - INFO - Successfully uploaded export_batch_96_20250407_154603.parquet to GCS
-2025-04-07 15:46:03,369 - INFO - Processed batch 96 - 96000/100000 documents
-2025-04-07 15:46:03,474 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:46:03,474 - ERROR - Error processing batch 97: expected str, bytes or os.PathLike object, not NoneType
-2025-04-07 15:46:03,474 - INFO - Skipping batch 97 and continuing with the next batch.
-2025-04-07 15:46:03,797 - INFO - Successfully uploaded export_batch_98_20250407_154603.parquet to GCS
-2025-04-07 15:46:03,797 - INFO - Processed batch 98 - 98000/100000 documents
-2025-04-07 15:46:04,072 - INFO - Successfully uploaded export_batch_99_20250407_154603.parquet to GCS
-2025-04-07 15:46:04,072 - INFO - Processed batch 99 - 99000/100000 documents
-2025-04-07 15:46:04,072 - INFO - Export completed successfully
-2025-04-08 01:15:18,793 - INFO - Successfully connected to MongoDB
-2025-04-08 01:15:20,903 - INFO - Successfully connected to GCS
-2025-04-08 01:15:20,907 - INFO - Total documents to process: 41432473
-2025-04-08 01:15:20,907 - INFO - Limiting processing to the first 10000 documents for testing.
-2025-04-08 01:15:21,320 - INFO - Successfully uploaded export_batch_0_20250408_011520.parquet to GCS
-2025-04-08 01:15:21,320 - INFO - Processed batch 0 - 0/10000 documents
-2025-04-08 01:15:21,581 - INFO - Successfully uploaded export_batch_1_20250408_011521.parquet to GCS
-2025-04-08 01:15:21,581 - INFO - Processed batch 1 - 1000/10000 documents
-2025-04-08 01:15:21,910 - INFO - Successfully uploaded export_batch_2_20250408_011521.parquet to GCS
-2025-04-08 01:15:21,910 - INFO - Processed batch 2 - 2000/10000 documents
-2025-04-08 01:15:22,149 - INFO - Successfully uploaded export_batch_3_20250408_011521.parquet to GCS
-2025-04-08 01:15:22,149 - INFO - Processed batch 3 - 3000/10000 documents
-2025-04-08 01:15:22,216 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-08 01:15:22,217 - ERROR - Error processing batch 4: expected str, bytes or os.PathLike object, not NoneType
-2025-04-08 01:15:22,217 - INFO - Skipping batch 4 and continuing with the next batch.
-2025-04-08 01:15:22,471 - INFO - Successfully uploaded export_batch_5_20250408_011522.parquet to GCS
-2025-04-08 01:15:22,473 - INFO - Processed batch 5 - 5000/10000 documents
-2025-04-08 01:15:22,529 - ERROR - Error uploading to GCS: expected str, bytes or os.PathLike object, not NoneType
-2025-04-08 01:15:22,530 - ERROR - Error processing batch 6: expected str, bytes or os.PathLike object, not NoneType
-2025-04-08 01:15:22,530 - INFO - Skipping batch 6 and continuing with the next batch.
-2025-04-08 01:15:22,812 - INFO - Successfully uploaded export_batch_7_20250408_011522.parquet to GCS
-2025-04-08 01:15:22,813 - INFO - Processed batch 7 - 7000/10000 documents
-2025-04-08 01:15:23,058 - INFO - Successfully uploaded export_batch_8_20250408_011522.parquet to GCS
-2025-04-08 01:15:23,058 - INFO - Processed batch 8 - 8000/10000 documents
-2025-04-08 01:15:23,292 - INFO - Successfully uploaded export_batch_9_20250408_011523.parquet to GCS
-2025-04-08 01:15:23,292 - INFO - Processed batch 9 - 9000/10000 documents
-2025-04-08 01:15:23,292 - INFO - Export completed successfully
+2025-04-09 14:03:15,238 - INFO - Successfully connected to MongoDB
+2025-04-09 14:03:17,171 - INFO - Successfully connected to GCS
+2025-04-09 14:03:17,174 - INFO - Total documents to process: 41432473
+2025-04-09 14:03:17,174 - INFO - Limiting processing to the first 100000 documents for testing.
+2025-04-09 14:03:17,297 - INFO - Processed 1000/1000 documents in batch 0
+2025-04-09 14:03:17,521 - INFO - Successfully uploaded export_batch_0_20250409_140317.parquet to GCS
+2025-04-09 14:03:17,521 - INFO - Uploaded batch 0 to GCS with 1000/1000 rows.
+2025-04-09 14:03:17,573 - INFO - Processed 1000/1000 documents in batch 1
+2025-04-09 14:03:17,783 - INFO - Successfully uploaded export_batch_1_20250409_140317.parquet to GCS
+2025-04-09 14:03:17,784 - INFO - Uploaded batch 1 to GCS with 1000/1000 rows.
+2025-04-09 14:03:17,841 - INFO - Processed 1000/1000 documents in batch 2
+2025-04-09 14:03:18,053 - INFO - Successfully uploaded export_batch_2_20250409_140317.parquet to GCS
+2025-04-09 14:03:18,054 - INFO - Uploaded batch 2 to GCS with 1000/1000 rows.
+2025-04-09 14:03:18,115 - INFO - Processed 1000/1000 documents in batch 3
+2025-04-09 14:03:18,307 - INFO - Successfully uploaded export_batch_3_20250409_140318.parquet to GCS
+2025-04-09 14:03:18,307 - INFO - Uploaded batch 3 to GCS with 1000/1000 rows.
+2025-04-09 14:03:18,365 - INFO - Processed 1000/1000 documents in batch 4
+2025-04-09 14:03:18,582 - INFO - Successfully uploaded export_batch_4_20250409_140318.parquet to GCS
+2025-04-09 14:03:18,583 - INFO - Uploaded batch 4 to GCS with 1000/1000 rows.
+2025-04-09 14:03:18,640 - INFO - Processed 1000/1000 documents in batch 5
+2025-04-09 14:03:18,837 - INFO - Successfully uploaded export_batch_5_20250409_140318.parquet to GCS
+2025-04-09 14:03:18,838 - INFO - Uploaded batch 5 to GCS with 1000/1000 rows.
+2025-04-09 14:03:18,898 - INFO - Processed 1000/1000 documents in batch 6
+2025-04-09 14:03:19,118 - INFO - Successfully uploaded export_batch_6_20250409_140318.parquet to GCS
+2025-04-09 14:03:19,118 - INFO - Uploaded batch 6 to GCS with 1000/1000 rows.
+2025-04-09 14:03:19,181 - INFO - Processed 1000/1000 documents in batch 7
+2025-04-09 14:03:19,371 - INFO - Successfully uploaded export_batch_7_20250409_140319.parquet to GCS
+2025-04-09 14:03:19,372 - INFO - Uploaded batch 7 to GCS with 1000/1000 rows.
+2025-04-09 14:03:19,430 - INFO - Processed 1000/1000 documents in batch 8
+2025-04-09 14:03:19,604 - INFO - Successfully uploaded export_batch_8_20250409_140319.parquet to GCS
+2025-04-09 14:03:19,604 - INFO - Uploaded batch 8 to GCS with 1000/1000 rows.
+2025-04-09 14:03:19,667 - INFO - Processed 1000/1000 documents in batch 9
+2025-04-09 14:03:19,846 - INFO - Successfully uploaded export_batch_9_20250409_140319.parquet to GCS
+2025-04-09 14:03:19,847 - INFO - Uploaded batch 9 to GCS with 1000/1000 rows.
+2025-04-09 14:03:19,914 - INFO - Processed 1000/1000 documents in batch 10
+2025-04-09 14:03:20,099 - INFO - Successfully uploaded export_batch_10_20250409_140319.parquet to GCS
+2025-04-09 14:03:20,100 - INFO - Uploaded batch 10 to GCS with 1000/1000 rows.
+2025-04-09 14:03:20,168 - INFO - Processed 1000/1000 documents in batch 11
+2025-04-09 14:03:20,360 - INFO - Successfully uploaded export_batch_11_20250409_140320.parquet to GCS
+2025-04-09 14:03:20,360 - INFO - Uploaded batch 11 to GCS with 1000/1000 rows.
+2025-04-09 14:03:20,428 - INFO - Processed 1000/1000 documents in batch 12
+2025-04-09 14:03:20,613 - INFO - Successfully uploaded export_batch_12_20250409_140320.parquet to GCS
+2025-04-09 14:03:20,614 - INFO - Uploaded batch 12 to GCS with 1000/1000 rows.
+2025-04-09 14:03:20,685 - INFO - Processed 1000/1000 documents in batch 13
+2025-04-09 14:03:20,864 - INFO - Successfully uploaded export_batch_13_20250409_140320.parquet to GCS
+2025-04-09 14:03:20,865 - INFO - Uploaded batch 13 to GCS with 1000/1000 rows.
+2025-04-09 14:03:20,934 - INFO - Processed 1000/1000 documents in batch 14
+2025-04-09 14:03:21,126 - INFO - Successfully uploaded export_batch_14_20250409_140320.parquet to GCS
+2025-04-09 14:03:21,127 - INFO - Uploaded batch 14 to GCS with 1000/1000 rows.
+2025-04-09 14:03:21,236 - INFO - Processed 1000/1000 documents in batch 15
+2025-04-09 14:03:21,439 - INFO - Successfully uploaded export_batch_15_20250409_140321.parquet to GCS
+2025-04-09 14:03:21,439 - INFO - Uploaded batch 15 to GCS with 1000/1000 rows.
+2025-04-09 14:03:21,500 - INFO - Processed 1000/1000 documents in batch 16
+2025-04-09 14:03:21,655 - INFO - Successfully uploaded export_batch_16_20250409_140321.parquet to GCS
+2025-04-09 14:03:21,655 - INFO - Uploaded batch 16 to GCS with 1000/1000 rows.
+2025-04-09 14:03:21,714 - INFO - Processed 1000/1000 documents in batch 17
+2025-04-09 14:03:21,929 - INFO - Successfully uploaded export_batch_17_20250409_140321.parquet to GCS
+2025-04-09 14:03:21,931 - INFO - Uploaded batch 17 to GCS with 1000/1000 rows.
+2025-04-09 14:03:21,990 - INFO - Processed 1000/1000 documents in batch 18
+2025-04-09 14:03:22,172 - INFO - Successfully uploaded export_batch_18_20250409_140321.parquet to GCS
+2025-04-09 14:03:22,172 - INFO - Uploaded batch 18 to GCS with 1000/1000 rows.
+2025-04-09 14:03:22,232 - INFO - Processed 1000/1000 documents in batch 19
+2025-04-09 14:03:22,413 - INFO - Successfully uploaded export_batch_19_20250409_140322.parquet to GCS
+2025-04-09 14:03:22,413 - INFO - Uploaded batch 19 to GCS with 1000/1000 rows.
+2025-04-09 14:03:22,470 - INFO - Processed 1000/1000 documents in batch 20
+2025-04-09 14:03:22,690 - INFO - Successfully uploaded export_batch_20_20250409_140322.parquet to GCS
+2025-04-09 14:03:22,690 - INFO - Uploaded batch 20 to GCS with 1000/1000 rows.
+2025-04-09 14:03:22,751 - INFO - Processed 1000/1000 documents in batch 21
+2025-04-09 14:03:22,952 - INFO - Successfully uploaded export_batch_21_20250409_140322.parquet to GCS
+2025-04-09 14:03:22,952 - INFO - Uploaded batch 21 to GCS with 1000/1000 rows.
+2025-04-09 14:03:23,029 - INFO - Processed 1000/1000 documents in batch 22
+2025-04-09 14:03:23,209 - INFO - Successfully uploaded export_batch_22_20250409_140322.parquet to GCS
+2025-04-09 14:03:23,209 - INFO - Uploaded batch 22 to GCS with 1000/1000 rows.
+2025-04-09 14:03:23,300 - INFO - Processed 1000/1000 documents in batch 23
+2025-04-09 14:03:23,486 - INFO - Successfully uploaded export_batch_23_20250409_140323.parquet to GCS
+2025-04-09 14:03:23,486 - INFO - Uploaded batch 23 to GCS with 1000/1000 rows.
+2025-04-09 14:03:23,562 - INFO - Processed 1000/1000 documents in batch 24
+2025-04-09 14:03:23,763 - INFO - Successfully uploaded export_batch_24_20250409_140323.parquet to GCS
+2025-04-09 14:03:23,763 - INFO - Uploaded batch 24 to GCS with 1000/1000 rows.
+2025-04-09 14:03:23,840 - INFO - Processed 1000/1000 documents in batch 25
+2025-04-09 14:03:24,022 - INFO - Successfully uploaded export_batch_25_20250409_140323.parquet to GCS
+2025-04-09 14:03:24,023 - INFO - Uploaded batch 25 to GCS with 1000/1000 rows.
+2025-04-09 14:03:24,092 - INFO - Processed 1000/1000 documents in batch 26
+2025-04-09 14:03:24,302 - INFO - Successfully uploaded export_batch_26_20250409_140324.parquet to GCS
+2025-04-09 14:03:24,302 - INFO - Uploaded batch 26 to GCS with 1000/1000 rows.
+2025-04-09 14:03:24,366 - INFO - Processed 1000/1000 documents in batch 27
+2025-04-09 14:03:24,570 - INFO - Successfully uploaded export_batch_27_20250409_140324.parquet to GCS
+2025-04-09 14:03:24,571 - INFO - Uploaded batch 27 to GCS with 1000/1000 rows.
+2025-04-09 14:03:24,635 - INFO - Processed 1000/1000 documents in batch 28
+2025-04-09 14:03:24,828 - INFO - Successfully uploaded export_batch_28_20250409_140324.parquet to GCS
+2025-04-09 14:03:24,829 - INFO - Uploaded batch 28 to GCS with 1000/1000 rows.
+2025-04-09 14:03:24,940 - INFO - Processed 1000/1000 documents in batch 29
+2025-04-09 14:03:25,148 - INFO - Successfully uploaded export_batch_29_20250409_140324.parquet to GCS
+2025-04-09 14:03:25,149 - INFO - Uploaded batch 29 to GCS with 1000/1000 rows.
+2025-04-09 14:03:25,219 - INFO - Processed 1000/1000 documents in batch 30
+2025-04-09 14:03:25,408 - INFO - Successfully uploaded export_batch_30_20250409_140325.parquet to GCS
+2025-04-09 14:03:25,408 - INFO - Uploaded batch 30 to GCS with 1000/1000 rows.
+2025-04-09 14:03:25,475 - INFO - Processed 1000/1000 documents in batch 31
+2025-04-09 14:03:25,673 - INFO - Successfully uploaded export_batch_31_20250409_140325.parquet to GCS
+2025-04-09 14:03:25,674 - INFO - Uploaded batch 31 to GCS with 1000/1000 rows.
+2025-04-09 14:03:25,740 - INFO - Processed 1000/1000 documents in batch 32
+2025-04-09 14:03:25,922 - INFO - Successfully uploaded export_batch_32_20250409_140325.parquet to GCS
+2025-04-09 14:03:25,922 - INFO - Uploaded batch 32 to GCS with 1000/1000 rows.
+2025-04-09 14:03:25,991 - INFO - Processed 1000/1000 documents in batch 33
+2025-04-09 14:03:26,181 - INFO - Successfully uploaded export_batch_33_20250409_140325.parquet to GCS
+2025-04-09 14:03:26,181 - INFO - Uploaded batch 33 to GCS with 1000/1000 rows.
+2025-04-09 14:03:26,250 - INFO - Processed 1000/1000 documents in batch 34
+2025-04-09 14:03:26,439 - INFO - Successfully uploaded export_batch_34_20250409_140326.parquet to GCS
+2025-04-09 14:03:26,439 - INFO - Uploaded batch 34 to GCS with 1000/1000 rows.
+2025-04-09 14:03:26,506 - INFO - Processed 1000/1000 documents in batch 35
+2025-04-09 14:03:26,804 - INFO - Successfully uploaded export_batch_35_20250409_140326.parquet to GCS
+2025-04-09 14:03:26,804 - INFO - Uploaded batch 35 to GCS with 1000/1000 rows.
+2025-04-09 14:03:26,879 - INFO - Processed 1000/1000 documents in batch 36
+2025-04-09 14:03:27,063 - INFO - Successfully uploaded export_batch_36_20250409_140326.parquet to GCS
+2025-04-09 14:03:27,064 - INFO - Uploaded batch 36 to GCS with 1000/1000 rows.
+2025-04-09 14:03:27,136 - INFO - Processed 1000/1000 documents in batch 37
+2025-04-09 14:03:27,310 - INFO - Successfully uploaded export_batch_37_20250409_140327.parquet to GCS
+2025-04-09 14:03:27,310 - INFO - Uploaded batch 37 to GCS with 1000/1000 rows.
+2025-04-09 14:03:27,380 - INFO - Processed 1000/1000 documents in batch 38
+2025-04-09 14:03:27,556 - INFO - Successfully uploaded export_batch_38_20250409_140327.parquet to GCS
+2025-04-09 14:03:27,557 - INFO - Uploaded batch 38 to GCS with 1000/1000 rows.
+2025-04-09 14:03:27,635 - INFO - Processed 1000/1000 documents in batch 39
+2025-04-09 14:03:27,830 - INFO - Successfully uploaded export_batch_39_20250409_140327.parquet to GCS
+2025-04-09 14:03:27,830 - INFO - Uploaded batch 39 to GCS with 1000/1000 rows.
+2025-04-09 14:03:27,898 - INFO - Processed 1000/1000 documents in batch 40
+2025-04-09 14:03:28,078 - INFO - Successfully uploaded export_batch_40_20250409_140327.parquet to GCS
+2025-04-09 14:03:28,079 - INFO - Uploaded batch 40 to GCS with 1000/1000 rows.
+2025-04-09 14:03:28,162 - INFO - Processed 1000/1000 documents in batch 41
+2025-04-09 14:03:28,359 - INFO - Successfully uploaded export_batch_41_20250409_140328.parquet to GCS
+2025-04-09 14:03:28,359 - INFO - Uploaded batch 41 to GCS with 1000/1000 rows.
+2025-04-09 14:03:28,444 - INFO - Processed 1000/1000 documents in batch 42
+2025-04-09 14:03:28,603 - INFO - Successfully uploaded export_batch_42_20250409_140328.parquet to GCS
+2025-04-09 14:03:28,604 - INFO - Uploaded batch 42 to GCS with 1000/1000 rows.
+2025-04-09 14:03:28,693 - INFO - Processed 1000/1000 documents in batch 43
+2025-04-09 14:03:28,894 - INFO - Successfully uploaded export_batch_43_20250409_140328.parquet to GCS
+2025-04-09 14:03:28,895 - INFO - Uploaded batch 43 to GCS with 1000/1000 rows.
+2025-04-09 14:03:29,051 - INFO - Processed 1000/1000 documents in batch 44
+2025-04-09 14:03:29,247 - INFO - Successfully uploaded export_batch_44_20250409_140328.parquet to GCS
+2025-04-09 14:03:29,248 - INFO - Uploaded batch 44 to GCS with 1000/1000 rows.
+2025-04-09 14:03:29,330 - INFO - Processed 1000/1000 documents in batch 45
+2025-04-09 14:03:29,524 - INFO - Successfully uploaded export_batch_45_20250409_140329.parquet to GCS
+2025-04-09 14:03:29,525 - INFO - Uploaded batch 45 to GCS with 1000/1000 rows.
+2025-04-09 14:03:29,598 - INFO - Processed 1000/1000 documents in batch 46
+2025-04-09 14:03:29,783 - INFO - Successfully uploaded export_batch_46_20250409_140329.parquet to GCS
+2025-04-09 14:03:29,783 - INFO - Uploaded batch 46 to GCS with 1000/1000 rows.
+2025-04-09 14:03:29,859 - INFO - Processed 1000/1000 documents in batch 47
+2025-04-09 14:03:30,023 - INFO - Successfully uploaded export_batch_47_20250409_140329.parquet to GCS
+2025-04-09 14:03:30,024 - INFO - Uploaded batch 47 to GCS with 1000/1000 rows.
+2025-04-09 14:03:30,098 - INFO - Processed 1000/1000 documents in batch 48
+2025-04-09 14:03:30,272 - INFO - Successfully uploaded export_batch_48_20250409_140330.parquet to GCS
+2025-04-09 14:03:30,272 - INFO - Uploaded batch 48 to GCS with 1000/1000 rows.
+2025-04-09 14:03:30,357 - INFO - Processed 1000/1000 documents in batch 49
+2025-04-09 14:03:30,548 - INFO - Successfully uploaded export_batch_49_20250409_140330.parquet to GCS
+2025-04-09 14:03:30,549 - INFO - Uploaded batch 49 to GCS with 1000/1000 rows.
+2025-04-09 14:03:30,624 - INFO - Processed 1000/1000 documents in batch 50
+2025-04-09 14:03:30,808 - INFO - Successfully uploaded export_batch_50_20250409_140330.parquet to GCS
+2025-04-09 14:03:30,808 - INFO - Uploaded batch 50 to GCS with 1000/1000 rows.
+2025-04-09 14:03:30,884 - INFO - Processed 1000/1000 documents in batch 51
+2025-04-09 14:03:31,069 - INFO - Successfully uploaded export_batch_51_20250409_140330.parquet to GCS
+2025-04-09 14:03:31,070 - INFO - Uploaded batch 51 to GCS with 1000/1000 rows.
+2025-04-09 14:03:31,146 - INFO - Processed 1000/1000 documents in batch 52
+2025-04-09 14:03:31,318 - INFO - Successfully uploaded export_batch_52_20250409_140331.parquet to GCS
+2025-04-09 14:03:31,318 - INFO - Uploaded batch 52 to GCS with 1000/1000 rows.
+2025-04-09 14:03:31,401 - INFO - Processed 1000/1000 documents in batch 53
+2025-04-09 14:03:31,580 - INFO - Successfully uploaded export_batch_53_20250409_140331.parquet to GCS
+2025-04-09 14:03:31,580 - INFO - Uploaded batch 53 to GCS with 1000/1000 rows.
+2025-04-09 14:03:31,657 - INFO - Processed 1000/1000 documents in batch 54
+2025-04-09 14:03:31,834 - INFO - Successfully uploaded export_batch_54_20250409_140331.parquet to GCS
+2025-04-09 14:03:31,834 - INFO - Uploaded batch 54 to GCS with 1000/1000 rows.
+2025-04-09 14:03:31,917 - INFO - Processed 1000/1000 documents in batch 55
+2025-04-09 14:03:32,092 - INFO - Successfully uploaded export_batch_55_20250409_140331.parquet to GCS
+2025-04-09 14:03:32,092 - INFO - Uploaded batch 55 to GCS with 1000/1000 rows.
+2025-04-09 14:03:32,170 - INFO - Processed 1000/1000 documents in batch 56
+2025-04-09 14:03:32,351 - INFO - Successfully uploaded export_batch_56_20250409_140332.parquet to GCS
+2025-04-09 14:03:32,351 - INFO - Uploaded batch 56 to GCS with 1000/1000 rows.
+2025-04-09 14:03:32,460 - INFO - Processed 1000/1000 documents in batch 57
+2025-04-09 14:03:32,643 - INFO - Successfully uploaded export_batch_57_20250409_140332.parquet to GCS
+2025-04-09 14:03:32,643 - INFO - Uploaded batch 57 to GCS with 1000/1000 rows.
+2025-04-09 14:03:32,723 - INFO - Processed 1000/1000 documents in batch 58
+2025-04-09 14:03:32,917 - INFO - Successfully uploaded export_batch_58_20250409_140332.parquet to GCS
+2025-04-09 14:03:32,918 - INFO - Uploaded batch 58 to GCS with 1000/1000 rows.
+2025-04-09 14:03:33,048 - INFO - Processed 1000/1000 documents in batch 59
+2025-04-09 14:03:33,230 - INFO - Successfully uploaded export_batch_59_20250409_140333.parquet to GCS
+2025-04-09 14:03:33,230 - INFO - Uploaded batch 59 to GCS with 1000/1000 rows.
+2025-04-09 14:03:33,312 - INFO - Processed 1000/1000 documents in batch 60
+2025-04-09 14:03:33,489 - INFO - Successfully uploaded export_batch_60_20250409_140333.parquet to GCS
+2025-04-09 14:03:33,489 - INFO - Uploaded batch 60 to GCS with 1000/1000 rows.
+2025-04-09 14:03:33,569 - INFO - Processed 1000/1000 documents in batch 61
+2025-04-09 14:03:33,787 - INFO - Successfully uploaded export_batch_61_20250409_140333.parquet to GCS
+2025-04-09 14:03:33,787 - INFO - Uploaded batch 61 to GCS with 1000/1000 rows.
+2025-04-09 14:03:33,867 - INFO - Processed 1000/1000 documents in batch 62
+2025-04-09 14:03:34,046 - INFO - Successfully uploaded export_batch_62_20250409_140333.parquet to GCS
+2025-04-09 14:03:34,046 - INFO - Uploaded batch 62 to GCS with 1000/1000 rows.
+2025-04-09 14:03:34,135 - INFO - Processed 1000/1000 documents in batch 63
+2025-04-09 14:03:34,305 - INFO - Successfully uploaded export_batch_63_20250409_140334.parquet to GCS
+2025-04-09 14:03:34,305 - INFO - Uploaded batch 63 to GCS with 1000/1000 rows.
+2025-04-09 14:03:34,386 - INFO - Processed 1000/1000 documents in batch 64
+2025-04-09 14:03:34,565 - INFO - Successfully uploaded export_batch_64_20250409_140334.parquet to GCS
+2025-04-09 14:03:34,565 - INFO - Uploaded batch 64 to GCS with 1000/1000 rows.
+2025-04-09 14:03:34,648 - INFO - Processed 1000/1000 documents in batch 65
+2025-04-09 14:03:34,824 - INFO - Successfully uploaded export_batch_65_20250409_140334.parquet to GCS
+2025-04-09 14:03:34,824 - INFO - Uploaded batch 65 to GCS with 1000/1000 rows.
+2025-04-09 14:03:34,910 - INFO - Processed 1000/1000 documents in batch 66
+2025-04-09 14:03:35,090 - INFO - Successfully uploaded export_batch_66_20250409_140334.parquet to GCS
+2025-04-09 14:03:35,090 - INFO - Uploaded batch 66 to GCS with 1000/1000 rows.
+2025-04-09 14:03:35,175 - INFO - Processed 1000/1000 documents in batch 67
+2025-04-09 14:03:35,352 - INFO - Successfully uploaded export_batch_67_20250409_140335.parquet to GCS
+2025-04-09 14:03:35,352 - INFO - Uploaded batch 67 to GCS with 1000/1000 rows.
+2025-04-09 14:03:35,433 - INFO - Processed 1000/1000 documents in batch 68
+2025-04-09 14:03:35,591 - INFO - Successfully uploaded export_batch_68_20250409_140335.parquet to GCS
+2025-04-09 14:03:35,591 - INFO - Uploaded batch 68 to GCS with 1000/1000 rows.
+2025-04-09 14:03:35,672 - INFO - Processed 1000/1000 documents in batch 69
+2025-04-09 14:03:35,851 - INFO - Successfully uploaded export_batch_69_20250409_140335.parquet to GCS
+2025-04-09 14:03:35,851 - INFO - Uploaded batch 69 to GCS with 1000/1000 rows.
+2025-04-09 14:03:35,933 - INFO - Processed 1000/1000 documents in batch 70
+2025-04-09 14:03:36,117 - INFO - Successfully uploaded export_batch_70_20250409_140335.parquet to GCS
+2025-04-09 14:03:36,118 - INFO - Uploaded batch 70 to GCS with 1000/1000 rows.
+2025-04-09 14:03:36,205 - INFO - Processed 1000/1000 documents in batch 71
+2025-04-09 14:03:36,380 - INFO - Successfully uploaded export_batch_71_20250409_140336.parquet to GCS
+2025-04-09 14:03:36,380 - INFO - Uploaded batch 71 to GCS with 1000/1000 rows.
+2025-04-09 14:03:36,466 - INFO - Processed 1000/1000 documents in batch 72
+2025-04-09 14:03:36,649 - INFO - Successfully uploaded export_batch_72_20250409_140336.parquet to GCS
+2025-04-09 14:03:36,649 - INFO - Uploaded batch 72 to GCS with 1000/1000 rows.
+2025-04-09 14:03:36,736 - INFO - Processed 1000/1000 documents in batch 73
+2025-04-09 14:03:36,925 - INFO - Successfully uploaded export_batch_73_20250409_140336.parquet to GCS
+2025-04-09 14:03:36,925 - INFO - Uploaded batch 73 to GCS with 1000/1000 rows.
+2025-04-09 14:03:37,057 - INFO - Processed 1000/1000 documents in batch 74
+2025-04-09 14:03:37,235 - INFO - Successfully uploaded export_batch_74_20250409_140337.parquet to GCS
+2025-04-09 14:03:37,235 - INFO - Uploaded batch 74 to GCS with 1000/1000 rows.
+2025-04-09 14:03:37,328 - INFO - Processed 1000/1000 documents in batch 75
+2025-04-09 14:03:37,515 - INFO - Successfully uploaded export_batch_75_20250409_140337.parquet to GCS
+2025-04-09 14:03:37,515 - INFO - Uploaded batch 75 to GCS with 1000/1000 rows.
+2025-04-09 14:03:37,605 - INFO - Processed 1000/1000 documents in batch 76
+2025-04-09 14:03:37,773 - INFO - Successfully uploaded export_batch_76_20250409_140337.parquet to GCS
+2025-04-09 14:03:37,773 - INFO - Uploaded batch 76 to GCS with 1000/1000 rows.
+2025-04-09 14:03:37,876 - INFO - Processed 1000/1000 documents in batch 77
+2025-04-09 14:03:38,056 - INFO - Successfully uploaded export_batch_77_20250409_140337.parquet to GCS
+2025-04-09 14:03:38,057 - INFO - Uploaded batch 77 to GCS with 1000/1000 rows.
+2025-04-09 14:03:38,147 - INFO - Processed 1000/1000 documents in batch 78
+2025-04-09 14:03:38,364 - INFO - Successfully uploaded export_batch_78_20250409_140338.parquet to GCS
+2025-04-09 14:03:38,365 - INFO - Uploaded batch 78 to GCS with 1000/1000 rows.
+2025-04-09 14:03:38,455 - INFO - Processed 1000/1000 documents in batch 79
+2025-04-09 14:03:38,654 - INFO - Successfully uploaded export_batch_79_20250409_140338.parquet to GCS
+2025-04-09 14:03:38,655 - INFO - Uploaded batch 79 to GCS with 1000/1000 rows.
+2025-04-09 14:03:38,755 - INFO - Processed 1000/1000 documents in batch 80
+2025-04-09 14:03:38,933 - INFO - Successfully uploaded export_batch_80_20250409_140338.parquet to GCS
+2025-04-09 14:03:38,933 - INFO - Uploaded batch 80 to GCS with 1000/1000 rows.
+2025-04-09 14:03:39,023 - INFO - Processed 1000/1000 documents in batch 81
+2025-04-09 14:03:39,203 - INFO - Successfully uploaded export_batch_81_20250409_140338.parquet to GCS
+2025-04-09 14:03:39,203 - INFO - Uploaded batch 81 to GCS with 1000/1000 rows.
+2025-04-09 14:03:39,306 - INFO - Processed 1000/1000 documents in batch 82
+2025-04-09 14:03:39,492 - INFO - Successfully uploaded export_batch_82_20250409_140339.parquet to GCS
+2025-04-09 14:03:39,492 - INFO - Uploaded batch 82 to GCS with 1000/1000 rows.
+2025-04-09 14:03:39,582 - INFO - Processed 1000/1000 documents in batch 83
+2025-04-09 14:03:39,783 - INFO - Successfully uploaded export_batch_83_20250409_140339.parquet to GCS
+2025-04-09 14:03:39,783 - INFO - Uploaded batch 83 to GCS with 1000/1000 rows.
+2025-04-09 14:03:39,881 - INFO - Processed 1000/1000 documents in batch 84
+2025-04-09 14:03:40,109 - INFO - Successfully uploaded export_batch_84_20250409_140339.parquet to GCS
+2025-04-09 14:03:40,109 - INFO - Uploaded batch 84 to GCS with 1000/1000 rows.
+2025-04-09 14:03:40,204 - INFO - Processed 1000/1000 documents in batch 85
+2025-04-09 14:03:40,397 - INFO - Successfully uploaded export_batch_85_20250409_140340.parquet to GCS
+2025-04-09 14:03:40,397 - INFO - Uploaded batch 85 to GCS with 1000/1000 rows.
+2025-04-09 14:03:40,488 - INFO - Processed 1000/1000 documents in batch 86
+2025-04-09 14:03:40,687 - INFO - Successfully uploaded export_batch_86_20250409_140340.parquet to GCS
+2025-04-09 14:03:40,688 - INFO - Uploaded batch 86 to GCS with 1000/1000 rows.
+2025-04-09 14:03:40,778 - INFO - Processed 1000/1000 documents in batch 87
+2025-04-09 14:03:40,944 - INFO - Successfully uploaded export_batch_87_20250409_140340.parquet to GCS
+2025-04-09 14:03:40,944 - INFO - Uploaded batch 87 to GCS with 1000/1000 rows.
+2025-04-09 14:03:41,039 - INFO - Processed 1000/1000 documents in batch 88
+2025-04-09 14:03:41,205 - INFO - Successfully uploaded export_batch_88_20250409_140341.parquet to GCS
+2025-04-09 14:03:41,205 - INFO - Uploaded batch 88 to GCS with 1000/1000 rows.
+2025-04-09 14:03:41,341 - INFO - Processed 1000/1000 documents in batch 89
+2025-04-09 14:03:41,522 - INFO - Successfully uploaded export_batch_89_20250409_140341.parquet to GCS
+2025-04-09 14:03:41,522 - INFO - Uploaded batch 89 to GCS with 1000/1000 rows.
+2025-04-09 14:03:41,617 - INFO - Processed 1000/1000 documents in batch 90
+2025-04-09 14:03:41,805 - INFO - Successfully uploaded export_batch_90_20250409_140341.parquet to GCS
+2025-04-09 14:03:41,806 - INFO - Uploaded batch 90 to GCS with 1000/1000 rows.
+2025-04-09 14:03:41,898 - INFO - Processed 1000/1000 documents in batch 91
+2025-04-09 14:03:42,099 - INFO - Successfully uploaded export_batch_91_20250409_140341.parquet to GCS
+2025-04-09 14:03:42,100 - INFO - Uploaded batch 91 to GCS with 1000/1000 rows.
+2025-04-09 14:03:42,192 - INFO - Processed 1000/1000 documents in batch 92
+2025-04-09 14:03:42,366 - INFO - Successfully uploaded export_batch_92_20250409_140342.parquet to GCS
+2025-04-09 14:03:42,367 - INFO - Uploaded batch 92 to GCS with 1000/1000 rows.
+2025-04-09 14:03:42,479 - INFO - Processed 1000/1000 documents in batch 93
+2025-04-09 14:03:42,688 - INFO - Successfully uploaded export_batch_93_20250409_140342.parquet to GCS
+2025-04-09 14:03:42,688 - INFO - Uploaded batch 93 to GCS with 1000/1000 rows.
+2025-04-09 14:03:42,812 - INFO - Processed 1000/1000 documents in batch 94
+2025-04-09 14:03:43,006 - INFO - Successfully uploaded export_batch_94_20250409_140342.parquet to GCS
+2025-04-09 14:03:43,006 - INFO - Uploaded batch 94 to GCS with 1000/1000 rows.
+2025-04-09 14:03:43,124 - INFO - Processed 1000/1000 documents in batch 95
+2025-04-09 14:03:43,334 - INFO - Successfully uploaded export_batch_95_20250409_140343.parquet to GCS
+2025-04-09 14:03:43,335 - INFO - Uploaded batch 95 to GCS with 1000/1000 rows.
+2025-04-09 14:03:43,442 - INFO - Processed 1000/1000 documents in batch 96
+2025-04-09 14:03:43,637 - INFO - Successfully uploaded export_batch_96_20250409_140343.parquet to GCS
+2025-04-09 14:03:43,637 - INFO - Uploaded batch 96 to GCS with 1000/1000 rows.
+2025-04-09 14:03:43,738 - INFO - Processed 1000/1000 documents in batch 97
+2025-04-09 14:03:43,913 - INFO - Successfully uploaded export_batch_97_20250409_140343.parquet to GCS
+2025-04-09 14:03:43,914 - INFO - Uploaded batch 97 to GCS with 1000/1000 rows.
+2025-04-09 14:03:44,012 - INFO - Processed 1000/1000 documents in batch 98
+2025-04-09 14:03:44,195 - INFO - Successfully uploaded export_batch_98_20250409_140343.parquet to GCS
+2025-04-09 14:03:44,195 - INFO - Uploaded batch 98 to GCS with 1000/1000 rows.
+2025-04-09 14:03:44,296 - INFO - Processed 1000/1000 documents in batch 99
+2025-04-09 14:03:44,484 - INFO - Successfully uploaded export_batch_99_20250409_140344.parquet to GCS
+2025-04-09 14:03:44,484 - INFO - Uploaded batch 99 to GCS with 1000/1000 rows.
+2025-04-09 14:03:44,484 - INFO - Export completed successfully

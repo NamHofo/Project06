@@ -65,7 +65,7 @@ class MongoToGCSExporter:
                 for document in batch_data:
                     # Remove MongoDB's _id if not needed or convert to string
                     if '_id' in document:
-                        document['_id'] = string(document['_id'])
+                        document['_id'] = str(document['_id'])
                     f.write(json.dumps(document) + '\n')
                     
             return filename
@@ -74,90 +74,79 @@ class MongoToGCSExporter:
             raise
 
     def process_batch_to_parquet(self, batch_data, batch_number):
-        """Chuyển đổi dữ liệu batch sang định dạng Parquet, bỏ qua batch nếu gây lỗi"""
+        """Convert batch data to Parquet format, skipping rows with errors and logging problematic rows."""
         try:
-            # Tạo tên file với timestamp
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             filename = f"export_batch_{batch_number}_{timestamp}.parquet"
+            error_filename = f"error_cart_products_batch_{batch_number}_{timestamp}.json"
 
-            # Chuẩn hóa dữ liệu trước khi xử lý
             processed_data = []
+            error_data = []
+            valid_count = 0
+
+            # Xử lý từng dòng
             for doc in batch_data:
-                # Tạo một bản sao của document
-                doc_copy = doc.copy()
+                try:
+                    doc_copy = doc.copy()
+                    if '_id' in doc_copy:
+                        doc_copy['_id'] = str(doc_copy['_id'])
 
-                # Chuyển _id thành chuỗi
-                if '_id' in doc_copy:
-                    doc_copy['_id'] = str(doc_copy['_id'])
+                    for field in ['utm_source', 'utm_medium', 'order_id', 'key_search', 'show_recommendation']:
+                        if field in doc_copy:
+                            doc_copy[field] = str(doc_copy[field]) if doc_copy[field] is not None else None
 
-                # Chuyển các trường cụ thể thành chuỗi
-                for field in ['utm_source', 'utm_medium', 'order_id', 'key_search', 'show_recommendation']:
-                    if field in doc_copy:
-                        doc_copy[field] = str(doc_copy[field]) if doc_copy[field] is not None else None
-
-                # Chuẩn hóa cart_products
-                cart = doc_copy.get("cart_products", None)
-
-                # Chuẩn hóa triệt để cart_products
-                if not isinstance(cart, list):
+                    # Chuẩn hóa cart_products để đồng nhất kiểu dữ liệu
+                    cart = doc_copy.get("cart_products", None)
                     if cart is None:
-                        doc_copy["cart_products"] = []  # Nếu là None, đặt thành danh sách rỗng
-                    elif isinstance(cart, dict):
-                        doc_copy["cart_products"] = [cart]  # Nếu là dict, bọc trong danh sách
-                    else:
-                        # Nếu là kiểu dữ liệu khác (chuỗi, số, v.v.), chuyển thành danh sách rỗng
                         doc_copy["cart_products"] = []
-                else:
-                    # Nếu là danh sách, làm sạch và chuẩn hóa
-                    cleaned_cart = []
-                    for item in cart:
-                        if isinstance(item, list):
-                            # Nếu phần tử là danh sách lồng nhau, làm phẳng
-                            for sub_item in item:
-                                for sub_sub_item in item:
-                                    if isinstance(sub_sub_item, (dict, str, int, float)):
-                                        cleaned_cart.append(sub_item)
-                                    else:
-                                        cleaned_cart.append(None)
-                        elif isinstance(item, (dict, str, int, float)):
-                            cleaned_cart.append(item)
-                        # Bỏ qua các kiểu dữ liệu khác
-                    doc_copy["cart_products"] = cleaned_cart
+                    elif not isinstance(cart, list):
+                        doc_copy["cart_products"] = [str(cart)]  # Chuyển giá trị không phải list thành list chứa 1 phần tử
+                    else:
+                        cleaned_cart = []
+                        for item in cart:
+                            if isinstance(item, list):
+                                cleaned_cart.extend([str(sub_item) if sub_item is not None else None for sub_item in item])
+                            elif item is None:
+                                cleaned_cart.append(None)
+                            else:
+                                cleaned_cart.append(str(item))  # Chuyển tất cả thành string để đồng nhất
+                        doc_copy["cart_products"] = cleaned_cart
 
-                processed_data.append(doc_copy)
+                    processed_data.append(doc_copy)
+                    valid_count += 1
 
-            # Thử chuyển toàn bộ batch thành DataFrame và xuất ra Parquet
-            try:
-                # Chuyển dữ liệu thành DataFrame
-                df = pd.json_normalize(processed_data)
+                except Exception as row_error:
+                    logging.error(f"Error processing row with _id {doc.get('_id', 'Unknown ID')}: {str(row_error)}")
+                    error_data.append({
+                        "_id": str(doc.get("_id", "Unknown ID")),
+                        "cart_products": doc.get("cart_products"),
+                        "error": str(row_error)
+                    })
 
-                # Thay dấu chấm trong tên cột bằng dấu gạch dưới
-                df.columns = [col.replace(".", "_") for col in df.columns]
-
-                # Chuẩn hóa các cột liên quan đến cart_products
-                for col in df.columns:
-                    if col.startswith("cart_products") and df[col].apply(lambda x: isinstance(x, list)).any():
-                        df[col] = df[col].apply(lambda x: x if isinstance(x, list) else [])
-
-                # Xuất ra file Parquet
-                df.to_parquet(filename, index=False)
-
-                # Ghi log thành công
-                print(f"Đã xử lý {len(processed_data)} document hợp lệ trong batch {batch_number}.")
-                return filename
-
-            except Exception as e:
-                # Nếu batch gây lỗi, ghi log và bỏ qua batch
-                print(f"Bỏ qua batch {batch_number} do lỗi: {str(e)}")
-                # Ghi log chi tiết giá trị cart_products để debug
-                with open(f"error_cart_products_batch_{batch_number}_{timestamp}.json", "w") as f:
-                    error_data = [{"_id": doc.get("_id", "Unknown ID"), "cart_products": doc.get("cart_products")} for doc in processed_data]
+            # Lưu lỗi nếu có
+            if error_data:
+                with open(error_filename, "w") as f:
                     json.dump(error_data, f, indent=4)
-                
+                logging.info(f"Saved {len(error_data)} errors to {error_filename}")
+
+            # Xuất dữ liệu hợp lệ sang Parquet
+            if processed_data:
+                try:
+                    df = pd.json_normalize(processed_data)
+                    df.columns = [col.replace(".", "_") for col in df.columns]
+                    df.to_parquet(filename, index=False)
+                    logging.info(f"Processed {valid_count}/{len(batch_data)} documents in batch {batch_number}")
+                    return filename, valid_count, len(batch_data)
+                except Exception as parquet_error:
+                    logging.error(f"Error converting batch {batch_number} to Parquet: {str(parquet_error)}")
+                    return None, 0, len(batch_data)  # Đặt valid_count = 0 nếu lỗi xảy ra ở bước này
+            else:
+                logging.warning(f"No valid data to process in batch {batch_number}")
+                return None, 0, len(batch_data)
 
         except Exception as e:
-            print(f"Lỗi không mong muốn khi xử lý batch {batch_number}: {str(e)}")
-            return None
+            logging.error(f"Unexpected error processing batch {batch_number}: {str(e)}")
+            return None, 0, len(batch_data)
 
 
 
@@ -171,66 +160,40 @@ class MongoToGCSExporter:
             except Exception as e:
                 logging.error(f"Error uploading to GCS: {str(e)}")
                 raise
-
-
-        # """Upload file to GCS and save a local copy"""
-        # try:
-        #     # Define a local directory to save the file
-        #     local_save_dir = "local_exports"
-        #     os.makedirs(local_save_dir, exist_ok=True)  # Create the directory if it doesn't exist
-
-        #     # Save a copy of the file locally
-        #     local_file_path = os.path.join(local_save_dir, filename)
-        #     os.rename(filename, local_file_path)  # Move the file to the local directory
-        #     logging.info(f"Saved a local copy of {filename} to {local_file_path}")
-
-        # except Exception as e:
-        #     logging.error(f"Error uploading to GCS or saving locally: {str(e)}")
-        #     raise
     
 
     def export_to_gcs(self):
         """Main export function"""
         try:
-            # Connect to services
             collection = self.connect_to_mongo()
             bucket = self.connect_to_gcs()
-
-            # Get total document count for progress tracking
             total_docs = collection.estimated_document_count()
             logging.info(f"Total documents to process: {total_docs}")
 
-            # Limit to 100,000 documents for testing
-            max_docs = 10000
+            #Test với 100,000 docs
+            max_docs = 100000
             if total_docs > max_docs:
                 logging.info(f"Limiting processing to the first {max_docs} documents for testing.")
                 total_docs = max_docs
 
-            # Process in batches
             batch_number = 0
             skip = 0
 
             while skip < total_docs:
-                try:
-                    # Fetch batch
-                    batch_data = list(collection.find()
-                                        .skip(skip)
-                                        .limit(self.batch_size))
-                    
-                    if not batch_data:
-                        break
+                batch_data = list(collection.find().skip(skip).limit(self.batch_size))
+                if not batch_data:
+                    break
 
-                    # Process and upload batch
-                    filename = self.process_batch_to_parquet(batch_data, batch_number)
+                filename, valid_count, total_count = self.process_batch_to_parquet(batch_data, batch_number)
+                if filename and valid_count > 0:
                     self.upload_to_gcs(bucket, filename)
+                    logging.info(f"Uploaded batch {batch_number} to GCS with {valid_count}/{total_count} rows.")
+                else:
+                    logging.warning(f"Batch {batch_number} skipped due to errors or no valid data ({valid_count}/{total_count} rows).")
+                    error_count = total_count - valid_count
+                    if error_count > 0:
+                        logging.info(f"Batch {batch_number}: {error_count} rows failed, details saved in error file.")
 
-                    # Update counters
-                    logging.info(f"Processed batch {batch_number} - {skip}/{total_docs} documents")
-                except Exception as batch_error:
-                    logging.error(f"Error processing batch {batch_number}: {str(batch_error)}")
-                    logging.info(f"Skipping batch {batch_number} and continuing with the next batch.")
-
-                # Update counters regardless of success or failure
                 skip += self.batch_size
                 batch_number += 1
 
