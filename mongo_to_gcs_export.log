@@ -303,3 +303,613 @@
 2025-04-09 14:03:44,484 - INFO - Successfully uploaded export_batch_99_20250409_140344.parquet to GCS
 2025-04-09 14:03:44,484 - INFO - Uploaded batch 99 to GCS with 1000/1000 rows.
 2025-04-09 14:03:44,484 - INFO - Export completed successfully
+2025-04-09 15:04:15,497 - INFO - Successfully connected to MongoDB
+2025-04-09 15:04:18,355 - INFO - Successfully connected to GCS
+2025-04-09 15:04:18,362 - INFO - Total documents to process: 41432473
+2025-04-09 15:04:18,362 - INFO - Limiting processing to the first 100000 documents for testing.
+2025-04-09 15:04:18,539 - INFO - Processed 1000/1000 documents in batch 0
+2025-04-09 15:04:18,940 - INFO - Successfully uploaded export_batch_0_20250409_150418.parquet to GCS
+2025-04-09 15:04:18,940 - INFO - Uploaded batch 0 to GCS with 1000/1000 rows.
+2025-04-09 15:04:18,995 - INFO - Processed 1000/1000 documents in batch 1
+2025-04-09 15:04:19,186 - INFO - Successfully uploaded export_batch_1_20250409_150418.parquet to GCS
+2025-04-09 15:04:19,186 - INFO - Uploaded batch 1 to GCS with 1000/1000 rows.
+2025-04-09 15:04:19,240 - INFO - Processed 1000/1000 documents in batch 2
+2025-04-09 15:04:19,444 - INFO - Successfully uploaded export_batch_2_20250409_150419.parquet to GCS
+2025-04-09 15:04:19,445 - INFO - Uploaded batch 2 to GCS with 1000/1000 rows.
+2025-04-09 15:04:19,528 - INFO - Processed 1000/1000 documents in batch 3
+2025-04-09 15:04:19,730 - INFO - Successfully uploaded export_batch_3_20250409_150419.parquet to GCS
+2025-04-09 15:04:19,731 - INFO - Uploaded batch 3 to GCS with 1000/1000 rows.
+2025-04-09 15:04:19,784 - INFO - Processed 1000/1000 documents in batch 4
+2025-04-09 15:04:19,980 - INFO - Successfully uploaded export_batch_4_20250409_150419.parquet to GCS
+2025-04-09 15:04:19,981 - INFO - Uploaded batch 4 to GCS with 1000/1000 rows.
+2025-04-09 15:04:20,040 - INFO - Processed 1000/1000 documents in batch 5
+2025-04-09 15:04:20,229 - INFO - Successfully uploaded export_batch_5_20250409_150419.parquet to GCS
+2025-04-09 15:04:20,229 - INFO - Uploaded batch 5 to GCS with 1000/1000 rows.
+2025-04-09 15:04:20,282 - INFO - Processed 1000/1000 documents in batch 6
+2025-04-09 15:04:20,485 - INFO - Successfully uploaded export_batch_6_20250409_150420.parquet to GCS
+2025-04-09 15:04:20,486 - INFO - Uploaded batch 6 to GCS with 1000/1000 rows.
+2025-04-09 15:04:20,549 - INFO - Processed 1000/1000 documents in batch 7
+2025-04-09 15:04:20,727 - INFO - Successfully uploaded export_batch_7_20250409_150420.parquet to GCS
+2025-04-09 15:04:20,728 - INFO - Uploaded batch 7 to GCS with 1000/1000 rows.
+2025-04-09 15:04:20,784 - INFO - Processed 1000/1000 documents in batch 8
+2025-04-09 15:04:20,985 - INFO - Successfully uploaded export_batch_8_20250409_150420.parquet to GCS
+2025-04-09 15:04:20,985 - INFO - Uploaded batch 8 to GCS with 1000/1000 rows.
+2025-04-09 15:04:21,042 - INFO - Processed 1000/1000 documents in batch 9
+2025-04-09 15:04:21,238 - INFO - Successfully uploaded export_batch_9_20250409_150421.parquet to GCS
+2025-04-09 15:04:21,238 - INFO - Uploaded batch 9 to GCS with 1000/1000 rows.
+2025-04-09 15:04:21,295 - INFO - Processed 1000/1000 documents in batch 10
+2025-04-09 15:04:21,496 - INFO - Successfully uploaded export_batch_10_20250409_150421.parquet to GCS
+2025-04-09 15:04:21,496 - INFO - Uploaded batch 10 to GCS with 1000/1000 rows.
+2025-04-09 15:04:21,557 - INFO - Processed 1000/1000 documents in batch 11
+2025-04-09 15:04:21,736 - INFO - Successfully uploaded export_batch_11_20250409_150421.parquet to GCS
+2025-04-09 15:04:21,736 - INFO - Uploaded batch 11 to GCS with 1000/1000 rows.
+2025-04-09 15:04:21,809 - INFO - Processed 1000/1000 documents in batch 12
+2025-04-09 15:04:22,011 - INFO - Successfully uploaded export_batch_12_20250409_150421.parquet to GCS
+2025-04-09 15:04:22,011 - INFO - Uploaded batch 12 to GCS with 1000/1000 rows.
+2025-04-09 15:04:22,090 - INFO - Processed 1000/1000 documents in batch 13
+2025-04-09 15:04:22,273 - INFO - Successfully uploaded export_batch_13_20250409_150422.parquet to GCS
+2025-04-09 15:04:22,273 - INFO - Uploaded batch 13 to GCS with 1000/1000 rows.
+2025-04-09 15:04:22,341 - INFO - Processed 1000/1000 documents in batch 14
+2025-04-09 15:04:22,536 - INFO - Successfully uploaded export_batch_14_20250409_150422.parquet to GCS
+2025-04-09 15:04:22,537 - INFO - Uploaded batch 14 to GCS with 1000/1000 rows.
+2025-04-09 15:04:22,720 - INFO - Processed 1000/1000 documents in batch 15
+2025-04-09 15:04:22,890 - INFO - Successfully uploaded export_batch_15_20250409_150422.parquet to GCS
+2025-04-09 15:04:22,891 - INFO - Uploaded batch 15 to GCS with 1000/1000 rows.
+2025-04-09 15:04:22,955 - INFO - Processed 1000/1000 documents in batch 16
+2025-04-09 15:04:23,154 - INFO - Successfully uploaded export_batch_16_20250409_150422.parquet to GCS
+2025-04-09 15:04:23,155 - INFO - Uploaded batch 16 to GCS with 1000/1000 rows.
+2025-04-09 15:04:23,217 - INFO - Processed 1000/1000 documents in batch 17
+2025-04-09 15:04:23,416 - INFO - Successfully uploaded export_batch_17_20250409_150423.parquet to GCS
+2025-04-09 15:04:23,417 - INFO - Uploaded batch 17 to GCS with 1000/1000 rows.
+2025-04-09 15:04:23,478 - INFO - Processed 1000/1000 documents in batch 18
+2025-04-09 15:04:23,687 - INFO - Successfully uploaded export_batch_18_20250409_150423.parquet to GCS
+2025-04-09 15:04:23,688 - INFO - Uploaded batch 18 to GCS with 1000/1000 rows.
+2025-04-09 15:04:23,765 - INFO - Processed 1000/1000 documents in batch 19
+2025-04-09 15:04:23,926 - INFO - Successfully uploaded export_batch_19_20250409_150423.parquet to GCS
+2025-04-09 15:04:23,926 - INFO - Uploaded batch 19 to GCS with 1000/1000 rows.
+2025-04-09 15:04:24,004 - INFO - Processed 1000/1000 documents in batch 20
+2025-04-09 15:04:24,190 - INFO - Successfully uploaded export_batch_20_20250409_150423.parquet to GCS
+2025-04-09 15:04:24,191 - INFO - Uploaded batch 20 to GCS with 1000/1000 rows.
+2025-04-09 15:04:24,271 - INFO - Processed 1000/1000 documents in batch 21
+2025-04-09 15:04:24,467 - INFO - Successfully uploaded export_batch_21_20250409_150424.parquet to GCS
+2025-04-09 15:04:24,467 - INFO - Uploaded batch 21 to GCS with 1000/1000 rows.
+2025-04-09 15:04:24,550 - INFO - Processed 1000/1000 documents in batch 22
+2025-04-09 15:04:24,749 - INFO - Successfully uploaded export_batch_22_20250409_150424.parquet to GCS
+2025-04-09 15:04:24,750 - INFO - Uploaded batch 22 to GCS with 1000/1000 rows.
+2025-04-09 15:04:24,841 - INFO - Processed 1000/1000 documents in batch 23
+2025-04-09 15:04:25,043 - INFO - Successfully uploaded export_batch_23_20250409_150424.parquet to GCS
+2025-04-09 15:04:25,044 - INFO - Uploaded batch 23 to GCS with 1000/1000 rows.
+2025-04-09 15:04:25,127 - INFO - Processed 1000/1000 documents in batch 24
+2025-04-09 15:04:25,311 - INFO - Successfully uploaded export_batch_24_20250409_150425.parquet to GCS
+2025-04-09 15:04:25,312 - INFO - Uploaded batch 24 to GCS with 1000/1000 rows.
+2025-04-09 15:04:25,393 - INFO - Processed 1000/1000 documents in batch 25
+2025-04-09 15:04:25,611 - INFO - Successfully uploaded export_batch_25_20250409_150425.parquet to GCS
+2025-04-09 15:04:25,611 - INFO - Uploaded batch 25 to GCS with 1000/1000 rows.
+2025-04-09 15:04:25,697 - INFO - Processed 1000/1000 documents in batch 26
+2025-04-09 15:04:25,879 - INFO - Successfully uploaded export_batch_26_20250409_150425.parquet to GCS
+2025-04-09 15:04:25,879 - INFO - Uploaded batch 26 to GCS with 1000/1000 rows.
+2025-04-09 15:04:25,953 - INFO - Processed 1000/1000 documents in batch 27
+2025-04-09 15:04:26,153 - INFO - Successfully uploaded export_batch_27_20250409_150425.parquet to GCS
+2025-04-09 15:04:26,154 - INFO - Uploaded batch 27 to GCS with 1000/1000 rows.
+2025-04-09 15:04:26,222 - INFO - Processed 1000/1000 documents in batch 28
+2025-04-09 15:04:26,406 - INFO - Successfully uploaded export_batch_28_20250409_150426.parquet to GCS
+2025-04-09 15:04:26,406 - INFO - Uploaded batch 28 to GCS with 1000/1000 rows.
+2025-04-09 15:04:26,550 - INFO - Processed 1000/1000 documents in batch 29
+2025-04-09 15:04:26,736 - INFO - Successfully uploaded export_batch_29_20250409_150426.parquet to GCS
+2025-04-09 15:04:26,736 - INFO - Uploaded batch 29 to GCS with 1000/1000 rows.
+2025-04-09 15:04:26,805 - INFO - Processed 1000/1000 documents in batch 30
+2025-04-09 15:04:26,986 - INFO - Successfully uploaded export_batch_30_20250409_150426.parquet to GCS
+2025-04-09 15:04:26,987 - INFO - Uploaded batch 30 to GCS with 1000/1000 rows.
+2025-04-09 15:04:27,060 - INFO - Processed 1000/1000 documents in batch 31
+2025-04-09 15:04:27,231 - INFO - Successfully uploaded export_batch_31_20250409_150427.parquet to GCS
+2025-04-09 15:04:27,231 - INFO - Uploaded batch 31 to GCS with 1000/1000 rows.
+2025-04-09 15:04:27,300 - INFO - Processed 1000/1000 documents in batch 32
+2025-04-09 15:04:27,477 - INFO - Successfully uploaded export_batch_32_20250409_150427.parquet to GCS
+2025-04-09 15:04:27,478 - INFO - Uploaded batch 32 to GCS with 1000/1000 rows.
+2025-04-09 15:04:27,548 - INFO - Processed 1000/1000 documents in batch 33
+2025-04-09 15:04:27,752 - INFO - Successfully uploaded export_batch_33_20250409_150427.parquet to GCS
+2025-04-09 15:04:27,753 - INFO - Uploaded batch 33 to GCS with 1000/1000 rows.
+2025-04-09 15:04:27,824 - INFO - Processed 1000/1000 documents in batch 34
+2025-04-09 15:04:28,019 - INFO - Successfully uploaded export_batch_34_20250409_150427.parquet to GCS
+2025-04-09 15:04:28,019 - INFO - Uploaded batch 34 to GCS with 1000/1000 rows.
+2025-04-09 15:04:28,092 - INFO - Processed 1000/1000 documents in batch 35
+2025-04-09 15:04:28,299 - INFO - Successfully uploaded export_batch_35_20250409_150428.parquet to GCS
+2025-04-09 15:04:28,299 - INFO - Uploaded batch 35 to GCS with 1000/1000 rows.
+2025-04-09 15:04:28,370 - INFO - Processed 1000/1000 documents in batch 36
+2025-04-09 15:04:28,572 - INFO - Successfully uploaded export_batch_36_20250409_150428.parquet to GCS
+2025-04-09 15:04:28,573 - INFO - Uploaded batch 36 to GCS with 1000/1000 rows.
+2025-04-09 15:04:28,647 - INFO - Processed 1000/1000 documents in batch 37
+2025-04-09 15:04:28,835 - INFO - Successfully uploaded export_batch_37_20250409_150428.parquet to GCS
+2025-04-09 15:04:28,835 - INFO - Uploaded batch 37 to GCS with 1000/1000 rows.
+2025-04-09 15:04:28,965 - INFO - Processed 1000/1000 documents in batch 38
+2025-04-09 15:04:29,143 - INFO - Successfully uploaded export_batch_38_20250409_150428.parquet to GCS
+2025-04-09 15:04:29,143 - INFO - Uploaded batch 38 to GCS with 1000/1000 rows.
+2025-04-09 15:04:29,240 - INFO - Processed 1000/1000 documents in batch 39
+2025-04-09 15:04:29,431 - INFO - Successfully uploaded export_batch_39_20250409_150429.parquet to GCS
+2025-04-09 15:04:29,431 - INFO - Uploaded batch 39 to GCS with 1000/1000 rows.
+2025-04-09 15:04:29,519 - INFO - Processed 1000/1000 documents in batch 40
+2025-04-09 15:04:29,703 - INFO - Successfully uploaded export_batch_40_20250409_150429.parquet to GCS
+2025-04-09 15:04:29,703 - INFO - Uploaded batch 40 to GCS with 1000/1000 rows.
+2025-04-09 15:04:29,794 - INFO - Processed 1000/1000 documents in batch 41
+2025-04-09 15:04:29,971 - INFO - Successfully uploaded export_batch_41_20250409_150429.parquet to GCS
+2025-04-09 15:04:29,972 - INFO - Uploaded batch 41 to GCS with 1000/1000 rows.
+2025-04-09 15:04:30,055 - INFO - Processed 1000/1000 documents in batch 42
+2025-04-09 15:04:30,235 - INFO - Successfully uploaded export_batch_42_20250409_150430.parquet to GCS
+2025-04-09 15:04:30,235 - INFO - Uploaded batch 42 to GCS with 1000/1000 rows.
+2025-04-09 15:04:30,319 - INFO - Processed 1000/1000 documents in batch 43
+2025-04-09 15:04:30,499 - INFO - Successfully uploaded export_batch_43_20250409_150430.parquet to GCS
+2025-04-09 15:04:30,499 - INFO - Uploaded batch 43 to GCS with 1000/1000 rows.
+2025-04-09 15:04:30,626 - INFO - Processed 1000/1000 documents in batch 44
+2025-04-09 15:04:30,812 - INFO - Successfully uploaded export_batch_44_20250409_150430.parquet to GCS
+2025-04-09 15:04:30,813 - INFO - Uploaded batch 44 to GCS with 1000/1000 rows.
+2025-04-09 15:04:30,890 - INFO - Processed 1000/1000 documents in batch 45
+2025-04-09 15:04:31,096 - INFO - Successfully uploaded export_batch_45_20250409_150430.parquet to GCS
+2025-04-09 15:04:31,096 - INFO - Uploaded batch 45 to GCS with 1000/1000 rows.
+2025-04-09 15:04:31,176 - INFO - Processed 1000/1000 documents in batch 46
+2025-04-09 15:04:31,373 - INFO - Successfully uploaded export_batch_46_20250409_150431.parquet to GCS
+2025-04-09 15:04:31,373 - INFO - Uploaded batch 46 to GCS with 1000/1000 rows.
+2025-04-09 15:04:31,451 - INFO - Processed 1000/1000 documents in batch 47
+2025-04-09 15:04:31,615 - INFO - Successfully uploaded export_batch_47_20250409_150431.parquet to GCS
+2025-04-09 15:04:31,616 - INFO - Uploaded batch 47 to GCS with 1000/1000 rows.
+2025-04-09 15:04:31,694 - INFO - Processed 1000/1000 documents in batch 48
+2025-04-09 15:04:31,838 - INFO - Successfully uploaded export_batch_48_20250409_150431.parquet to GCS
+2025-04-09 15:04:31,839 - INFO - Uploaded batch 48 to GCS with 1000/1000 rows.
+2025-04-09 15:04:31,917 - INFO - Processed 1000/1000 documents in batch 49
+2025-04-09 15:04:32,083 - INFO - Successfully uploaded export_batch_49_20250409_150431.parquet to GCS
+2025-04-09 15:04:32,083 - INFO - Uploaded batch 49 to GCS with 1000/1000 rows.
+2025-04-09 15:04:32,169 - INFO - Processed 1000/1000 documents in batch 50
+2025-04-09 15:04:32,348 - INFO - Successfully uploaded export_batch_50_20250409_150432.parquet to GCS
+2025-04-09 15:04:32,348 - INFO - Uploaded batch 50 to GCS with 1000/1000 rows.
+2025-04-09 15:04:32,453 - INFO - Processed 1000/1000 documents in batch 51
+2025-04-09 15:04:32,610 - INFO - Successfully uploaded export_batch_51_20250409_150432.parquet to GCS
+2025-04-09 15:04:32,611 - INFO - Uploaded batch 51 to GCS with 1000/1000 rows.
+2025-04-09 15:04:32,693 - INFO - Processed 1000/1000 documents in batch 52
+2025-04-09 15:04:32,874 - INFO - Successfully uploaded export_batch_52_20250409_150432.parquet to GCS
+2025-04-09 15:04:32,875 - INFO - Uploaded batch 52 to GCS with 1000/1000 rows.
+2025-04-09 15:04:32,956 - INFO - Processed 1000/1000 documents in batch 53
+2025-04-09 15:04:33,141 - INFO - Successfully uploaded export_batch_53_20250409_150432.parquet to GCS
+2025-04-09 15:04:33,141 - INFO - Uploaded batch 53 to GCS with 1000/1000 rows.
+2025-04-09 15:04:33,220 - INFO - Processed 1000/1000 documents in batch 54
+2025-04-09 15:04:33,405 - INFO - Successfully uploaded export_batch_54_20250409_150433.parquet to GCS
+2025-04-09 15:04:33,405 - INFO - Uploaded batch 54 to GCS with 1000/1000 rows.
+2025-04-09 15:04:33,490 - INFO - Processed 1000/1000 documents in batch 55
+2025-04-09 15:04:33,673 - INFO - Successfully uploaded export_batch_55_20250409_150433.parquet to GCS
+2025-04-09 15:04:33,673 - INFO - Uploaded batch 55 to GCS with 1000/1000 rows.
+2025-04-09 15:04:33,752 - INFO - Processed 1000/1000 documents in batch 56
+2025-04-09 15:04:33,936 - INFO - Successfully uploaded export_batch_56_20250409_150433.parquet to GCS
+2025-04-09 15:04:33,937 - INFO - Uploaded batch 56 to GCS with 1000/1000 rows.
+2025-04-09 15:04:34,034 - INFO - Processed 1000/1000 documents in batch 57
+2025-04-09 15:04:34,261 - INFO - Successfully uploaded export_batch_57_20250409_150433.parquet to GCS
+2025-04-09 15:04:34,261 - INFO - Uploaded batch 57 to GCS with 1000/1000 rows.
+2025-04-09 15:04:34,363 - INFO - Processed 1000/1000 documents in batch 58
+2025-04-09 15:04:34,543 - INFO - Successfully uploaded export_batch_58_20250409_150434.parquet to GCS
+2025-04-09 15:04:34,543 - INFO - Uploaded batch 58 to GCS with 1000/1000 rows.
+2025-04-09 15:04:34,723 - INFO - Processed 1000/1000 documents in batch 59
+2025-04-09 15:04:34,905 - INFO - Successfully uploaded export_batch_59_20250409_150434.parquet to GCS
+2025-04-09 15:04:34,905 - INFO - Uploaded batch 59 to GCS with 1000/1000 rows.
+2025-04-09 15:04:35,004 - INFO - Processed 1000/1000 documents in batch 60
+2025-04-09 15:04:35,189 - INFO - Successfully uploaded export_batch_60_20250409_150434.parquet to GCS
+2025-04-09 15:04:35,190 - INFO - Uploaded batch 60 to GCS with 1000/1000 rows.
+2025-04-09 15:04:35,284 - INFO - Processed 1000/1000 documents in batch 61
+2025-04-09 15:04:35,465 - INFO - Successfully uploaded export_batch_61_20250409_150435.parquet to GCS
+2025-04-09 15:04:35,465 - INFO - Uploaded batch 61 to GCS with 1000/1000 rows.
+2025-04-09 15:04:35,567 - INFO - Processed 1000/1000 documents in batch 62
+2025-04-09 15:04:35,755 - INFO - Successfully uploaded export_batch_62_20250409_150435.parquet to GCS
+2025-04-09 15:04:35,755 - INFO - Uploaded batch 62 to GCS with 1000/1000 rows.
+2025-04-09 15:04:35,847 - INFO - Processed 1000/1000 documents in batch 63
+2025-04-09 15:04:36,030 - INFO - Successfully uploaded export_batch_63_20250409_150435.parquet to GCS
+2025-04-09 15:04:36,030 - INFO - Uploaded batch 63 to GCS with 1000/1000 rows.
+2025-04-09 15:04:36,179 - INFO - Processed 1000/1000 documents in batch 64
+2025-04-09 15:04:36,375 - INFO - Successfully uploaded export_batch_64_20250409_150436.parquet to GCS
+2025-04-09 15:04:36,375 - INFO - Uploaded batch 64 to GCS with 1000/1000 rows.
+2025-04-09 15:04:36,489 - INFO - Processed 1000/1000 documents in batch 65
+2025-04-09 15:04:36,674 - INFO - Successfully uploaded export_batch_65_20250409_150436.parquet to GCS
+2025-04-09 15:04:36,674 - INFO - Uploaded batch 65 to GCS with 1000/1000 rows.
+2025-04-09 15:04:36,787 - INFO - Processed 1000/1000 documents in batch 66
+2025-04-09 15:04:36,980 - INFO - Successfully uploaded export_batch_66_20250409_150436.parquet to GCS
+2025-04-09 15:04:36,980 - INFO - Uploaded batch 66 to GCS with 1000/1000 rows.
+2025-04-09 15:04:37,090 - INFO - Processed 1000/1000 documents in batch 67
+2025-04-09 15:04:37,293 - INFO - Successfully uploaded export_batch_67_20250409_150437.parquet to GCS
+2025-04-09 15:04:37,294 - INFO - Uploaded batch 67 to GCS with 1000/1000 rows.
+2025-04-09 15:04:37,380 - INFO - Processed 1000/1000 documents in batch 68
+2025-04-09 15:04:37,568 - INFO - Successfully uploaded export_batch_68_20250409_150437.parquet to GCS
+2025-04-09 15:04:37,568 - INFO - Uploaded batch 68 to GCS with 1000/1000 rows.
+2025-04-09 15:04:37,665 - INFO - Processed 1000/1000 documents in batch 69
+2025-04-09 15:04:37,845 - INFO - Successfully uploaded export_batch_69_20250409_150437.parquet to GCS
+2025-04-09 15:04:37,845 - INFO - Uploaded batch 69 to GCS with 1000/1000 rows.
+2025-04-09 15:04:37,938 - INFO - Processed 1000/1000 documents in batch 70
+2025-04-09 15:04:38,117 - INFO - Successfully uploaded export_batch_70_20250409_150437.parquet to GCS
+2025-04-09 15:04:38,118 - INFO - Uploaded batch 70 to GCS with 1000/1000 rows.
+2025-04-09 15:04:38,209 - INFO - Processed 1000/1000 documents in batch 71
+2025-04-09 15:04:38,392 - INFO - Successfully uploaded export_batch_71_20250409_150438.parquet to GCS
+2025-04-09 15:04:38,392 - INFO - Uploaded batch 71 to GCS with 1000/1000 rows.
+2025-04-09 15:04:38,483 - INFO - Processed 1000/1000 documents in batch 72
+2025-04-09 15:04:38,680 - INFO - Successfully uploaded export_batch_72_20250409_150438.parquet to GCS
+2025-04-09 15:04:38,680 - INFO - Uploaded batch 72 to GCS with 1000/1000 rows.
+2025-04-09 15:04:38,943 - INFO - Processed 1000/1000 documents in batch 73
+2025-04-09 15:04:39,135 - INFO - Successfully uploaded export_batch_73_20250409_150438.parquet to GCS
+2025-04-09 15:04:39,135 - INFO - Uploaded batch 73 to GCS with 1000/1000 rows.
+2025-04-09 15:04:39,279 - INFO - Processed 1000/1000 documents in batch 74
+2025-04-09 15:04:39,487 - INFO - Successfully uploaded export_batch_74_20250409_150439.parquet to GCS
+2025-04-09 15:04:39,488 - INFO - Uploaded batch 74 to GCS with 1000/1000 rows.
+2025-04-09 15:04:39,758 - INFO - Processed 1000/1000 documents in batch 75
+2025-04-09 15:04:39,944 - INFO - Successfully uploaded export_batch_75_20250409_150439.parquet to GCS
+2025-04-09 15:04:39,944 - INFO - Uploaded batch 75 to GCS with 1000/1000 rows.
+2025-04-09 15:04:40,039 - INFO - Processed 1000/1000 documents in batch 76
+2025-04-09 15:04:40,272 - INFO - Successfully uploaded export_batch_76_20250409_150439.parquet to GCS
+2025-04-09 15:04:40,272 - INFO - Uploaded batch 76 to GCS with 1000/1000 rows.
+2025-04-09 15:04:40,515 - INFO - Processed 1000/1000 documents in batch 77
+2025-04-09 15:04:40,697 - INFO - Successfully uploaded export_batch_77_20250409_150440.parquet to GCS
+2025-04-09 15:04:40,697 - INFO - Uploaded batch 77 to GCS with 1000/1000 rows.
+2025-04-09 15:04:40,791 - INFO - Processed 1000/1000 documents in batch 78
+2025-04-09 15:04:40,972 - INFO - Successfully uploaded export_batch_78_20250409_150440.parquet to GCS
+2025-04-09 15:04:40,972 - INFO - Uploaded batch 78 to GCS with 1000/1000 rows.
+2025-04-09 15:04:41,066 - INFO - Processed 1000/1000 documents in batch 79
+2025-04-09 15:04:41,247 - INFO - Successfully uploaded export_batch_79_20250409_150441.parquet to GCS
+2025-04-09 15:04:41,247 - INFO - Uploaded batch 79 to GCS with 1000/1000 rows.
+2025-04-09 15:04:41,343 - INFO - Processed 1000/1000 documents in batch 80
+2025-04-09 15:04:41,530 - INFO - Successfully uploaded export_batch_80_20250409_150441.parquet to GCS
+2025-04-09 15:04:41,530 - INFO - Uploaded batch 80 to GCS with 1000/1000 rows.
+2025-04-09 15:04:41,626 - INFO - Processed 1000/1000 documents in batch 81
+2025-04-09 15:04:41,802 - INFO - Successfully uploaded export_batch_81_20250409_150441.parquet to GCS
+2025-04-09 15:04:41,803 - INFO - Uploaded batch 81 to GCS with 1000/1000 rows.
+2025-04-09 15:04:41,907 - INFO - Processed 1000/1000 documents in batch 82
+2025-04-09 15:04:42,106 - INFO - Successfully uploaded export_batch_82_20250409_150441.parquet to GCS
+2025-04-09 15:04:42,107 - INFO - Uploaded batch 82 to GCS with 1000/1000 rows.
+2025-04-09 15:04:42,230 - INFO - Processed 1000/1000 documents in batch 83
+2025-04-09 15:04:42,406 - INFO - Successfully uploaded export_batch_83_20250409_150442.parquet to GCS
+2025-04-09 15:04:42,406 - INFO - Uploaded batch 83 to GCS with 1000/1000 rows.
+2025-04-09 15:04:42,523 - INFO - Processed 1000/1000 documents in batch 84
+2025-04-09 15:04:42,762 - INFO - Successfully uploaded export_batch_84_20250409_150442.parquet to GCS
+2025-04-09 15:04:42,763 - INFO - Uploaded batch 84 to GCS with 1000/1000 rows.
+2025-04-09 15:04:42,879 - INFO - Processed 1000/1000 documents in batch 85
+2025-04-09 15:04:43,087 - INFO - Successfully uploaded export_batch_85_20250409_150442.parquet to GCS
+2025-04-09 15:04:43,087 - INFO - Uploaded batch 85 to GCS with 1000/1000 rows.
+2025-04-09 15:04:43,194 - INFO - Processed 1000/1000 documents in batch 86
+2025-04-09 15:04:43,377 - INFO - Successfully uploaded export_batch_86_20250409_150443.parquet to GCS
+2025-04-09 15:04:43,377 - INFO - Uploaded batch 86 to GCS with 1000/1000 rows.
+2025-04-09 15:04:43,482 - INFO - Processed 1000/1000 documents in batch 87
+2025-04-09 15:04:43,633 - INFO - Successfully uploaded export_batch_87_20250409_150443.parquet to GCS
+2025-04-09 15:04:43,633 - INFO - Uploaded batch 87 to GCS with 1000/1000 rows.
+2025-04-09 15:04:43,730 - INFO - Processed 1000/1000 documents in batch 88
+2025-04-09 15:04:43,911 - INFO - Successfully uploaded export_batch_88_20250409_150443.parquet to GCS
+2025-04-09 15:04:43,912 - INFO - Uploaded batch 88 to GCS with 1000/1000 rows.
+2025-04-09 15:04:44,055 - INFO - Processed 1000/1000 documents in batch 89
+2025-04-09 15:04:44,232 - INFO - Successfully uploaded export_batch_89_20250409_150444.parquet to GCS
+2025-04-09 15:04:44,233 - INFO - Uploaded batch 89 to GCS with 1000/1000 rows.
+2025-04-09 15:04:44,334 - INFO - Processed 1000/1000 documents in batch 90
+2025-04-09 15:04:44,552 - INFO - Successfully uploaded export_batch_90_20250409_150444.parquet to GCS
+2025-04-09 15:04:44,552 - INFO - Uploaded batch 90 to GCS with 1000/1000 rows.
+2025-04-09 15:04:44,653 - INFO - Processed 1000/1000 documents in batch 91
+2025-04-09 15:04:44,835 - INFO - Successfully uploaded export_batch_91_20250409_150444.parquet to GCS
+2025-04-09 15:04:44,836 - INFO - Uploaded batch 91 to GCS with 1000/1000 rows.
+2025-04-09 15:04:44,937 - INFO - Processed 1000/1000 documents in batch 92
+2025-04-09 15:04:45,137 - INFO - Successfully uploaded export_batch_92_20250409_150444.parquet to GCS
+2025-04-09 15:04:45,137 - INFO - Uploaded batch 92 to GCS with 1000/1000 rows.
+2025-04-09 15:04:45,251 - INFO - Processed 1000/1000 documents in batch 93
+2025-04-09 15:04:45,430 - INFO - Successfully uploaded export_batch_93_20250409_150445.parquet to GCS
+2025-04-09 15:04:45,430 - INFO - Uploaded batch 93 to GCS with 1000/1000 rows.
+2025-04-09 15:04:45,531 - INFO - Processed 1000/1000 documents in batch 94
+2025-04-09 15:04:45,724 - INFO - Successfully uploaded export_batch_94_20250409_150445.parquet to GCS
+2025-04-09 15:04:45,724 - INFO - Uploaded batch 94 to GCS with 1000/1000 rows.
+2025-04-09 15:04:45,831 - INFO - Processed 1000/1000 documents in batch 95
+2025-04-09 15:04:46,023 - INFO - Successfully uploaded export_batch_95_20250409_150445.parquet to GCS
+2025-04-09 15:04:46,023 - INFO - Uploaded batch 95 to GCS with 1000/1000 rows.
+2025-04-09 15:04:46,126 - INFO - Processed 1000/1000 documents in batch 96
+2025-04-09 15:04:46,312 - INFO - Successfully uploaded export_batch_96_20250409_150446.parquet to GCS
+2025-04-09 15:04:46,312 - INFO - Uploaded batch 96 to GCS with 1000/1000 rows.
+2025-04-09 15:04:46,418 - INFO - Processed 1000/1000 documents in batch 97
+2025-04-09 15:04:46,580 - INFO - Successfully uploaded export_batch_97_20250409_150446.parquet to GCS
+2025-04-09 15:04:46,580 - INFO - Uploaded batch 97 to GCS with 1000/1000 rows.
+2025-04-09 15:04:46,682 - INFO - Processed 1000/1000 documents in batch 98
+2025-04-09 15:04:46,880 - INFO - Successfully uploaded export_batch_98_20250409_150446.parquet to GCS
+2025-04-09 15:04:46,880 - INFO - Uploaded batch 98 to GCS with 1000/1000 rows.
+2025-04-09 15:04:46,981 - INFO - Processed 1000/1000 documents in batch 99
+2025-04-09 15:04:47,194 - INFO - Successfully uploaded export_batch_99_20250409_150446.parquet to GCS
+2025-04-09 15:04:47,194 - INFO - Uploaded batch 99 to GCS with 1000/1000 rows.
+2025-04-09 15:04:47,194 - INFO - Export completed successfully
+2025-04-11 01:31:33,970 - INFO - Successfully connected to MongoDB
+2025-04-11 01:31:36,164 - INFO - Successfully connected to GCS
+2025-04-11 01:31:36,167 - INFO - Total documents to process: 41432473
+2025-04-11 01:31:36,167 - INFO - Limiting processing to the first 100000 documents for testing.
+2025-04-11 01:31:36,306 - INFO - Processed 1000/1000 documents in batch 0
+2025-04-11 01:31:36,484 - INFO - Successfully uploaded export_batch_0_20250411_013136.parquet to GCS
+2025-04-11 01:31:36,484 - INFO - Uploaded batch 0 to GCS with 1000/1000 rows.
+2025-04-11 01:31:36,540 - INFO - Processed 1000/1000 documents in batch 1
+2025-04-11 01:31:36,786 - INFO - Successfully uploaded export_batch_1_20250411_013136.parquet to GCS
+2025-04-11 01:31:36,787 - INFO - Uploaded batch 1 to GCS with 1000/1000 rows.
+2025-04-11 01:31:36,841 - INFO - Processed 1000/1000 documents in batch 2
+2025-04-11 01:31:37,060 - INFO - Successfully uploaded export_batch_2_20250411_013136.parquet to GCS
+2025-04-11 01:31:37,060 - INFO - Uploaded batch 2 to GCS with 1000/1000 rows.
+2025-04-11 01:31:37,119 - INFO - Processed 1000/1000 documents in batch 3
+2025-04-11 01:31:37,327 - INFO - Successfully uploaded export_batch_3_20250411_013137.parquet to GCS
+2025-04-11 01:31:37,327 - INFO - Uploaded batch 3 to GCS with 1000/1000 rows.
+2025-04-11 01:31:37,382 - INFO - Processed 1000/1000 documents in batch 4
+2025-04-11 01:31:37,585 - INFO - Successfully uploaded export_batch_4_20250411_013137.parquet to GCS
+2025-04-11 01:31:37,585 - INFO - Uploaded batch 4 to GCS with 1000/1000 rows.
+2025-04-11 01:31:37,643 - INFO - Processed 1000/1000 documents in batch 5
+2025-04-11 01:31:37,842 - INFO - Successfully uploaded export_batch_5_20250411_013137.parquet to GCS
+2025-04-11 01:31:37,842 - INFO - Uploaded batch 5 to GCS with 1000/1000 rows.
+2025-04-11 01:31:37,902 - INFO - Processed 1000/1000 documents in batch 6
+2025-04-11 01:31:38,297 - INFO - Successfully uploaded export_batch_6_20250411_013137.parquet to GCS
+2025-04-11 01:31:38,297 - INFO - Uploaded batch 6 to GCS with 1000/1000 rows.
+2025-04-11 01:31:38,358 - INFO - Processed 1000/1000 documents in batch 7
+2025-04-11 01:31:38,639 - INFO - Successfully uploaded export_batch_7_20250411_013138.parquet to GCS
+2025-04-11 01:31:38,640 - INFO - Uploaded batch 7 to GCS with 1000/1000 rows.
+2025-04-11 01:31:38,711 - INFO - Processed 1000/1000 documents in batch 8
+2025-04-11 01:31:38,904 - INFO - Successfully uploaded export_batch_8_20250411_013138.parquet to GCS
+2025-04-11 01:31:38,905 - INFO - Uploaded batch 8 to GCS with 1000/1000 rows.
+2025-04-11 01:31:38,967 - INFO - Processed 1000/1000 documents in batch 9
+2025-04-11 01:31:39,175 - INFO - Successfully uploaded export_batch_9_20250411_013138.parquet to GCS
+2025-04-11 01:31:39,175 - INFO - Uploaded batch 9 to GCS with 1000/1000 rows.
+2025-04-11 01:31:39,233 - INFO - Processed 1000/1000 documents in batch 10
+2025-04-11 01:31:39,430 - INFO - Successfully uploaded export_batch_10_20250411_013139.parquet to GCS
+2025-04-11 01:31:39,431 - INFO - Uploaded batch 10 to GCS with 1000/1000 rows.
+2025-04-11 01:31:39,538 - INFO - Processed 1000/1000 documents in batch 11
+2025-04-11 01:31:39,728 - INFO - Successfully uploaded export_batch_11_20250411_013139.parquet to GCS
+2025-04-11 01:31:39,729 - INFO - Uploaded batch 11 to GCS with 1000/1000 rows.
+2025-04-11 01:31:39,795 - INFO - Processed 1000/1000 documents in batch 12
+2025-04-11 01:31:39,986 - INFO - Successfully uploaded export_batch_12_20250411_013139.parquet to GCS
+2025-04-11 01:31:39,986 - INFO - Uploaded batch 12 to GCS with 1000/1000 rows.
+2025-04-11 01:31:40,078 - INFO - Processed 1000/1000 documents in batch 13
+2025-04-11 01:31:40,275 - INFO - Successfully uploaded export_batch_13_20250411_013140.parquet to GCS
+2025-04-11 01:31:40,276 - INFO - Uploaded batch 13 to GCS with 1000/1000 rows.
+2025-04-11 01:31:40,342 - INFO - Processed 1000/1000 documents in batch 14
+2025-04-11 01:31:40,540 - INFO - Successfully uploaded export_batch_14_20250411_013140.parquet to GCS
+2025-04-11 01:31:40,541 - INFO - Uploaded batch 14 to GCS with 1000/1000 rows.
+2025-04-11 01:31:40,602 - INFO - Processed 1000/1000 documents in batch 15
+2025-04-11 01:31:40,787 - INFO - Successfully uploaded export_batch_15_20250411_013140.parquet to GCS
+2025-04-11 01:31:40,787 - INFO - Uploaded batch 15 to GCS with 1000/1000 rows.
+2025-04-11 01:31:40,851 - INFO - Processed 1000/1000 documents in batch 16
+2025-04-11 01:31:41,056 - INFO - Successfully uploaded export_batch_16_20250411_013140.parquet to GCS
+2025-04-11 01:31:41,057 - INFO - Uploaded batch 16 to GCS with 1000/1000 rows.
+2025-04-11 01:31:41,122 - INFO - Processed 1000/1000 documents in batch 17
+2025-04-11 01:31:41,295 - INFO - Successfully uploaded export_batch_17_20250411_013141.parquet to GCS
+2025-04-11 01:31:41,296 - INFO - Uploaded batch 17 to GCS with 1000/1000 rows.
+2025-04-11 01:31:41,363 - INFO - Processed 1000/1000 documents in batch 18
+2025-04-11 01:31:41,538 - INFO - Successfully uploaded export_batch_18_20250411_013141.parquet to GCS
+2025-04-11 01:31:41,538 - INFO - Uploaded batch 18 to GCS with 1000/1000 rows.
+2025-04-11 01:31:41,603 - INFO - Processed 1000/1000 documents in batch 19
+2025-04-11 01:31:41,795 - INFO - Successfully uploaded export_batch_19_20250411_013141.parquet to GCS
+2025-04-11 01:31:41,795 - INFO - Uploaded batch 19 to GCS with 1000/1000 rows.
+2025-04-11 01:31:41,860 - INFO - Processed 1000/1000 documents in batch 20
+2025-04-11 01:31:42,037 - INFO - Successfully uploaded export_batch_20_20250411_013141.parquet to GCS
+2025-04-11 01:31:42,038 - INFO - Uploaded batch 20 to GCS with 1000/1000 rows.
+2025-04-11 01:31:42,141 - INFO - Processed 1000/1000 documents in batch 21
+2025-04-11 01:31:42,330 - INFO - Successfully uploaded export_batch_21_20250411_013142.parquet to GCS
+2025-04-11 01:31:42,331 - INFO - Uploaded batch 21 to GCS with 1000/1000 rows.
+2025-04-11 01:31:42,469 - INFO - Processed 1000/1000 documents in batch 22
+2025-04-11 01:31:42,645 - INFO - Successfully uploaded export_batch_22_20250411_013142.parquet to GCS
+2025-04-11 01:31:42,645 - INFO - Uploaded batch 22 to GCS with 1000/1000 rows.
+2025-04-11 01:31:42,714 - INFO - Processed 1000/1000 documents in batch 23
+2025-04-11 01:31:42,907 - INFO - Successfully uploaded export_batch_23_20250411_013142.parquet to GCS
+2025-04-11 01:31:42,907 - INFO - Uploaded batch 23 to GCS with 1000/1000 rows.
+2025-04-11 01:31:42,973 - INFO - Processed 1000/1000 documents in batch 24
+2025-04-11 01:31:43,165 - INFO - Successfully uploaded export_batch_24_20250411_013142.parquet to GCS
+2025-04-11 01:31:43,166 - INFO - Uploaded batch 24 to GCS with 1000/1000 rows.
+2025-04-11 01:31:43,234 - INFO - Processed 1000/1000 documents in batch 25
+2025-04-11 01:31:43,426 - INFO - Successfully uploaded export_batch_25_20250411_013143.parquet to GCS
+2025-04-11 01:31:43,427 - INFO - Uploaded batch 25 to GCS with 1000/1000 rows.
+2025-04-11 01:31:43,496 - INFO - Processed 1000/1000 documents in batch 26
+2025-04-11 01:31:43,684 - INFO - Successfully uploaded export_batch_26_20250411_013143.parquet to GCS
+2025-04-11 01:31:43,685 - INFO - Uploaded batch 26 to GCS with 1000/1000 rows.
+2025-04-11 01:31:43,754 - INFO - Processed 1000/1000 documents in batch 27
+2025-04-11 01:31:43,930 - INFO - Successfully uploaded export_batch_27_20250411_013143.parquet to GCS
+2025-04-11 01:31:43,930 - INFO - Uploaded batch 27 to GCS with 1000/1000 rows.
+2025-04-11 01:31:44,001 - INFO - Processed 1000/1000 documents in batch 28
+2025-04-11 01:31:44,198 - INFO - Successfully uploaded export_batch_28_20250411_013143.parquet to GCS
+2025-04-11 01:31:44,198 - INFO - Uploaded batch 28 to GCS with 1000/1000 rows.
+2025-04-11 01:31:44,275 - INFO - Processed 1000/1000 documents in batch 29
+2025-04-11 01:31:44,469 - INFO - Successfully uploaded export_batch_29_20250411_013144.parquet to GCS
+2025-04-11 01:31:44,469 - INFO - Uploaded batch 29 to GCS with 1000/1000 rows.
+2025-04-11 01:31:44,571 - INFO - Processed 1000/1000 documents in batch 30
+2025-04-11 01:31:44,778 - INFO - Successfully uploaded export_batch_30_20250411_013144.parquet to GCS
+2025-04-11 01:31:44,778 - INFO - Uploaded batch 30 to GCS with 1000/1000 rows.
+2025-04-11 01:31:44,852 - INFO - Processed 1000/1000 documents in batch 31
+2025-04-11 01:31:45,037 - INFO - Successfully uploaded export_batch_31_20250411_013144.parquet to GCS
+2025-04-11 01:31:45,037 - INFO - Uploaded batch 31 to GCS with 1000/1000 rows.
+2025-04-11 01:31:45,111 - INFO - Processed 1000/1000 documents in batch 32
+2025-04-11 01:31:45,316 - INFO - Successfully uploaded export_batch_32_20250411_013145.parquet to GCS
+2025-04-11 01:31:45,316 - INFO - Uploaded batch 32 to GCS with 1000/1000 rows.
+2025-04-11 01:31:45,439 - INFO - Processed 1000/1000 documents in batch 33
+2025-04-11 01:31:45,607 - INFO - Successfully uploaded export_batch_33_20250411_013145.parquet to GCS
+2025-04-11 01:31:45,608 - INFO - Uploaded batch 33 to GCS with 1000/1000 rows.
+2025-04-11 01:31:45,683 - INFO - Processed 1000/1000 documents in batch 34
+2025-04-11 01:31:45,860 - INFO - Successfully uploaded export_batch_34_20250411_013145.parquet to GCS
+2025-04-11 01:31:45,860 - INFO - Uploaded batch 34 to GCS with 1000/1000 rows.
+2025-04-11 01:31:45,941 - INFO - Processed 1000/1000 documents in batch 35
+2025-04-11 01:31:46,109 - INFO - Successfully uploaded export_batch_35_20250411_013145.parquet to GCS
+2025-04-11 01:31:46,109 - INFO - Uploaded batch 35 to GCS with 1000/1000 rows.
+2025-04-11 01:31:46,185 - INFO - Processed 1000/1000 documents in batch 36
+2025-04-11 01:31:46,382 - INFO - Successfully uploaded export_batch_36_20250411_013146.parquet to GCS
+2025-04-11 01:31:46,382 - INFO - Uploaded batch 36 to GCS with 1000/1000 rows.
+2025-04-11 01:31:46,458 - INFO - Processed 1000/1000 documents in batch 37
+2025-04-11 01:31:46,645 - INFO - Successfully uploaded export_batch_37_20250411_013146.parquet to GCS
+2025-04-11 01:31:46,645 - INFO - Uploaded batch 37 to GCS with 1000/1000 rows.
+2025-04-11 01:31:46,720 - INFO - Processed 1000/1000 documents in batch 38
+2025-04-11 01:31:46,896 - INFO - Successfully uploaded export_batch_38_20250411_013146.parquet to GCS
+2025-04-11 01:31:46,896 - INFO - Uploaded batch 38 to GCS with 1000/1000 rows.
+2025-04-11 01:31:46,976 - INFO - Processed 1000/1000 documents in batch 39
+2025-04-11 01:31:47,159 - INFO - Successfully uploaded export_batch_39_20250411_013146.parquet to GCS
+2025-04-11 01:31:47,159 - INFO - Uploaded batch 39 to GCS with 1000/1000 rows.
+2025-04-11 01:31:47,237 - INFO - Processed 1000/1000 documents in batch 40
+2025-04-11 01:31:47,431 - INFO - Successfully uploaded export_batch_40_20250411_013147.parquet to GCS
+2025-04-11 01:31:47,432 - INFO - Uploaded batch 40 to GCS with 1000/1000 rows.
+2025-04-11 01:31:47,514 - INFO - Processed 1000/1000 documents in batch 41
+2025-04-11 01:31:47,691 - INFO - Successfully uploaded export_batch_41_20250411_013147.parquet to GCS
+2025-04-11 01:31:47,691 - INFO - Uploaded batch 41 to GCS with 1000/1000 rows.
+2025-04-11 01:31:47,772 - INFO - Processed 1000/1000 documents in batch 42
+2025-04-11 01:31:47,964 - INFO - Successfully uploaded export_batch_42_20250411_013147.parquet to GCS
+2025-04-11 01:31:47,964 - INFO - Uploaded batch 42 to GCS with 1000/1000 rows.
+2025-04-11 01:31:48,048 - INFO - Processed 1000/1000 documents in batch 43
+2025-04-11 01:31:48,236 - INFO - Successfully uploaded export_batch_43_20250411_013147.parquet to GCS
+2025-04-11 01:31:48,237 - INFO - Uploaded batch 43 to GCS with 1000/1000 rows.
+2025-04-11 01:31:48,361 - INFO - Processed 1000/1000 documents in batch 44
+2025-04-11 01:31:48,563 - INFO - Successfully uploaded export_batch_44_20250411_013148.parquet to GCS
+2025-04-11 01:31:48,563 - INFO - Uploaded batch 44 to GCS with 1000/1000 rows.
+2025-04-11 01:31:48,643 - INFO - Processed 1000/1000 documents in batch 45
+2025-04-11 01:31:48,824 - INFO - Successfully uploaded export_batch_45_20250411_013148.parquet to GCS
+2025-04-11 01:31:48,824 - INFO - Uploaded batch 45 to GCS with 1000/1000 rows.
+2025-04-11 01:31:48,906 - INFO - Processed 1000/1000 documents in batch 46
+2025-04-11 01:31:49,107 - INFO - Successfully uploaded export_batch_46_20250411_013148.parquet to GCS
+2025-04-11 01:31:49,107 - INFO - Uploaded batch 46 to GCS with 1000/1000 rows.
+2025-04-11 01:31:49,191 - INFO - Processed 1000/1000 documents in batch 47
+2025-04-11 01:31:49,395 - INFO - Successfully uploaded export_batch_47_20250411_013149.parquet to GCS
+2025-04-11 01:31:49,395 - INFO - Uploaded batch 47 to GCS with 1000/1000 rows.
+2025-04-11 01:31:49,475 - INFO - Processed 1000/1000 documents in batch 48
+2025-04-11 01:31:49,646 - INFO - Successfully uploaded export_batch_48_20250411_013149.parquet to GCS
+2025-04-11 01:31:49,647 - INFO - Uploaded batch 48 to GCS with 1000/1000 rows.
+2025-04-11 01:31:49,728 - INFO - Processed 1000/1000 documents in batch 49
+2025-04-11 01:31:49,901 - INFO - Successfully uploaded export_batch_49_20250411_013149.parquet to GCS
+2025-04-11 01:31:49,902 - INFO - Uploaded batch 49 to GCS with 1000/1000 rows.
+2025-04-11 01:31:49,983 - INFO - Processed 1000/1000 documents in batch 50
+2025-04-11 01:31:50,172 - INFO - Successfully uploaded export_batch_50_20250411_013149.parquet to GCS
+2025-04-11 01:31:50,172 - INFO - Uploaded batch 50 to GCS with 1000/1000 rows.
+2025-04-11 01:31:50,252 - INFO - Processed 1000/1000 documents in batch 51
+2025-04-11 01:31:50,428 - INFO - Successfully uploaded export_batch_51_20250411_013150.parquet to GCS
+2025-04-11 01:31:50,428 - INFO - Uploaded batch 51 to GCS with 1000/1000 rows.
+2025-04-11 01:31:50,508 - INFO - Processed 1000/1000 documents in batch 52
+2025-04-11 01:31:50,687 - INFO - Successfully uploaded export_batch_52_20250411_013150.parquet to GCS
+2025-04-11 01:31:50,687 - INFO - Uploaded batch 52 to GCS with 1000/1000 rows.
+2025-04-11 01:31:50,769 - INFO - Processed 1000/1000 documents in batch 53
+2025-04-11 01:31:50,968 - INFO - Successfully uploaded export_batch_53_20250411_013150.parquet to GCS
+2025-04-11 01:31:50,968 - INFO - Uploaded batch 53 to GCS with 1000/1000 rows.
+2025-04-11 01:31:51,056 - INFO - Processed 1000/1000 documents in batch 54
+2025-04-11 01:31:51,242 - INFO - Successfully uploaded export_batch_54_20250411_013151.parquet to GCS
+2025-04-11 01:31:51,242 - INFO - Uploaded batch 54 to GCS with 1000/1000 rows.
+2025-04-11 01:31:51,369 - INFO - Processed 1000/1000 documents in batch 55
+2025-04-11 01:31:51,560 - INFO - Successfully uploaded export_batch_55_20250411_013151.parquet to GCS
+2025-04-11 01:31:51,560 - INFO - Uploaded batch 55 to GCS with 1000/1000 rows.
+2025-04-11 01:31:51,648 - INFO - Processed 1000/1000 documents in batch 56
+2025-04-11 01:31:51,835 - INFO - Successfully uploaded export_batch_56_20250411_013151.parquet to GCS
+2025-04-11 01:31:51,836 - INFO - Uploaded batch 56 to GCS with 1000/1000 rows.
+2025-04-11 01:31:51,920 - INFO - Processed 1000/1000 documents in batch 57
+2025-04-11 01:31:52,103 - INFO - Successfully uploaded export_batch_57_20250411_013151.parquet to GCS
+2025-04-11 01:31:52,103 - INFO - Uploaded batch 57 to GCS with 1000/1000 rows.
+2025-04-11 01:31:52,188 - INFO - Processed 1000/1000 documents in batch 58
+2025-04-11 01:31:52,371 - INFO - Successfully uploaded export_batch_58_20250411_013152.parquet to GCS
+2025-04-11 01:31:52,371 - INFO - Uploaded batch 58 to GCS with 1000/1000 rows.
+2025-04-11 01:31:52,462 - INFO - Processed 1000/1000 documents in batch 59
+2025-04-11 01:31:52,644 - INFO - Successfully uploaded export_batch_59_20250411_013152.parquet to GCS
+2025-04-11 01:31:52,644 - INFO - Uploaded batch 59 to GCS with 1000/1000 rows.
+2025-04-11 01:31:52,732 - INFO - Processed 1000/1000 documents in batch 60
+2025-04-11 01:31:52,908 - INFO - Successfully uploaded export_batch_60_20250411_013152.parquet to GCS
+2025-04-11 01:31:52,908 - INFO - Uploaded batch 60 to GCS with 1000/1000 rows.
+2025-04-11 01:31:53,012 - INFO - Processed 1000/1000 documents in batch 61
+2025-04-11 01:31:53,195 - INFO - Successfully uploaded export_batch_61_20250411_013152.parquet to GCS
+2025-04-11 01:31:53,195 - INFO - Uploaded batch 61 to GCS with 1000/1000 rows.
+2025-04-11 01:31:53,280 - INFO - Processed 1000/1000 documents in batch 62
+2025-04-11 01:31:53,460 - INFO - Successfully uploaded export_batch_62_20250411_013153.parquet to GCS
+2025-04-11 01:31:53,460 - INFO - Uploaded batch 62 to GCS with 1000/1000 rows.
+2025-04-11 01:31:53,552 - INFO - Processed 1000/1000 documents in batch 63
+2025-04-11 01:31:53,729 - INFO - Successfully uploaded export_batch_63_20250411_013153.parquet to GCS
+2025-04-11 01:31:53,729 - INFO - Uploaded batch 63 to GCS with 1000/1000 rows.
+2025-04-11 01:31:53,815 - INFO - Processed 1000/1000 documents in batch 64
+2025-04-11 01:31:54,000 - INFO - Successfully uploaded export_batch_64_20250411_013153.parquet to GCS
+2025-04-11 01:31:54,000 - INFO - Uploaded batch 64 to GCS with 1000/1000 rows.
+2025-04-11 01:31:54,087 - INFO - Processed 1000/1000 documents in batch 65
+2025-04-11 01:31:54,268 - INFO - Successfully uploaded export_batch_65_20250411_013154.parquet to GCS
+2025-04-11 01:31:54,268 - INFO - Uploaded batch 65 to GCS with 1000/1000 rows.
+2025-04-11 01:31:54,402 - INFO - Processed 1000/1000 documents in batch 66
+2025-04-11 01:31:54,609 - INFO - Successfully uploaded export_batch_66_20250411_013154.parquet to GCS
+2025-04-11 01:31:54,610 - INFO - Uploaded batch 66 to GCS with 1000/1000 rows.
+2025-04-11 01:31:54,711 - INFO - Processed 1000/1000 documents in batch 67
+2025-04-11 01:31:54,882 - INFO - Successfully uploaded export_batch_67_20250411_013154.parquet to GCS
+2025-04-11 01:31:54,882 - INFO - Uploaded batch 67 to GCS with 1000/1000 rows.
+2025-04-11 01:31:54,973 - INFO - Processed 1000/1000 documents in batch 68
+2025-04-11 01:31:55,147 - INFO - Successfully uploaded export_batch_68_20250411_013154.parquet to GCS
+2025-04-11 01:31:55,147 - INFO - Uploaded batch 68 to GCS with 1000/1000 rows.
+2025-04-11 01:31:55,237 - INFO - Processed 1000/1000 documents in batch 69
+2025-04-11 01:31:55,431 - INFO - Successfully uploaded export_batch_69_20250411_013155.parquet to GCS
+2025-04-11 01:31:55,433 - INFO - Uploaded batch 69 to GCS with 1000/1000 rows.
+2025-04-11 01:31:55,538 - INFO - Processed 1000/1000 documents in batch 70
+2025-04-11 01:31:55,723 - INFO - Successfully uploaded export_batch_70_20250411_013155.parquet to GCS
+2025-04-11 01:31:55,723 - INFO - Uploaded batch 70 to GCS with 1000/1000 rows.
+2025-04-11 01:31:55,815 - INFO - Processed 1000/1000 documents in batch 71
+2025-04-11 01:31:56,015 - INFO - Successfully uploaded export_batch_71_20250411_013155.parquet to GCS
+2025-04-11 01:31:56,015 - INFO - Uploaded batch 71 to GCS with 1000/1000 rows.
+2025-04-11 01:31:56,108 - INFO - Processed 1000/1000 documents in batch 72
+2025-04-11 01:31:56,287 - INFO - Successfully uploaded export_batch_72_20250411_013156.parquet to GCS
+2025-04-11 01:31:56,287 - INFO - Uploaded batch 72 to GCS with 1000/1000 rows.
+2025-04-11 01:31:56,382 - INFO - Processed 1000/1000 documents in batch 73
+2025-04-11 01:31:56,550 - INFO - Successfully uploaded export_batch_73_20250411_013156.parquet to GCS
+2025-04-11 01:31:56,550 - INFO - Uploaded batch 73 to GCS with 1000/1000 rows.
+2025-04-11 01:31:56,644 - INFO - Processed 1000/1000 documents in batch 74
+2025-04-11 01:31:56,832 - INFO - Successfully uploaded export_batch_74_20250411_013156.parquet to GCS
+2025-04-11 01:31:56,832 - INFO - Uploaded batch 74 to GCS with 1000/1000 rows.
+2025-04-11 01:31:56,930 - INFO - Processed 1000/1000 documents in batch 75
+2025-04-11 01:31:57,131 - INFO - Successfully uploaded export_batch_75_20250411_013156.parquet to GCS
+2025-04-11 01:31:57,131 - INFO - Uploaded batch 75 to GCS with 1000/1000 rows.
+2025-04-11 01:31:57,226 - INFO - Processed 1000/1000 documents in batch 76
+2025-04-11 01:31:57,423 - INFO - Successfully uploaded export_batch_76_20250411_013157.parquet to GCS
+2025-04-11 01:31:57,424 - INFO - Uploaded batch 76 to GCS with 1000/1000 rows.
+2025-04-11 01:31:57,585 - INFO - Processed 1000/1000 documents in batch 77
+2025-04-11 01:31:57,781 - INFO - Successfully uploaded export_batch_77_20250411_013157.parquet to GCS
+2025-04-11 01:31:57,782 - INFO - Uploaded batch 77 to GCS with 1000/1000 rows.
+2025-04-11 01:31:57,879 - INFO - Processed 1000/1000 documents in batch 78
+2025-04-11 01:31:58,074 - INFO - Successfully uploaded export_batch_78_20250411_013157.parquet to GCS
+2025-04-11 01:31:58,074 - INFO - Uploaded batch 78 to GCS with 1000/1000 rows.
+2025-04-11 01:31:58,172 - INFO - Processed 1000/1000 documents in batch 79
+2025-04-11 01:31:58,354 - INFO - Successfully uploaded export_batch_79_20250411_013158.parquet to GCS
+2025-04-11 01:31:58,355 - INFO - Uploaded batch 79 to GCS with 1000/1000 rows.
+2025-04-11 01:31:58,451 - INFO - Processed 1000/1000 documents in batch 80
+2025-04-11 01:31:58,633 - INFO - Successfully uploaded export_batch_80_20250411_013158.parquet to GCS
+2025-04-11 01:31:58,634 - INFO - Uploaded batch 80 to GCS with 1000/1000 rows.
+2025-04-11 01:31:58,730 - INFO - Processed 1000/1000 documents in batch 81
+2025-04-11 01:31:58,912 - INFO - Successfully uploaded export_batch_81_20250411_013158.parquet to GCS
+2025-04-11 01:31:58,912 - INFO - Uploaded batch 81 to GCS with 1000/1000 rows.
+2025-04-11 01:31:59,017 - INFO - Processed 1000/1000 documents in batch 82
+2025-04-11 01:31:59,215 - INFO - Successfully uploaded export_batch_82_20250411_013158.parquet to GCS
+2025-04-11 01:31:59,216 - INFO - Uploaded batch 82 to GCS with 1000/1000 rows.
+2025-04-11 01:31:59,314 - INFO - Processed 1000/1000 documents in batch 83
+2025-04-11 01:31:59,507 - INFO - Successfully uploaded export_batch_83_20250411_013159.parquet to GCS
+2025-04-11 01:31:59,508 - INFO - Uploaded batch 83 to GCS with 1000/1000 rows.
+2025-04-11 01:31:59,617 - INFO - Processed 1000/1000 documents in batch 84
+2025-04-11 01:31:59,811 - INFO - Successfully uploaded export_batch_84_20250411_013159.parquet to GCS
+2025-04-11 01:31:59,812 - INFO - Uploaded batch 84 to GCS with 1000/1000 rows.
+2025-04-11 01:31:59,920 - INFO - Processed 1000/1000 documents in batch 85
+2025-04-11 01:32:00,138 - INFO - Successfully uploaded export_batch_85_20250411_013159.parquet to GCS
+2025-04-11 01:32:00,139 - INFO - Uploaded batch 85 to GCS with 1000/1000 rows.
+2025-04-11 01:32:00,240 - INFO - Processed 1000/1000 documents in batch 86
+2025-04-11 01:32:00,419 - INFO - Successfully uploaded export_batch_86_20250411_013200.parquet to GCS
+2025-04-11 01:32:00,419 - INFO - Uploaded batch 86 to GCS with 1000/1000 rows.
+2025-04-11 01:32:00,519 - INFO - Processed 1000/1000 documents in batch 87
+2025-04-11 01:32:00,671 - INFO - Successfully uploaded export_batch_87_20250411_013200.parquet to GCS
+2025-04-11 01:32:00,672 - INFO - Uploaded batch 87 to GCS with 1000/1000 rows.
+2025-04-11 01:32:00,817 - INFO - Processed 1000/1000 documents in batch 88
+2025-04-11 01:32:00,995 - INFO - Successfully uploaded export_batch_88_20250411_013200.parquet to GCS
+2025-04-11 01:32:00,996 - INFO - Uploaded batch 88 to GCS with 1000/1000 rows.
+2025-04-11 01:32:01,098 - INFO - Processed 1000/1000 documents in batch 89
+2025-04-11 01:32:01,276 - INFO - Successfully uploaded export_batch_89_20250411_013201.parquet to GCS
+2025-04-11 01:32:01,277 - INFO - Uploaded batch 89 to GCS with 1000/1000 rows.
+2025-04-11 01:32:01,378 - INFO - Processed 1000/1000 documents in batch 90
+2025-04-11 01:32:01,582 - INFO - Successfully uploaded export_batch_90_20250411_013201.parquet to GCS
+2025-04-11 01:32:01,583 - INFO - Uploaded batch 90 to GCS with 1000/1000 rows.
+2025-04-11 01:32:01,698 - INFO - Processed 1000/1000 documents in batch 91
+2025-04-11 01:32:01,881 - INFO - Successfully uploaded export_batch_91_20250411_013201.parquet to GCS
+2025-04-11 01:32:01,881 - INFO - Uploaded batch 91 to GCS with 1000/1000 rows.
+2025-04-11 01:32:02,037 - INFO - Processed 1000/1000 documents in batch 92
+2025-04-11 01:32:02,216 - INFO - Successfully uploaded export_batch_92_20250411_013201.parquet to GCS
+2025-04-11 01:32:02,217 - INFO - Uploaded batch 92 to GCS with 1000/1000 rows.
+2025-04-11 01:32:02,320 - INFO - Processed 1000/1000 documents in batch 93
+2025-04-11 01:32:02,509 - INFO - Successfully uploaded export_batch_93_20250411_013202.parquet to GCS
+2025-04-11 01:32:02,509 - INFO - Uploaded batch 93 to GCS with 1000/1000 rows.
+2025-04-11 01:32:02,627 - INFO - Processed 1000/1000 documents in batch 94
+2025-04-11 01:32:02,819 - INFO - Successfully uploaded export_batch_94_20250411_013202.parquet to GCS
+2025-04-11 01:32:02,819 - INFO - Uploaded batch 94 to GCS with 1000/1000 rows.
+2025-04-11 01:32:02,923 - INFO - Processed 1000/1000 documents in batch 95
+2025-04-11 01:32:03,111 - INFO - Successfully uploaded export_batch_95_20250411_013202.parquet to GCS
+2025-04-11 01:32:03,111 - INFO - Uploaded batch 95 to GCS with 1000/1000 rows.
+2025-04-11 01:32:03,218 - INFO - Processed 1000/1000 documents in batch 96
+2025-04-11 01:32:03,419 - INFO - Successfully uploaded export_batch_96_20250411_013203.parquet to GCS
+2025-04-11 01:32:03,419 - INFO - Uploaded batch 96 to GCS with 1000/1000 rows.
+2025-04-11 01:32:03,569 - INFO - Processed 1000/1000 documents in batch 97
+2025-04-11 01:32:03,754 - INFO - Successfully uploaded export_batch_97_20250411_013203.parquet to GCS
+2025-04-11 01:32:03,755 - INFO - Uploaded batch 97 to GCS with 1000/1000 rows.
+2025-04-11 01:32:03,857 - INFO - Processed 1000/1000 documents in batch 98
+2025-04-11 01:32:04,040 - INFO - Successfully uploaded export_batch_98_20250411_013203.parquet to GCS
+2025-04-11 01:32:04,040 - INFO - Uploaded batch 98 to GCS with 1000/1000 rows.
+2025-04-11 01:32:04,174 - INFO - Processed 1000/1000 documents in batch 99
+2025-04-11 01:32:04,369 - INFO - Successfully uploaded export_batch_99_20250411_013204.parquet to GCS
+2025-04-11 01:32:04,369 - INFO - Uploaded batch 99 to GCS with 1000/1000 rows.
+2025-04-11 01:32:04,369 - INFO - Export completed successfully
