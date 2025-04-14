@@ -10,3 +10,5 @@ for file_path in files:
     table = pq.read_table(file_path)
     print(f"Schema của {file_path}:")
     print(table.schema)
+
+
