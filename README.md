@@ -9,30 +9,31 @@ This repository contains the implementation of **Project 06**, a data pipeline a
 
 ## Table of Contents
 
-1. [Project Overview](#project-overview)
-2. [Architecture](#architecture)
-3. [Prerequisites](#prerequisites)
-4. [Setup Instructions](#setup-instructions)
+1. [Project Overview](#1-project-overview)
+2. [Architecture](#2-architecture)
+3. [Prerequisites](#3-prerequisites)
+4. [Setup Instructions](#4-setup-instructions)
    - [Authentication](#authentication)
    - [Virtual Machine Setup](#virtual-machine-setup)
    - [MongoDB Installation](#mongodb-installation)
    - [Data Upload and Extraction](#data-upload-and-extraction)
    - [MongoDB Data Import](#mongodb-data-import)
-5. [Data Export Process](#data-export-process)
+5. [Data Export Process](#5-data-export-process)
    - [Python Script for MongoDB to GCS](#python-script-for-mongodb-to-gcs)
    - [Error Handling and Logging](#error-handling-and-logging)
-6. [BigQuery Integration](#bigquery-integration)
+6. [BigQuery Integration](#6-bigquery-integration)
    - [Dataset and Table Creation](#dataset-and-table-creation)
    - [Schema Definition](#schema-definition)
    - [Automated Data Loading](#automated-data-loading)
-7. [Testing and Monitoring](#testing-and-monitoring)
+7. [Testing and Monitoring](#7-testing-and-monitoring)
    - [End-to-End Testing](#end-to-end-testing)
    - [Alert Setup](#alert-setup)
-8. [Troubleshooting](#troubleshooting)
-9. [Contributing](#contributing)
-10. [License](#license)
+8. [Troubleshooting](#8-troubleshooting)
+9. [Contributing](#9-contributing)
+10. [License](#10-license)
 
-## 1) Project Overview {#project-overview}
+
+## 1) Project Overview 
 
 The goal of **Project 06** is to build an end-to-end data pipeline that:
 
