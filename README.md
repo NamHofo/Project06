@@ -32,7 +32,7 @@ This repository contains the implementation of **Project 06**, a data pipeline a
 9. [Contributing](#contributing)
 10. [License](#license)
 
-## 1) Project Overview
+## 1) Project Overview {#project-overview}
 
 The goal of **Project 06** is to build an end-to-end data pipeline that:
 
