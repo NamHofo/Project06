@@ -92,7 +92,6 @@ class MongoToGCSExporter:
                                     doc_copy["cart_products"] = cart_products
 
                                 if "option" in doc:
-                                    option = []
                                     if doc.get("option") == "":
                                         doc_copy["option"] = []
 
