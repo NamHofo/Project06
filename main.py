@@ -91,39 +91,10 @@ class MongoToGCSExporter:
                                         cart_products.append(cart_product)
                                     doc_copy["cart_products"] = cart_products
 
-                                option = doc_copy.get("option", None)
-                                if option is None:
-                                    doc_copy["option"] = []
-                                elif not isinstance(option, list):
-                                    doc_copy["option"] = [{
-                                        "option_id": str(option) if option else None,
-                                        "option_label": None,
-                                        "quality": None,
-                                        "quality_label": None,
-                                        "value_id": None,
-                                        "value_label": None,
-                                        "alloy": None,
-                                        "diamond": None,
-                                        "shapediamond": None
-                                    }]
-                                else:
-                                    cleaned_option = []
-                                    for item in option:
-                                        if isinstance(item, dict):
-                                            cleaned_option.append({
-                                                "option_id": str(item.get("option_id")) if item.get("option_id") is not None else None,
-                                                "option_label": str(item.get("option_label")) if item.get("option_label") is not None else None,
-                                                "quality": str(item.get("quality")) if item.get("quality") is not None else None,
-                                                "quality_label": str(item.get("quality_label")) if item.get("quality_label") is not None else None,
-                                                "value_id": str(item.get("value_id")) if item.get("value_id") is not None else None,
-                                                "value_label": str(item.get("value_label")) if item.get("value_label") is not None else None,
-                                                "alloy": str(item.get("alloy")) if item.get("alloy") is not None else None,
-                                                "diamond": str(item.get("diamond")) if item.get("diamond") is not None else None,
-                                                "shapediamond": str(item.get("shapediamond")) if item.get("shapediamond") is not None else None
-                                            })
-                                        else:
-                                            continue
-                                    doc_copy["option"] = cleaned_option
+                                if "option" in doc:
+                                    option = []
+                                    if doc.get("option") == "":
+                                        doc_copy["option"] = []
 
                         # Write to JSONL
                         f.write(json.dumps(doc_copy, ensure_ascii=False) + '\n')

@@ -8,7 +8,7 @@ app = Flask(__name__)
 BUCKET_NAME = "project-06-bucket"
 EXPORT_FOLDER = "exports_jsonl/"
 DATASET_NAME = "summary"
-TABLE_NAME = "table_jsonl"
+TABLE_NAME = "glamira_dataset"
 SCHEMA_PATH = "schema.json"  # Đường dẫn đến file schema.json
 
 def load_schema_from_file(schema_path):
