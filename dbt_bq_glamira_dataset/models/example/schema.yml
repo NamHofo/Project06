@@ -1,0 +1,27 @@
+
+version: 2
+
+sources:
+  - name: summary
+    database: peppy-primacy-455413-d8  # Thay bằng ID dự án BigQuery của bạn
+    schema: summary
+    tables:
+      - name: glamira_dataset
+        description: "Bảng chứa dữ liệu với cột _id"
+
+models:
+  - name: my_first_dbt_model
+    description: "Create a table with _id collumn not null"
+    columns:
+      - name: _id 
+        description: "Model lấy các dòng có _id không null từ glamira_dataset"
+        columns:
+          - name: _id
+            description: "Mã định danh, không null"
+            tests:
+              - not_null
+  - name: change_data_type
+    description: "Thay đổi kiểu dữ liệu của các cột về dạng phù hợp"
+    
+
+
