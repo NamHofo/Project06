@@ -9,6 +9,8 @@ This repository contains the implementation of **Project 06**, a data pipeline a
 
 ## Table of Contents
 
+## Table of Contents
+
 1. [Project Overview](#1-project-overview)
 2. [Architecture](#2-architecture)
 3. [Prerequisites](#3-prerequisites)
@@ -25,12 +27,20 @@ This repository contains the implementation of **Project 06**, a data pipeline a
    - [Dataset and Table Creation](#dataset-and-table-creation)
    - [Schema Definition](#schema-definition)
    - [Automated Data Loading](#automated-data-loading)
-7. [Testing and Monitoring](#7-testing-and-monitoring)
+7. [DBT for Data Type Conversion](#7-dbt-for-data-type-conversion)
+   - [Setup dbt](#setup-dbt)
+   - [DBT Model for Data Type Conversion](#dbt-model-for-data-type-conversion)
+   - [Key Features of the DBT Model](#key-features-of-the-dbt-model)
+   - [Run DBT](#run-dbt)
+   - [Handling Common Issues](#handling-common-issues)
+   - [Testing and Validation](#testing-and-validation)
+   - [Troubleshooting](#troubleshooting)
+8. [Testing and Monitoring](#8-testing-and-monitoring)
    - [End-to-End Testing](#end-to-end-testing)
    - [Alert Setup](#alert-setup)
-8. [Troubleshooting](#8-troubleshooting)
-9. [Contributing](#9-contributing)
-10. [License](#10-license)
+9. [Troubleshooting](#9-troubleshooting)
+10. [Contributing](#10-contributing)
+11. [License](#11-license)
 
 
 ## 1) Project Overview 
@@ -308,7 +318,191 @@ A Cloud Run service (bq-loader) loads JSONL files from GCS to BigQuery:
 
 - Converted all fields to STRING to avoid conflicts (e.g., user_id_db from INTEGER to STRING).
 
-## 7) Testing and Monitoring
+## 7) DBT for Data Type Conversion
+
+To optimize the data in the BigQuery table (`summary.table_jsonl`) for efficient querying and analysis, we use **dbt (data build tool)** to transform column data types. The source table, loaded from JSONL files, initially stores most fields as `STRING` or other default types, which may not be ideal for analysis (e.g., `price` as `STRING` with values like `1.924.00`, `time_stamp` as `INTEGER`). The dbt model converts these columns to appropriate types such as `FLOAT64`, `TIMESTAMP`, `INTEGER`, and `DATETIME`, while handling issues like localized number formats and nested structures.
+
+## Setup dbt
+
+1. **Install dbt**:
+    
+    Install `dbt-bigquery` on your local machine or the VM:
+    
+    ```bash
+    pip install dbt-bigquery
+    
+    ```
+    
+2. **Initialize dbt Project**:
+    
+    Create a new dbt project in your repository:
+    
+    ```bash
+    dbt init dbt_bq_glamira_dataset
+    cd dbt_bq_glamira_dataset
+    
+    ```
+    
+3. **Configure dbt**:
+    - Update `profiles.yml` (located in `~/.dbt/`) to connect to your BigQuery project:
+        
+        ```yaml
+        dbt_bq_glamira_dataset:
+          target: dev
+          outputs:
+            dev:
+              type: bigquery
+              method: service-account
+              project: peppy-primacy-455413-d8
+              dataset: summary
+              threads: 4
+              keyfile: /path/to/your-key.json
+        
+        ```
+        
+    - Ensure the service account key (`/path/to/your-key.json`) has permissions for BigQuery (`roles/bigquery.admin`).
+4. **Define Source**:
+    
+    Create a `sources.yml` file in the `models/` directory to reference the `summary.table_jsonl` table:
+    
+    ```yaml
+    version: 2
+    
+    sources:
+      - name: summary
+        database: peppy-primacy-455413-d8
+        schema: summary
+        tables:
+          - name: glamira_dataset
+    ```
+    
+
+## DBT Model for Data Type Conversion
+
+A dbt model (`models/example/change_data_type.sql`) transforms the data types of columns in `summary.table_jsonl`. The model handles:
+
+- Converting `price` from `STRING` (e.g., `1.924.00`, `344,00`) to `FLOAT64` by removing thousands separators and standardizing decimal points.
+- Converting `time_stamp` from `INTEGER` (Unix timestamp in seconds) to `TIMESTAMP`.
+- Converting `local_time` from `STRING` to `DATETIME`.
+- Converting identifier fields (e.g., `user_id_db`, `store_id`, `product_id`, `order_id`, `cat_id`, `collect_id`, `viewing_product_id`, `recommendation_product_id`, `option_id`, `value_id`) from `STRING` to `INTEGER`.
+- Handling nested `REPEATED RECORD` fields (`option` and `cart_products`) with appropriate type conversions.
+
+**Model Example** (`models/example/change_data_type.sql`)
+
+## Key Features of the DBT Model
+
+- **Safe Casting**: Uses `SAFE_CAST` to handle invalid values (e.g., non-numeric strings return `NULL`).
+- **Price Cleaning**: Handles localized number formats (e.g., `1.924.00`, `344,00`) by removing thousands separators and standardizing decimal points.
+- **Nested Structures**: Properly transforms nested `REPEATED RECORD` fields (`option`, `cart_products`) while maintaining their structure.
+- **Performance Optimization**: Partitions the output table by `time_stamp` and clusters by `store_id` for efficient querying.
+
+## Run DBT
+
+1. **Test the Model**:
+    
+    Validate the SQL before running:
+    
+    ```bash
+    dbt compile
+    ```
+    
+    Check the compiled SQL in `target/compiled/dbt_bq_glamira_dataset/models/example/change_data_type.sql`.
+    
+2. **Execute the Model**:
+    
+    Run dbt to create the transformed table in BigQuery:
+    
+    ```bash
+    dbt run
+    ```
+    
+3. **Verify Output**:
+    
+    Check the new table (`summary.change_data_type`) in BigQuery to ensure columns have the correct data types (e.g., `price` as `FLOAT64`, `user_id_db` as `INTEGER`).
+    
+
+## Handling Common Issues
+
+- **Invalid Number Formats**:
+    - The `price` field may contain values like `1.924.00` or `344,00`. The model uses `REGEXP_REPLACE` to standardize these to `1924.00` or `344.00`.
+    - If new formats appear, update the `REGEXP_REPLACE` pattern or add additional cleaning logic.
+- **Timestamp Conversion**:
+    - The `time_stamp` field (Unix timestamp in seconds) is converted to `TIMESTAMP` using `TIMESTAMP_SECONDS`. If milliseconds are used, switch to `TIMESTAMP_MILLIS`.
+- **Non-Numeric IDs**:
+    - If `user_id_db`, `store_id`, or other `INTEGER` fields contain non-numeric values (e.g., `"abc"`), `SAFE_CAST` returns `NULL`. To debug, query invalid values:
+        
+        ```sql
+        SELECT user_id_db
+        FROM summary.table_jsonl
+        WHERE SAFE_CAST(user_id_db AS INTEGER) IS NULL
+            AND user_id_db IS NOT NULL
+        LIMIT 10;
+        
+        ```
+        
+- **Nested Field Issues**:
+    - The `option` and `cart_products` fields are `REPEATED RECORD`. If `option_id` or `value_id` contain non-numeric values, validate with:
+        
+        ```sql
+        SELECT o.option_id
+        FROM summary.table_jsonl,
+            UNNEST(option) AS o
+        WHERE SAFE_CAST(o.option_id AS INTEGER) IS NULL
+            AND o.option_id IS NOT NULL
+        LIMIT 10;
+        
+        ```
+        
+- **Schema Evolution**:
+    - If the source JSONL files change, update the dbt model to accommodate new fields or types. Use `dbt run --full-refresh` to rebuild the table.
+
+## Testing and Validation
+
+1. **Add dbt Tests**:
+    
+    Create a `schema.yml` file in `models/` to enforce data quality:
+    
+    ```yaml
+    version: 2
+    
+    models:
+      - name: change_data_type
+        columns:
+          - name: price
+            tests:
+              - not_null
+              - dbt_utils.accepted_range:
+                  min_value: 0
+          - name: user_id_db
+            tests:
+              - not_null
+          - name: time_stamp
+            tests:
+              - not_null
+    
+    ```
+    
+2. **Run Tests**:
+    
+    ```bash
+    dbt test
+    
+    ```
+    
+3. **Monitor Output**:
+    - Verify the transformed table in BigQuery.
+    - Check for `NULL` values in `INTEGER` or `FLOAT64` columns to identify data issues.
+
+## Troubleshooting
+
+- **DBT Run Errors**:
+    - Check logs in `logs/dbt.log` or use `dbt run --debug`.
+    - Inspect compiled SQL in `target/compiled/` for errors.
+- **Invalid Casts**:
+    - If casting fails (e.g., `Bad double value` for `price`), update the cleaning logic in the model.
+    - For `INTEGER` fields, ensure source data is numeric.
+
+## 8) Testing and Monitoring
 
 ### End-to-End Testing
 
@@ -328,7 +522,7 @@ A Cloud Run service (bq-loader) loads JSONL files from GCS to BigQuery:
     - Threshold: 10,000 ms.
     - Notification: Email or SMS.
 
-## 8) Troubleshooting
+## 9) Troubleshooting
 
 - **Authentication Errors**:
     - Verify GOOGLE_APPLICATION_CREDENTIALS is set.
@@ -341,7 +535,7 @@ A Cloud Run service (bq-loader) loads JSONL files from GCS to BigQuery:
 - **Cloud Run Errors**:
     - Verify Docker image and dependencies in requirements.txt.
 
-## 9) Contributing
+## 10) Contributing
 
 Contributions are welcome! Please:
 
@@ -351,7 +545,7 @@ Contributions are welcome! Please:
 4. Push to the branch (git push origin feature/your-feature).
 5. Open a Pull Request.
 
-## 10) License
+## 11) License
 
 This project is licensed under the MIT License - see the  file for details.
 
