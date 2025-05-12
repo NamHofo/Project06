@@ -9,8 +9,6 @@ This repository contains the implementation of **Project 06**, a data pipeline a
 
 ## Table of Contents
 
-## Table of Contents
-
 1. [Project Overview](#1-project-overview)
 2. [Architecture](#2-architecture)
 3. [Prerequisites](#3-prerequisites)
